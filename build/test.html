@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>StoneWorks – Home</title>
+  <meta name="description" content="Premium stone and concrete solutions built to last." />
+
+  <!-- CSS generado por Gulp -->
+  <link rel="stylesheet" href="../build/css/app.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <!-- En producción se ensamblará con parciales -->
+  <!-- Para prueba se pega directo -->
+<header class="site-header" data-header>
+  <div class="site-header__bar">
+    <a class="brand" href="index.html" aria-label="Go to homepage">
+      <span class="brand__mark" aria-hidden="true">SW</span>
+      <span class="brand__text">StoneWorks</span>
+    </a>
+
+    <div class="site-header__actions">
+      <a class="btn btn--primary btn--sm" href="contact.html">Get a Quote</a>
+
+      <button
+        class="icon-btn"
+        type="button"
+        data-nav-toggle
+        aria-label="Open menu"
+        aria-controls="mobileNav"
+        aria-expanded="false"
+      >
+        <span class="icon-btn__lines" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div class="nav-overlay" data-nav-overlay hidden></div>
+
+  <!-- Off-canvas -->
+  <nav class="mobile-nav" id="mobileNav" data-mobile-nav hidden aria-label="Primary">
+    <div class="mobile-nav__header">
+      <span class="mobile-nav__title">Menu</span>
+      <button class="icon-btn icon-btn--close" type="button" data-nav-close aria-label="Close menu">
+        <span class="icon-btn__x" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <ul class="mobile-nav__list">
+      <li><a class="mobile-nav__link" href="index.html">Home</a></li>
+      <li><a class="mobile-nav__link" href="services.html">Services</a></li>
+      <li><a class="mobile-nav__link" href="projects.html">Projects</a></li>
+      <li><a class="mobile-nav__link" href="about.html">About</a></li>
+      <li><a class="mobile-nav__link" href="contact.html">Contact</a></li>
+      <li><a class="mobile-nav__link" href="privacy.html">Privacy</a></li>
+    </ul>
+
+    <div class="mobile-nav__footer">
+      <a class="btn btn--primary" href="contact.html">Book an Appointment</a>
+      <a class="btn btn--ghost" href="tel:+15018120003">Call now</a>
+      <p class="mobile-nav__note">Fast quotes. Clean installs. Built to last.</p>
+    </div>
+  </nav>
+</header>
+
+
+  <main class="main">
+    <!-- CONTENIDO FAKE PARA SCROLL -->
+    <section style="padding: 96px 16px;">
+      <h1>Premium Stone & Concrete Solutions</h1>
+      <p style="max-width: 520px; opacity: 0.8;">
+        This is temporary content used only to test the header behavior.
+      </p>
+      <div style="height: 800px;"></div>
+    </section>
+  </main>
+
+  <!-- JS generado por Gulp -->
+  <script src="../build/js/app.js" defer></script>
+</body>
+</html>

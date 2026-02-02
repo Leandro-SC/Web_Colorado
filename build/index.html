@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StoneWorks – Premium Stone & Concrete</title>
+  <meta name="description" content="Premium stone and concrete solutions built to last." />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+
+  <header class="site-header" data-header>
+  <div class="site-header__bar">
+    <a class="brand" href="index.html" aria-label="Go to homepage">
+      <span class="brand__mark" aria-hidden="true">SW</span>
+      <span class="brand__text">StoneWorks</span>
+    </a>
+
+    <!-- Desktop navigation (visible from desktop breakpoint) -->
+    <nav class="nav-desktop" aria-label="Primary">
+      <ul class="nav-desktop__list">
+        <li><a class="nav-desktop__link" href="services.html">Services</a></li>
+        <li><a class="nav-desktop__link" href="projects.html">Projects</a></li>
+        <li><a class="nav-desktop__link" href="about.html">About</a></li>
+        <li><a class="nav-desktop__link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="site-header__actions">
+      <a class="btn btn--primary btn--sm" href="contact.html">Get a Quote</a>
+
+      <!-- Mobile toggle (hidden from desktop breakpoint) -->
+      <button
+        class="icon-btn"
+        type="button"
+        data-nav-toggle
+        aria-label="Open menu"
+        aria-controls="mobileNav"
+        aria-expanded="false"
+      >
+        <span class="icon-btn__lines" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Overlay (mobile only behavior) -->
+  <div class="nav-overlay" data-nav-overlay hidden></div>
+
+  <!-- Off-canvas (mobile) -->
+  <nav class="mobile-nav" id="mobileNav" data-mobile-nav hidden aria-label="Primary">
+    <div class="mobile-nav__header">
+      <span class="mobile-nav__title">Menu</span>
+      <button class="icon-btn icon-btn--close" type="button" data-nav-close aria-label="Close menu">
+        <span class="icon-btn__x" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <ul class="mobile-nav__list">
+      <li><a class="mobile-nav__link" href="index.html">Home</a></li>
+      <li><a class="mobile-nav__link" href="services.html">Services</a></li>
+      <li><a class="mobile-nav__link" href="projects.html">Projects</a></li>
+      <li><a class="mobile-nav__link" href="about.html">About</a></li>
+      <li><a class="mobile-nav__link" href="contact.html">Contact</a></li>
+      <li><a class="mobile-nav__link" href="privacy.html">Privacy</a></li>
+    </ul>
+
+    <div class="mobile-nav__footer">
+      <a class="btn btn--primary" href="contact.html">Book an Appointment</a>
+      <a class="btn btn--ghost" href="tel:+15018120003">Call now</a>
+      <p class="mobile-nav__note">Fast quotes. Clean installs. Built to last.</p>
+    </div>
+  </nav>
+</header>
+
+
+  <main class="main">
+    <section class="page-hero">
+      <div class="page-hero__inner">
+        <div>
+          <h1 class="page-hero__title">Premium Stone & Concrete Solutions</h1>
+          <p class="page-hero__text">
+            High-performance installations for patios, walkways, retaining walls, and outdoor living spaces.
+          </p>
+          <div style="margin-top: 14px;">
+            <a class="btn btn--primary" href="contact.html">Get a Free Estimate</a>
+            <a class="btn btn--ghost" href="projects.html" style="margin-left: 10px;">View Projects</a>
+          </div>
+        </div>
+
+        <div class="page-content-block" aria-label="Hero media placeholder">
+          <!-- En Etapa 2 aquí irá el carrusel real con <picture> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="page-section__inner">
+        <h2 class="page-section__title">Quality-first craftsmanship</h2>
+        <p class="page-section__text">
+          Built with reliable materials, clean workmanship, and a process designed for long-term durability.
+        </p>
+
+        <div class="page-content-block">
+          <!-- Sección real base para validar scroll y layout -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>

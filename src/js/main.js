@@ -1,14 +1,20 @@
-import { navegacionFija } from "./modules/navegacionFija.js";
-import { scrollNav } from "./modules/scrollNav.js";
 import { menuMovil } from "./modules/menuMovil.js";
-
-export function crearGaleria() {}
-export function sliderHero() {}
-export function filtrosProyectos() {}
-export function lazyLoadImages() {}
+import { activeNav } from "./modules/activeNav.js";
+import { sliderHero } from "./modules/sliderHero.js";
+import { lazyLoadImages } from "./modules/lazyLoadImages.js";
+import { sliderHeroBanner } from "./modules/sliderHeroBanner.js";
+import { revealOnScroll } from "./modules/revealOnScroll.js";
+import { sliderServices } from "./modules/sliderServices.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  navegacionFija();
-  scrollNav();
   menuMovil();
+  activeNav();
+
+  lazyLoadImages();
+  sliderHero();
+
+  sliderHeroBanner();
+  revealOnScroll();
+
+  sliderServices();
 });

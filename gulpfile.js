@@ -7,7 +7,6 @@ import * as dartSass from "sass";
 import gulpSass from "gulp-sass";
 import plumber from "gulp-plumber";
 
-import sourcemaps from "gulp-sourcemaps";
 import postcss from "gulp-postcss";
 import autoprefixer from "autoprefixer";
 import cssnano from "cssnano";
@@ -84,15 +83,18 @@ export function html() {
    SCSS: dart-sass + autoprefixer + cssnano + sourcemaps
 ================================ */
 export function css() {
-  return src(paths.scss.entry, { allowEmpty: true })
-    .pipe(plumber())
-    .pipe(sourcemaps.init())
+  return src(paths.scss.entry, { allowEmpty: false })
     .pipe(
-      sass({
-        outputStyle: "expanded", // primero expandido para postcss más estable
-      }).on("error", sass.logError)
+      plumber({
+        errorHandler(err) {
+          console.error("SCSS ERROR:", err.messageFormatted || err.message);
+          this.emit("end");
+        },
+      })
     )
-    .pipe(postcss([autoprefixer(), cssnano()])) // minificado real
+    .pipe(sourcemaps.init())
+    .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
+    .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(sourcemaps.write("."))
     .pipe(dest(paths.scss.dest));
 }
@@ -101,7 +103,7 @@ export function css() {
    JavaScript: terser + sourcemaps
 ================================ */
 export function js() {
-  return src("src/js/main.js", { allowEmpty: true })
+  return src(paths.js.entry, { allowEmpty: false })
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(
@@ -115,7 +117,7 @@ export function js() {
       })
     )
     .pipe(sourcemaps.write("."))
-    .pipe(dest("build/js"));
+    .pipe(dest(paths.js.dest));
 }
 
 

@@ -1,41 +1,32 @@
 :root {
-  /* Premium light system */
+  /* Base (page) */
   --color-bg: #f6f7fb;
   --color-surface: #ffffff;
   --color-surface-2: #f1f3f9;
 
   --color-text: #0f172a;
-  --color-muted: rgba(15, 23, 42, 0.68);
-
+  --color-muted: rgba(15, 23, 42, 0.70);
   --color-border: rgba(15, 23, 42, 0.10);
 
-  --color-accent: #c79a3a; /* warm stone */
-  --color-accent-2: #2563eb;
+  /* Brand accents */
+  --color-accent: #c79a3a; /* stone gold */
+  --color-accent-strong: #e6c06b;
+  --color-focus: rgba(56, 189, 248, 0.35);
+
+  /* Header (dark premium) */
+  --nav-bg: #0b1220;
+  --nav-border: rgba(255, 255, 255, 0.12);
+  --nav-text: rgba(255, 255, 255, 0.92);
+  --nav-muted: rgba(255, 255, 255, 0.70);
+  --nav-pill: rgba(255, 255, 255, 0.10);
 
   --radius-lg: 18px;
   --radius-md: 14px;
-  --radius-sm: 12px;
 
-  --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.10);
-  --shadow-card: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --shadow-soft: 0 16px 40px rgba(15, 23, 42, 0.10);
+  --shadow-nav: 0 18px 60px rgba(0, 0, 0, 0.30);
 
-  --container: 1120px;
+  --container: 1160px;
   --gutter: 16px;
-
-  --header-h: 72px;
+  --header-h: 78px;
 }
-
-$fuente_principal : "Montserrat", sans-serif;
-// Media Queries
-$telefono: 480px;
-$tablet: 768px;
-$desktop: 1200px;
-$desktopXL: 1400px;
-
-// Colores
-$verde:#4CB8B3;
-$rosa: #F53756;
-$amarillo: #fdda00;
-$morado: #752F97;
-$negro: #000000;
-$blanco: #FFFFFF;

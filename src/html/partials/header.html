@@ -1,62 +1,87 @@
 <header class="site-header" data-header>
   <div class="site-header__bar">
     <a class="brand" href="index.html" aria-label="Go to homepage">
-      <span class="brand__mark" aria-hidden="true">SW</span>
-      <span class="brand__text">StoneWorks</span>
+      <span class="brand__logo">
+        <picture>
+          <source srcset="img/logo.avif" type="image/avif">
+          <source srcset="img/logo.webp" type="image/webp">
+          <img
+            src="img/logo.jpg"
+            width="180"
+            height="60"
+            alt="Colorado Pro Masonry LLC logo"
+            loading="eager"
+            decoding="async"
+          />
+        </picture>
+      </span>
+      <span class="brand__name">Colorado Pro Masonry LLC</span>
     </a>
 
-    <!-- Desktop navigation (visible from desktop breakpoint) -->
     <nav class="nav-desktop" aria-label="Primary">
       <ul class="nav-desktop__list">
-        <li><a class="nav-desktop__link" href="services.html">Services</a></li>
-        <li><a class="nav-desktop__link" href="projects.html">Projects</a></li>
-        <li><a class="nav-desktop__link" href="about.html">About</a></li>
-        <li><a class="nav-desktop__link" href="contact.html">Contact</a></li>
+        <li><a class="nav-desktop__link" href="index.html" data-nav="home">Home</a></li>
+        <li><a class="nav-desktop__link" href="services.html" data-nav="services">Services</a></li>
+        <li><a class="nav-desktop__link" href="projects.html" data-nav="projects">Projects</a></li>
+        <li><a class="nav-desktop__link" href="about.html" data-nav="about">About</a></li>
+        <li><a class="nav-desktop__link" href="contact.html" data-nav="contact">Contact</a></li>
       </ul>
     </nav>
 
     <div class="site-header__actions">
       <a class="btn btn--primary btn--sm" href="contact.html">Get a Quote</a>
 
-      <!-- Mobile toggle (hidden from desktop breakpoint) -->
       <button
-        class="icon-btn"
+        class="hamburger"
         type="button"
         data-nav-toggle
         aria-label="Open menu"
         aria-controls="mobileNav"
         aria-expanded="false"
       >
-        <span class="icon-btn__lines" aria-hidden="true"></span>
+        <span class="hamburger__box" aria-hidden="true">
+          <span class="hamburger__line"></span>
+        </span>
       </button>
     </div>
   </div>
 
-  <!-- Overlay (mobile only behavior) -->
   <div class="nav-overlay" data-nav-overlay hidden></div>
 
-  <!-- Off-canvas (mobile) -->
   <nav class="mobile-nav" id="mobileNav" data-mobile-nav hidden aria-label="Primary">
-    <div class="mobile-nav__header">
-      <span class="mobile-nav__title">Menu</span>
-      <button class="icon-btn icon-btn--close" type="button" data-nav-close aria-label="Close menu">
-        <span class="icon-btn__x" aria-hidden="true"></span>
-      </button>
-    </div>
+    <div class="mobile-nav__panel">
+      <div class="mobile-nav__handle" aria-hidden="true"></div>
 
-    <ul class="mobile-nav__list">
-      <li><a class="mobile-nav__link" href="index.html">Home</a></li>
-      <li><a class="mobile-nav__link" href="services.html">Services</a></li>
-      <li><a class="mobile-nav__link" href="projects.html">Projects</a></li>
-      <li><a class="mobile-nav__link" href="about.html">About</a></li>
-      <li><a class="mobile-nav__link" href="contact.html">Contact</a></li>
-      <li><a class="mobile-nav__link" href="privacy.html">Privacy</a></li>
-    </ul>
+      <div class="mobile-nav__top">
+        <div class="mobile-nav__brand">
+          <span class="mobile-nav__brandLogo" aria-hidden="true"></span>
+          <div class="mobile-nav__brandText">
+            <span class="mobile-nav__brandName">Colorado Pro Masonry</span>
+            <span class="mobile-nav__brandMeta">Fast quotes • Clean installs</span>
+          </div>
+        </div>
 
-    <div class="mobile-nav__footer">
-      <a class="btn btn--primary" href="contact.html">Book an Appointment</a>
-      <a class="btn btn--ghost" href="tel:+15018120003">Call now</a>
-      <p class="mobile-nav__note">Fast quotes. Clean installs. Built to last.</p>
+        <button class="icon-btn icon-btn--close" type="button" data-nav-close aria-label="Close menu">
+          <span class="icon-btn__x" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <ul class="mobile-nav__list">
+        <li><a class="mobile-nav__link" href="index.html" data-nav="home">Home</a></li>
+        <li><a class="mobile-nav__link" href="services.html" data-nav="services">Services</a></li>
+        <li><a class="mobile-nav__link" href="projects.html" data-nav="projects">Projects</a></li>
+        <li><a class="mobile-nav__link" href="about.html" data-nav="about">About</a></li>
+        <li><a class="mobile-nav__link" href="contact.html" data-nav="contact">Contact</a></li>
+      </ul>
+
+      <div class="mobile-nav__cta">
+        <a class="btn btn--primary" href="contact.html">Book an Appointment</a>
+        <div class="mobile-nav__ctaRow">
+          <a class="btn btn--ghost mobile-nav__ctaBtn" href="tel:+15018120003">Call now</a>
+          <a class="btn btn--ghost mobile-nav__ctaBtn" href="projects.html">View work</a>
+        </div>
+        <p class="mobile-nav__note">Licensed craftsmanship built for long-term durability.</p>
+      </div>
     </div>
   </nav>
 </header>

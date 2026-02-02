@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StoneWorks – Premium Stone & Concrete</title>
-  <meta name="description" content="Premium stone and concrete solutions built to last." />
+
+  <title>Colorado Pro Masonry LLC</title>
+  <meta name="description" content="Colorado Pro Masonry LLC provides premium stone and concrete services, built to last." />
+  <meta name="msapplication-TileColor" content="#f6f7fb" />
+
   <link rel="stylesheet" href="css/app.css" />
 </head>
 <body>
@@ -12,100 +15,498 @@
   <header class="site-header" data-header>
   <div class="site-header__bar">
     <a class="brand" href="index.html" aria-label="Go to homepage">
-      <span class="brand__mark" aria-hidden="true">SW</span>
-      <span class="brand__text">StoneWorks</span>
+      <span class="brand__logo">
+        <picture>
+          <source srcset="img/logo.avif" type="image/avif">
+          <source srcset="img/logo.webp" type="image/webp">
+          <img
+            src="img/logo.jpg"
+            width="180"
+            height="60"
+            alt="Colorado Pro Masonry LLC logo"
+            loading="eager"
+            decoding="async"
+          />
+        </picture>
+      </span>
+      <span class="brand__name">Colorado Pro Masonry LLC</span>
     </a>
 
-    <!-- Desktop navigation (visible from desktop breakpoint) -->
     <nav class="nav-desktop" aria-label="Primary">
       <ul class="nav-desktop__list">
-        <li><a class="nav-desktop__link" href="services.html">Services</a></li>
-        <li><a class="nav-desktop__link" href="projects.html">Projects</a></li>
-        <li><a class="nav-desktop__link" href="about.html">About</a></li>
-        <li><a class="nav-desktop__link" href="contact.html">Contact</a></li>
+        <li><a class="nav-desktop__link" href="index.html" data-nav="home">Home</a></li>
+        <li><a class="nav-desktop__link" href="services.html" data-nav="services">Services</a></li>
+        <li><a class="nav-desktop__link" href="projects.html" data-nav="projects">Projects</a></li>
+        <li><a class="nav-desktop__link" href="about.html" data-nav="about">About</a></li>
+        <li><a class="nav-desktop__link" href="contact.html" data-nav="contact">Contact</a></li>
       </ul>
     </nav>
 
     <div class="site-header__actions">
       <a class="btn btn--primary btn--sm" href="contact.html">Get a Quote</a>
 
-      <!-- Mobile toggle (hidden from desktop breakpoint) -->
       <button
-        class="icon-btn"
+        class="hamburger"
         type="button"
         data-nav-toggle
         aria-label="Open menu"
         aria-controls="mobileNav"
         aria-expanded="false"
       >
-        <span class="icon-btn__lines" aria-hidden="true"></span>
+        <span class="hamburger__box" aria-hidden="true">
+          <span class="hamburger__line"></span>
+        </span>
       </button>
     </div>
   </div>
 
-  <!-- Overlay (mobile only behavior) -->
   <div class="nav-overlay" data-nav-overlay hidden></div>
 
-  <!-- Off-canvas (mobile) -->
   <nav class="mobile-nav" id="mobileNav" data-mobile-nav hidden aria-label="Primary">
-    <div class="mobile-nav__header">
-      <span class="mobile-nav__title">Menu</span>
-      <button class="icon-btn icon-btn--close" type="button" data-nav-close aria-label="Close menu">
-        <span class="icon-btn__x" aria-hidden="true"></span>
-      </button>
-    </div>
+    <div class="mobile-nav__panel">
+      <div class="mobile-nav__handle" aria-hidden="true"></div>
 
-    <ul class="mobile-nav__list">
-      <li><a class="mobile-nav__link" href="index.html">Home</a></li>
-      <li><a class="mobile-nav__link" href="services.html">Services</a></li>
-      <li><a class="mobile-nav__link" href="projects.html">Projects</a></li>
-      <li><a class="mobile-nav__link" href="about.html">About</a></li>
-      <li><a class="mobile-nav__link" href="contact.html">Contact</a></li>
-      <li><a class="mobile-nav__link" href="privacy.html">Privacy</a></li>
-    </ul>
+      <div class="mobile-nav__top">
+        <div class="mobile-nav__brand">
+          <span class="mobile-nav__brandLogo" aria-hidden="true"></span>
+          <div class="mobile-nav__brandText">
+            <span class="mobile-nav__brandName">Colorado Pro Masonry</span>
+            <span class="mobile-nav__brandMeta">Fast quotes • Clean installs</span>
+          </div>
+        </div>
 
-    <div class="mobile-nav__footer">
-      <a class="btn btn--primary" href="contact.html">Book an Appointment</a>
-      <a class="btn btn--ghost" href="tel:+15018120003">Call now</a>
-      <p class="mobile-nav__note">Fast quotes. Clean installs. Built to last.</p>
+        <button class="icon-btn icon-btn--close" type="button" data-nav-close aria-label="Close menu">
+          <span class="icon-btn__x" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <ul class="mobile-nav__list">
+        <li><a class="mobile-nav__link" href="index.html" data-nav="home">Home</a></li>
+        <li><a class="mobile-nav__link" href="services.html" data-nav="services">Services</a></li>
+        <li><a class="mobile-nav__link" href="projects.html" data-nav="projects">Projects</a></li>
+        <li><a class="mobile-nav__link" href="about.html" data-nav="about">About</a></li>
+        <li><a class="mobile-nav__link" href="contact.html" data-nav="contact">Contact</a></li>
+      </ul>
+
+      <div class="mobile-nav__cta">
+        <a class="btn btn--primary" href="contact.html">Book an Appointment</a>
+        <div class="mobile-nav__ctaRow">
+          <a class="btn btn--ghost mobile-nav__ctaBtn" href="tel:+15018120003">Call now</a>
+          <a class="btn btn--ghost mobile-nav__ctaBtn" href="projects.html">View work</a>
+        </div>
+        <p class="mobile-nav__note">Licensed craftsmanship built for long-term durability.</p>
+      </div>
     </div>
   </nav>
 </header>
 
 
-  <main class="main">
-    <section class="page-hero">
-      <div class="page-hero__inner">
-        <div>
-          <h1 class="page-hero__title">Premium Stone & Concrete Solutions</h1>
-          <p class="page-hero__text">
-            High-performance installations for patios, walkways, retaining walls, and outdoor living spaces.
-          </p>
-          <div style="margin-top: 14px;">
-            <a class="btn btn--primary" href="contact.html">Get a Free Estimate</a>
-            <a class="btn btn--ghost" href="projects.html" style="margin-left: 10px;">View Projects</a>
+ <main class="main" id="main">
+ <section class="hero-banner" aria-label="Colorado Pro Masonry hero carousel">
+  <!-- Slider (background) -->
+  <div class="hero-banner__slider" data-hero-fade>
+    <div class="hero-banner__slides" data-hero-track>
+      <article class="hero-banner__slide is-active" data-hero-slide>
+        <picture>
+          <source srcset="img/colorado_mansory_03.avif" type="image/avif">
+          <source srcset="img/colorado_mansory_03.webp" type="image/webp">
+          <img
+            src="img/colorado_mansory_03.jpg"
+            alt="Premium stone patio"
+            width="1600"
+            height="900"
+            loading="eager"
+            decoding="async"
+          />
+        </picture>
+      </article>
+
+      <article class="hero-banner__slide" data-hero-slide>
+        <picture>
+          <source data-srcset="img/colorado_mansory_06.avif" type="image/avif">
+          <source data-srcset="img/colorado_mansory_06.webp" type="image/webp">
+          <img
+            data-src="img/colorado_mansory_06.jpg"
+            alt="Retaining wall installation"
+            width="1600"
+            height="900"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+      </article>
+
+      <article class="hero-banner__slide" data-hero-slide>
+        <picture>
+          <source data-srcset="img/colorado_mansory_44.avif" type="image/avif">
+          <source data-srcset="img/colorado_mansory_44.webp" type="image/webp">
+          <img
+            data-src="img/colorado_mansory_44.jpg"
+            alt="Outdoor living stonework"
+            width="1600"
+            height="900"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+      </article>
+    </div>
+
+    <!-- Overlay oscuro elegante -->
+    <div class="hero-banner__overlay" aria-hidden="true"></div>
+
+    <!-- Contenido centrado (como la referencia) -->
+    <div class="hero-banner__content" data-hero-content>
+      <h1 class="hero-banner__title">Colorado Pro Masonry</h1>
+      <p class="hero-banner__subtitle">Colorado’ Choice for Timeless Stone Design</p>
+
+      <div class="hero-banner__actions">
+        <a class="btn btn--primary hero-banner__btn" href="tel:+17206422692">(720) 642 2692</a>
+        <a class="btn btn--ghost hero-banner__btn hero-banner__btnLight" href="contact.html">Book an Appointment</a>
+      </div>
+    </div>
+
+    <!-- Dots -->
+    <div class="hero-banner__dots" data-hero-dots aria-label="Choose slide"></div>
+
+    <!-- Controls (desktop) -->
+    <div class="hero-banner__controls" aria-hidden="false">
+      <button class="hero-banner__ctrl" type="button" data-hero-prev aria-label="Previous slide">‹</button>
+      <button class="hero-banner__ctrl" type="button" data-hero-next aria-label="Next slide">›</button>
+    </div>
+
+    <!-- Ola inferior -->
+    <div class="hero-banner__wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path
+          d="M0,64 C120,96 240,96 360,80 C480,64 600,32 720,32 C840,32 960,64 1080,80 C1200,96 1320,96 1440,64 L1440,120 L0,120 Z"
+          fill="#ffffff"
+        />
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="trust-grid" aria-label="Why homeowners choose us">
+  <div class="trust-grid__inner">
+    <header class="trust-grid__head" data-reveal>
+      <p class="trust-grid__badge">Trusted workmanship</p>
+
+      <h2 class="trust-grid__title">
+        Built with a clean process and durable materials.
+      </h2>
+
+      <p class="trust-grid__subtitle">
+        We focus on structural prep, drainage, and finish details so your project looks premium and performs for years.
+      </p>
+    </header>
+
+    <div class="trust-grid__content">
+      <!-- Left: benefits -->
+      <div class="trust-grid__benefits">
+        <article class="trust-item" data-reveal>
+          <div class="trust-item__icon" aria-hidden="true">
+            <span class="trust-item__glyph trust-item__glyph--shield"></span>
           </div>
-        </div>
+          <div class="trust-item__body">
+            <h3 class="trust-item__title">Licensed & insured</h3>
+            <p class="trust-item__text">
+              Clear scope, safe worksite, and accountability from start to finish.
+            </p>
+            <hr class="trust-item__sep" />
+          </div>
+        </article>
 
-        <div class="page-content-block" aria-label="Hero media placeholder">
-          <!-- En Etapa 2 aquí irá el carrusel real con <picture> -->
+        <article class="trust-item" data-reveal>
+          <div class="trust-item__icon" aria-hidden="true">
+            <span class="trust-item__glyph trust-item__glyph--bolt"></span>
+          </div>
+          <div class="trust-item__body">
+            <h3 class="trust-item__title">Fast quotes</h3>
+            <p class="trust-item__text">
+              Share photos and measurements. We reply quickly with a clear estimate.
+            </p>
+            <hr class="trust-item__sep" />
+          </div>
+        </article>
+
+        <article class="trust-item" data-reveal>
+          <div class="trust-item__icon" aria-hidden="true">
+            <span class="trust-item__glyph trust-item__glyph--craft"></span>
+          </div>
+          <div class="trust-item__body">
+            <h3 class="trust-item__title">Premium craftsmanship</h3>
+            <p class="trust-item__text">
+              Tight lines, stable base prep, and a finish designed for long-term durability.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Right: images -->
+      <div class="trust-grid__media" data-reveal aria-label="Project photos">
+        <figure class="trust-media trust-media--wide">
+          <picture>
+            <source srcset="img/colorado_mansory_44.avif" type="image/avif">
+            <source srcset="img/colorado_mansory_44.webp" type="image/webp">
+            <img
+              src="img/colorado_mansory_44.jpg"
+              alt="Outdoor stone patio with clean layout and premium finish"
+              width="1260"
+              height="750"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+        </figure>
+
+        <figure class="trust-media">
+          <picture>
+            <source srcset="img/colorado_mansory_20.avif" type="image/avif">
+            <source srcset="img/colorado_mansory_20.webp" type="image/webp">
+            <img
+              src="img/trust/colorado_mansory_20.jpg"
+              alt="Stone walkway with precise joints"
+              width="630"
+              height="750"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+        </figure>
+
+        <figure class="trust-media">
+          <picture>
+            <source srcset="img/colorado_mansory_30.avif" type="image/avif">
+            <source srcset="img/colorado_mansory_30.webp" type="image/webp">
+            <img
+              src="img/colorado_mansory_30.jpg"
+              alt="Retaining wall with structured stone layout"
+              width="630"
+              height="750"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services-carousel" aria-label="Services">
+  <div class="services-carousel__inner">
+    <div class="services-carousel__head" data-reveal>
+      <h2 class="services-carousel__title group">
+        <span class="services-carousel__titleLine">
+          Outdoor masonry services<br class="services-carousel__break" />
+          built for durability.
+        </span>
+        <span class="services-carousel__underline" aria-hidden="true"></span>
+      </h2>
+
+      <p class="services-carousel__lead">
+        Premium stone and masonry work designed for curb appeal, performance, and clean finishes.
+      </p>
+    </div>
+
+    <div class="scroller" data-services-scroller data-reveal>
+      <div class="scroller__viewport" data-scroller-viewport>
+        <div class="scroller__track" data-scroller-track>
+       <!-- Stone Work -->
+<a class="svc-card" href="services.html" aria-label="Stone Work service">
+  <div class="svc-card__media">
+    <picture>
+      <source srcset="img/colorado_mansory_30.avif" type="image/avif">
+      <source srcset="img/colorado_mansory_30.webp" type="image/webp">
+      <img src="img/colorado_mansory_30.jpg" alt="Natural stone masonry work" width="900" height="700" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <div class="svc-card__badge">
+    <span class="svc-card__badgeText">Stone Work</span>
+  </div>
+  <div class="svc-card__overlay">
+    <p class="svc-card__desc">
+      Natural stone installations crafted with precision, clean joints, and long-term durability.
+    </p>
+  </div>
+</a>
+
+<!-- Thin Brick -->
+<a class="svc-card" href="services.html" aria-label="Thin Brick service">
+  <div class="svc-card__media">
+    <picture>
+      <source srcset="img/colorado_mansory_12.avif" type="image/avif">
+      <source srcset="img/colorado_mansory_12.webp" type="image/webp">
+      <img src="img/colorado_mansory_12.jpg" alt="Thin brick masonry finish" width="900" height="700" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <div class="svc-card__badge">
+    <span class="svc-card__badgeText">Thin Brick</span>
+  </div>
+  <div class="svc-card__overlay">
+    <p class="svc-card__desc">
+      Lightweight brick systems that deliver a classic look with modern performance.
+    </p>
+  </div>
+</a>
+
+<!-- Flagstone -->
+<a class="svc-card" href="services.html" aria-label="Flagstone service">
+  <div class="svc-card__media">
+    <picture>
+      <source srcset="img/colorado_mansory_03.avif" type="image/avif">
+      <source srcset="img/colorado_mansory_03.webp" type="image/webp">
+      <img src="img/colorado_mansory_03.jpg" alt="Flagstone patio installation" width="900" height="700" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <div class="svc-card__badge">
+    <span class="svc-card__badgeText">Flagstone</span>
+  </div>
+  <div class="svc-card__overlay">
+    <p class="svc-card__desc">
+      Premium flagstone layouts for patios, walkways, and outdoor transitions.
+    </p>
+  </div>
+</a>
+
+<!-- Outdoor Kitchens -->
+<a class="svc-card" href="services.html" aria-label="Outdoor Kitchens service">
+  <div class="svc-card__media">
+    <picture>
+      <source srcset="img/colorado_mansory_44.avif" type="image/avif">
+      <source srcset="img/colorado_mansory_44.webp" type="image/webp">
+      <img src="img/colorado_mansory_44.jpg" alt="Outdoor kitchen stone construction" width="900" height="700" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <div class="svc-card__badge">
+    <span class="svc-card__badgeText">Outdoor Kitchens</span>
+  </div>
+  <div class="svc-card__overlay">
+    <p class="svc-card__desc">
+      Built-in outdoor kitchens designed for everyday use and entertaining.
+    </p>
+  </div>
+</a>
+
+<!-- Fire Pits -->
+<a class="svc-card" href="services.html" aria-label="Fire Pits service">
+  <div class="svc-card__media">
+    <picture>
+      <source srcset="img/colorado_mansory_18.avif" type="image/avif">
+      <source srcset="img/colorado_mansory_18.webp" type="image/webp">
+      <img src="img/colorado_mansory_18.jpg" alt="Stone fire pit installation" width="900" height="700" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <div class="svc-card__badge">
+    <span class="svc-card__badgeText">Fire Pits</span>
+  </div>
+  <div class="svc-card__overlay">
+    <p class="svc-card__desc">
+      Custom fire pits with safe clearances and premium stone finishes.
+    </p>
+  </div>
+</a>
+
+<!-- Fireplaces -->
+<a class="svc-card" href="services.html" aria-label="Fireplaces service">
+  <div class="svc-card__media">
+    <picture>
+      <source srcset="img/colorado_mansory_22.avif" type="image/avif">
+      <source srcset="img/colorado_mansory_22.webp" type="image/webp">
+      <img src="img/colorado_mansory_22.jpg" alt="Stone fireplace construction" width="900" height="700" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <div class="svc-card__badge">
+    <span class="svc-card__badgeText">Fireplaces</span>
+  </div>
+  <div class="svc-card__overlay">
+    <p class="svc-card__desc">
+      Statement fireplaces designed as architectural focal points.
+    </p>
+  </div>
+</a>
+
+<!-- Decorative Stone Walls -->
+<a class="svc-card" href="services.html" aria-label="Decorative Stone Walls service">
+  <div class="svc-card__media">
+    <picture>
+      <source srcset="img/colorado_mansory_06.avif" type="image/avif">
+      <source srcset="img/colorado_mansory_06.webp" type="image/webp">
+      <img src="img/colorado_mansory_06.jpg" alt="Decorative stone wall feature" width="900" height="700" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <div class="svc-card__badge">
+    <span class="svc-card__badgeText">Stone Walls</span>
+  </div>
+  <div class="svc-card__overlay">
+    <p class="svc-card__desc">
+      Decorative stone walls that add depth, texture, and visual impact.
+    </p>
+  </div>
+</a>
+
+<!-- Masonry Repairs -->
+<a class="svc-card" href="services.html" aria-label="Masonry Repairs service">
+  <div class="svc-card__media">
+    <picture>
+      <source srcset="img/colorado_mansory_26.avif" type="image/avif">
+      <source srcset="img/colorado_mansory_26.webp" type="image/webp">
+      <img src="img/colorado_mansory_26.jpg" alt="Masonry repair work" width="900" height="700" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <div class="svc-card__badge">
+    <span class="svc-card__badgeText">Masonry Repairs</span>
+  </div>
+  <div class="svc-card__overlay">
+    <p class="svc-card__desc">
+      Structural repairs and refinishing to restore safety and appearance.
+    </p>
+  </div>
+</a>
+
+<!-- Custom Outdoor Projects -->
+<a class="svc-card" href="services.html" aria-label="Custom Outdoor Projects service">
+  <div class="svc-card__media">
+    <picture>
+      <source srcset="img/colorado_mansory_40.avif" type="image/avif">
+      <source srcset="img/colorado_mansory_40.webp" type="image/webp">
+      <img src="img/colorado_mansory_40.jpg" alt="Custom outdoor masonry project" width="900" height="700" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <div class="svc-card__badge">
+    <span class="svc-card__badgeText">Custom Projects</span>
+  </div>
+  <div class="svc-card__overlay">
+    <p class="svc-card__desc">
+      Tailored outdoor masonry projects built around your space and vision.
+    </p>
+  </div>
+</a>
+
         </div>
       </div>
-    </section>
 
-    <section class="page-section">
-      <div class="page-section__inner">
-        <h2 class="page-section__title">Quality-first craftsmanship</h2>
-        <p class="page-section__text">
-          Built with reliable materials, clean workmanship, and a process designed for long-term durability.
-        </p>
-
-        <div class="page-content-block">
-          <!-- Sección real base para validar scroll y layout -->
-        </div>
+      <div class="scroller__controls">
+        <button class="scroller__btn" type="button" data-scroller-prev aria-label="Previous services">‹</button>
+        <button class="scroller__btn" type="button" data-scroller-next aria-label="Next services">›</button>
       </div>
-    </section>
-  </main>
+
+      <div class="scroller__dots" data-scroller-dots aria-label="Service slides"></div>
+    </div>
+
+    <div class="services-carousel__footer" data-reveal>
+      <a class="services-carousel__cta" href="services.html" aria-label="View all services">
+        View all services
+        <span class="services-carousel__arrow" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+</main>
+
 
   
 

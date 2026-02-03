@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Colorado Pro Masonry LLC</title>
+  <meta name="description" content="Request a fast quote for stone and concrete work. Send details and photos and get clear next steps." />
+  <link rel="stylesheet" href="css/app.css" />
+
+  <!-- SEO: Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Colorado Pro Masonry LLC",
+    "url":"https://example.com",
+    "image":"https://example.com/img/logo.jpg",
+    "telephone":"+15018120003",
+    "priceRange":"$$",
+    "areaServed":"Colorado",
+    "sameAs":[]
+  }
+  </script>
+
+  <!-- Captcha (Cloudflare Turnstile) -->
+  <!-- Nota: no es librería UI; es servicio de seguridad. Requiere sitekey -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
+</head>
+<body>
+
+  @@include('partials/header.html')
+
+<main class="main" id="main">
+  <!-- HERO -->
+  <section class="contact-hero" aria-label="Contact banner">
+    <div class="contact-hero__media" aria-hidden="true">
+      <picture class="contact-hero__picture">
+        <source srcset="img/contact_hero.avif" type="image/avif" />
+        <source srcset="img/contact_hero.webp" type="image/webp" />
+        <img
+          src="img/contact_hero.jpg"
+          alt=""
+          width="1600"
+          height="900"
+          loading="eager"
+          decoding="async"
+        />
+      </picture>
+      <div class="contact-hero__overlay" aria-hidden="true"></div>
+    </div>
+
+    <div class="contact-hero__inner">
+      <div class="contact-hero__content">
+        <p class="contact-hero__eyebrow">Colorado Service Area</p>
+
+        <h1 class="contact-hero__title">Let’s Build Your Next Outdoor Project</h1>
+
+        <p class="contact-hero__text">
+          Share your idea, timeline, and a few photos. We’ll respond with clear next steps and a fast estimate.
+        </p>
+
+        <div class="contact-hero__cards" aria-label="Contact options">
+          <a class="info-card" href="tel:+15018120003" aria-label="Call us">
+            <span class="info-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                <path d="M6.62 10.79a15.09 15.09 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.36 11.36 0 0 0 3.56.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.56 1 1 0 0 1-.24 1.01l-2.2 2.22z"></path>
+              </svg>
+            </span>
+            <span class="info-card__label">Phone</span>
+            <span class="info-card__value">(501) 812 0003</span>
+          </a>
+
+          <a class="info-card" href="mailto:info@coloradopromasonry.com" aria-label="Email us">
+            <span class="info-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"></path>
+              </svg>
+            </span>
+            <span class="info-card__label">Email</span>
+            <span class="info-card__value">info@coloradopromasonry.com</span>
+          </a>
+
+          <a class="info-card" href="#map" aria-label="View service area map">
+            <span class="info-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"></path>
+              </svg>
+            </span>
+            <span class="info-card__label">Service area</span>
+            <span class="info-card__value">Colorado, USA</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ola inferior estilizada -->
+    <div class="contact-hero__wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none" focusable="false" aria-hidden="true">
+        <path d="M0,42 C160,66 320,78 480,64 C640,50 800,10 960,18 C1120,26 1280,62 1440,54 L1440,90 L0,90 Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- FORM (con fondo imagen) -->
+  <section class="contact-form" aria-label="Request a quote">
+    <div class="contact-form__bg" aria-hidden="true">
+      <picture class="contact-form__picture">
+        <source srcset="img/form_bg.avif" type="image/avif" />
+        <source srcset="img/form_bg.webp" type="image/webp" />
+        <img src="img/form_bg.jpg" alt="" width="1600" height="900" loading="lazy" decoding="async" />
+      </picture>
+      <div class="contact-form__overlay" aria-hidden="true"></div>
+    </div>
+
+    <div class="contact-form__inner">
+      <div class="contact-form__card">
+        <header class="contact-form__head">
+          <h2 class="contact-form__title">Get a Fast Estimate</h2>
+          <p class="contact-form__lead">
+            Tell us what you want to build. Add photos if possible — it helps us quote faster.
+          </p>
+        </header>
+
+        <form class="form" id="quoteForm" data-endpoint="TU_WEBAPP_URL" novalidate>
+          <div class="form__grid">
+            <div class="field">
+              <label class="field__label" for="name">Full name</label>
+              <input class="field__input" id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required />
+              <p class="field__error" data-error-for="name" hidden></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="phone">Phone</label>
+              <input class="field__input" id="phone" name="phone" type="tel" placeholder="(xxx) xxx xxxx" autocomplete="tel" required />
+              <p class="field__error" data-error-for="phone" hidden></p>
+            </div>
+
+            <div class="field field--full">
+              <label class="field__label" for="email">Email</label>
+              <input class="field__input" id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required />
+              <p class="field__error" data-error-for="email" hidden></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="service">Service</label>
+              <select class="field__select" id="service" name="service" required>
+                <option value="" selected disabled>Select a service</option>
+                <option>Stone Work</option>
+                <option>Thin Brick</option>
+                <option>Flagstone</option>
+                <option>Outdoor Kitchens</option>
+                <option>Fire Pits</option>
+                <option>Fireplaces</option>
+                <option>Decorative Stone Walls</option>
+                <option>Masonry Repairs</option>
+                <option>Custom Outdoor Projects</option>
+              </select>
+              <p class="field__error" data-error-for="service" hidden></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="timeline">Timeline</label>
+              <select class="field__select" id="timeline" name="timeline" required>
+                <option value="" selected disabled>Select timeline</option>
+                <option>ASAP</option>
+                <option>2–4 weeks</option>
+                <option>1–2 months</option>
+                <option>Flexible</option>
+              </select>
+              <p class="field__error" data-error-for="timeline" hidden></p>
+            </div>
+
+            <div class="field field--full">
+              <label class="field__label" for="message">Project details</label>
+              <textarea class="field__textarea" id="message" name="message" placeholder="Tell us what you want to build, approximate size, materials, and any notes." required></textarea>
+              <p class="field__error" data-error-for="message" hidden></p>
+            </div>
+
+            <!-- Honeypot: anti-bot (no tocar en CSS visible) -->
+            <div class="field field--hp" aria-hidden="true">
+              <label class="field__label" for="website">Website</label>
+              <input class="field__input" id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <!-- Turnstile -->
+            <div class="field field--full">
+              <div class="captcha">
+                <div class="cf-turnstile" data-sitekey="TU_SITE_KEY" data-callback="onTurnstileSuccess"></div>
+                <p class="field__error" data-error-for="captcha" hidden></p>
+              </div>
+            </div>
+
+            <div class="field field--full">
+              <button class="form__submit" type="submit">
+                Request estimate
+              </button>
+              <p class="form__note">
+                We respond quickly during business hours. Your information stays private.
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="contact-map" id="map" aria-label="Service area map">
+    <div class="contact-map__inner">
+      <header class="contact-map__head">
+        <h2 class="contact-map__title">Service Area</h2>
+        <p class="contact-map__lead">We serve projects across Colorado. Reach out to confirm your area.</p>
+      </header>
+
+      <div class="map">
+        <div class="map__frame">
+          <iframe
+            title="Colorado service area"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Colorado,USA&output=embed"
+            allowfullscreen
+          ></iframe>
+
+          <div class="map__pin" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<!-- Turnstile script (Captcha) -->
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+
+  @@include('partials/footer.html')
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>

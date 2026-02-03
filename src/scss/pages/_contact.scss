@@ -1,0 +1,565 @@
+@use "../base/mixins";
+
+/* =========================================================
+   CONTACT — Premium UI (Mobile-first)
+   Comentarios técnicos en español
+========================================================= */
+
+/* Tokens (mantengo tus valores) */
+$brand-dark: #0f172a;
+$brand-accent: #d97706;
+$brand-accent-bright: #fbbf24;
+$accent-glow: rgba(217, 119, 6, 0.25);
+
+$text-light: #ffffff;
+$text-light-soft: rgba(255, 255, 255, 0.80);
+$text-light-muted: rgba(255, 255, 255, 0.60);
+
+$text-dark: #1e293b;
+$text-dark-soft: #475569;
+$text-dark-muted: #94a3b8;
+
+$shadow-md: 0 18px 50px rgba(15, 23, 42, 0.10);
+$shadow-premium: 0 28px 70px rgba(15, 23, 42, 0.22);
+
+$glass-bg: rgba(255, 255, 255, 0.06);
+$glass-border: rgba(255, 255, 255, 0.16);
+
+$transition: 280ms cubic-bezier(0.4, 0, 0.2, 1);
+
+/* Utilidad anti scroll horizontal */
+.contact-hero,
+.contact-form,
+.contact-map {
+  overflow-x: clip;
+}
+
+/* =========================================================
+   1) HERO con imagen + ola inferior (muy visible)
+========================================================= */
+.contact-hero {
+  position: relative;
+  background: $brand-dark;
+  color: $text-light;
+
+  padding: 56px 0 92px;
+}
+
+.contact-hero__inner {
+  @include mixins.container;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-hero__content {
+  max-width: 56ch;
+}
+
+.contact-hero__media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.contact-hero__picture {
+  position: absolute;
+  inset: 0;
+}
+
+.contact-hero__picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.02);
+}
+
+.contact-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(900px 420px at 18% 25%, rgba(217, 119, 6, 0.22), transparent 60%),
+    radial-gradient(900px 420px at 82% 12%, rgba(56, 189, 248, 0.14), transparent 60%),
+    linear-gradient(180deg, rgba(15, 23, 42, 0.30) 0%, rgba(15, 23, 42, 0.92) 70%, rgba(15, 23, 42, 0.98) 100%);
+}
+
+.contact-hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 18px;
+  padding: 7px 14px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid $glass-border;
+  backdrop-filter: blur(10px);
+
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.70rem;
+  color: $brand-accent-bright;
+}
+
+.contact-hero__title {
+  margin: 0 0 14px 0;
+
+  font-weight: 950;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+
+  font-size: clamp(2.1rem, 7.8vw, 3.4rem);
+
+  background: linear-gradient(120deg, #ffffff 0%, #cbd5e1 55%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-hero__text {
+  margin: 0 0 22px 0;
+  color: $text-light-soft;
+  line-height: 1.75;
+  font-size: 1.02rem;
+  max-width: 58ch;
+}
+
+/* Cards pro de contacto */
+.contact-hero__cards {
+  display: grid;
+  gap: 12px;
+  margin-top: 26px;
+  max-width: 560px;
+}
+
+.info-card {
+  text-decoration: none;
+  color: inherit;
+
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  column-gap: 12px;
+  row-gap: 2px;
+
+  padding: 16px 16px;
+  border-radius: 18px;
+
+  background: $glass-bg;
+  border: 1px solid $glass-border;
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 18px 52px rgba(0, 0, 0, 0.20);
+
+  transform: translateZ(0);
+  transition: transform $transition, background-color $transition, border-color $transition, box-shadow $transition;
+}
+
+.info-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.26);
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.28);
+}
+
+.info-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+
+  display: grid;
+  place-items: center;
+
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.info-card__icon svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+  fill: rgba(255, 255, 255, 0.92);
+}
+
+.info-card__label {
+  grid-column: 2;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.68rem;
+  color: $text-light-muted;
+}
+
+.info-card__value {
+  grid-column: 2;
+  font-weight: 950;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.96);
+  font-size: 1.02rem;
+  word-break: break-word;
+}
+
+/* Ola inferior: que se note */
+.contact-hero__wave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+
+  height: 70px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.contact-hero__wave svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.contact-hero__wave path {
+  fill: #ffffff;
+  opacity: 1;
+}
+
+/* =========================================================
+   2) FORM con fondo imagen + card flotante
+========================================================= */
+.contact-form {
+  position: relative;
+  padding: 0 0 72px;
+  background: #ffffff;
+}
+
+.contact-form__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.contact-form__picture {
+  position: absolute;
+  inset: 0;
+}
+
+.contact-form__picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(1.05) contrast(1.02);
+}
+
+.contact-form__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.86) 45%, rgba(255,255,255,0.98) 100%),
+    radial-gradient(900px 380px at 20% 15%, rgba(217, 119, 6, 0.14), transparent 60%);
+}
+
+.contact-form__inner {
+  @include mixins.container;
+  position: relative;
+  z-index: 1;
+
+  margin-top: -52px; /* Solape pro con la ola */
+}
+
+.contact-form__card {
+  border-radius: 26px;
+  padding: 26px 18px;
+
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(15, 23, 42, 0.10);
+  backdrop-filter: blur(18px) saturate(170%);
+
+  box-shadow: $shadow-premium;
+}
+
+.contact-form__head {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.contact-form__title {
+  margin: 0 0 8px 0;
+  color: $text-dark;
+  font-weight: 950;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+  font-size: clamp(1.45rem, 4.6vw, 2.05rem);
+}
+
+.contact-form__lead {
+  margin: 0;
+  color: $text-dark-soft;
+  line-height: 1.65;
+  max-width: 60ch;
+}
+
+.form__grid {
+  display: grid;
+  gap: 16px;
+}
+
+.field__label {
+  display: block;
+  font-weight: 850;
+  color: $text-dark;
+  margin-bottom: 8px;
+  font-size: 0.92rem;
+}
+
+.field__input,
+.field__select,
+.field__textarea {
+  width: 100%;
+  border-radius: 14px;
+  padding: 14px 14px;
+
+  border: 1px solid rgba(15, 23, 42, 0.14);
+  background: rgba(255, 255, 255, 0.92);
+  color: $text-dark;
+
+  font-size: 1rem;
+
+  transition: box-shadow $transition, border-color $transition, transform $transition, background-color $transition;
+}
+
+.field__input:focus,
+.field__select:focus,
+.field__textarea:focus {
+  outline: none;
+  border-color: rgba(217, 119, 6, 0.85);
+  box-shadow: 0 0 0 4px $accent-glow;
+}
+
+.field__input::placeholder,
+.field__textarea::placeholder {
+  color: $text-dark-muted;
+}
+
+.field__textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.field.is-invalid .field__input,
+.field.is-invalid .field__select,
+.field.is-invalid .field__textarea {
+  border-color: rgba(220, 38, 38, 0.55);
+  background: rgba(254, 242, 242, 0.85);
+}
+
+.field__error {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #dc2626;
+  font-weight: 700;
+}
+
+/* Honeypot oculto */
+.field--hp {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.captcha {
+  padding: 10px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(15, 23, 42, 0.10);
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.form__submit {
+  width: 100%;
+  height: 54px;
+  border-radius: 14px;
+  border: 0;
+
+  font-weight: 950;
+  letter-spacing: -0.015em;
+  font-size: 1.02rem;
+  color: #ffffff;
+
+  background: linear-gradient(135deg, $brand-accent 0%, #b45309 100%);
+  box-shadow: 0 16px 40px rgba(217, 119, 6, 0.26);
+
+  cursor: pointer;
+  transition: transform $transition, box-shadow $transition, filter $transition;
+}
+
+.form__submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 56px rgba(217, 119, 6, 0.34);
+  filter: brightness(1.06);
+}
+
+.form__submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.form__note {
+  margin: 10px 0 0 0;
+  color: rgba(15, 23, 42, 0.70);
+  font-weight: 650;
+  line-height: 1.55;
+  font-size: 0.95rem;
+}
+
+/* =========================================================
+   3) MAP estilizado + pin premium
+========================================================= */
+.contact-map {
+  background: #ffffff;
+  padding: 58px 0 74px;
+}
+
+.contact-map__inner {
+  @include mixins.container;
+}
+
+.contact-map__head {
+  margin-bottom: 16px;
+}
+
+.contact-map__title {
+  margin: 0 0 8px 0;
+  font-weight: 950;
+  letter-spacing: -0.03em;
+  color: $text-dark;
+  font-size: clamp(1.45rem, 4.8vw, 2.05rem);
+}
+
+.contact-map__lead {
+  margin: 0;
+  color: $text-dark-soft;
+  line-height: 1.65;
+  max-width: 60ch;
+}
+
+.map__frame {
+  position: relative;
+  margin-top: 18px;
+
+  border-radius: 26px;
+  overflow: hidden;
+
+  border: 1px solid rgba(15, 23, 42, 0.10);
+  box-shadow: $shadow-md;
+
+  background: #0b1220;
+}
+
+.map__frame iframe {
+  width: 100%;
+  height: 360px;
+  display: block;
+
+  filter: grayscale(10%) contrast(92%);
+  transition: filter $transition, transform $transition;
+}
+
+.map__frame:hover iframe {
+  filter: none;
+  transform: scale(1.01);
+}
+
+.map__pin {
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  transform: translate(-50%, -100%);
+
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+
+  background: radial-gradient(circle at 30% 30%, $brand-accent-bright, $brand-accent);
+  border: 3px solid rgba(255,255,255,0.95);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.28);
+
+  pointer-events: none;
+}
+
+.map__pin::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+
+/* =========================================================
+   4) FAQ (si ya lo tienes en esta página, queda ok)
+========================================================= */
+.contact-faq {
+  padding: 56px 0 74px;
+  background: #ffffff;
+}
+
+/* =========================================================
+   5) Breakpoints (solo con mixins)
+========================================================= */
+@include mixins.tablet {
+  .contact-hero__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .field--full {
+    grid-column: 1 / -1;
+  }
+
+  .map__frame iframe {
+    height: 420px;
+  }
+}
+
+@include mixins.desktop {
+  .contact-hero {
+    padding: 110px 0 170px;
+  }
+
+  .contact-hero__inner {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 70px;
+  }
+
+  .contact-hero__content {
+    max-width: none;
+  }
+
+  .contact-hero__cards {
+    max-width: 560px;
+  }
+
+  .contact-form__inner {
+    margin-top: -72px;
+  }
+
+  .contact-form__card {
+    padding: 46px 44px;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

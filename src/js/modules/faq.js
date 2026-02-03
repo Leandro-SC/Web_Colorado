@@ -94,3 +94,35 @@ export function faq() {
     });
   });
 }
+
+
+export function faqAccordion() {
+  const root = document.querySelector("[data-faq]");
+  if (!root) return;
+
+  root.addEventListener("click", (e) => {
+    const btn = e.target.closest(".faq__btn");
+    if (!btn) return;
+
+    const item = btn.closest(".faq__item");
+    const panel = item?.querySelector(".faq__panel");
+    if (!item || !panel) return;
+
+    const isOpen = item.classList.contains("is-open");
+
+    // Cierra otros (acordeón real)
+    root.querySelectorAll(".faq__item.is-open").forEach((openItem) => {
+      if (openItem !== item) {
+        openItem.classList.remove("is-open");
+        const b = openItem.querySelector(".faq__btn");
+        const p = openItem.querySelector(".faq__panel");
+        if (b) b.setAttribute("aria-expanded", "false");
+        if (p) p.hidden = true;
+      }
+    });
+
+    item.classList.toggle("is-open", !isOpen);
+    btn.setAttribute("aria-expanded", String(!isOpen));
+    panel.hidden = isOpen;
+  });
+}

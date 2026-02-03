@@ -22,9 +22,6 @@
   }
   </script>
 
-  <!-- Captcha (Cloudflare Turnstile) -->
-  <!-- Nota: no es librería UI; es servicio de seguridad. Requiere sitekey -->
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 </head>
 <body>
 
@@ -35,10 +32,10 @@
   <section class="contact-hero" aria-label="Contact banner">
     <div class="contact-hero__media" aria-hidden="true">
       <picture class="contact-hero__picture">
-        <source srcset="img/contact_hero.avif" type="image/avif" />
-        <source srcset="img/contact_hero.webp" type="image/webp" />
+        <source srcset="img/colorado_mansory_52.avif" type="image/avif" />
+        <source srcset="img/colorado_mansory_52.webp" type="image/webp" />
         <img
-          src="img/contact_hero.jpg"
+          src="img/colorado_mansory_52.jpeg"
           alt=""
           width="1600"
           height="900"
@@ -121,7 +118,7 @@
           </p>
         </header>
 
-        <form class="form" id="quoteForm" data-endpoint="TU_WEBAPP_URL" novalidate>
+        <form class="form" id="quoteForm" data-endpoint="https://script.google.com/macros/s/AKfycbwUIh2Mcy6RQa_H1jSXtygPYtPvJ9cfSPdVbOOpvJKZtKS1UcIaq7N97KqyhctqwxLJ_A/exec" novalidate>
           <div class="form__grid">
             <div class="field">
               <label class="field__label" for="name">Full name</label>
@@ -182,14 +179,6 @@
               <input class="field__input" id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
             </div>
 
-            <!-- Turnstile -->
-            <div class="field field--full">
-              <div class="captcha">
-                <div class="cf-turnstile" data-sitekey="TU_SITE_KEY" data-callback="onTurnstileSuccess"></div>
-                <p class="field__error" data-error-for="captcha" hidden></p>
-              </div>
-            </div>
-
             <div class="field field--full">
               <button class="form__submit" type="submit">
                 Request estimate
@@ -230,11 +219,8 @@
 </main>
 
 
-<!-- Turnstile script (Captcha) -->
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-
-
   @@include('partials/footer.html')
+<script src="https://unpkg.com/i18next@23/i18next.min.js"></script>
 
   <script src="js/app.js" defer></script>
 </body>

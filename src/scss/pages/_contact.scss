@@ -228,7 +228,8 @@ $transition: 280ms cubic-bezier(0.4, 0, 0.2, 1);
 .contact-form {
   position: relative;
   padding: 0 0 72px;
-  background: #ffffff;
+ background-color: #f8f4fe;
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10h10v10H0V10zM10 0h10v10H10V0z' fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 .contact-form__bg {
@@ -419,7 +420,7 @@ $transition: 280ms cubic-bezier(0.4, 0, 0.2, 1);
    3) MAP estilizado + pin premium
 ========================================================= */
 .contact-map {
-  background: #ffffff;
+  background: #d8d8d7;
   padding: 58px 0 74px;
 }
 

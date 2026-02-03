@@ -12,6 +12,7 @@ import { faq,faqAccordion } from './modules/faq.js';
 import { filtrosProyectos, lightboxProyectos  } from './modules/projects.js';
 import { initReveal } from './modules/reveal.js';
 import {initContactForm  } from "./modules/contactForm.js";
+import { initFloatingActions } from "./modules/fab.js";
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -37,5 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   initReveal();
   initContactForm();
+   initFloatingActions();
 
 });

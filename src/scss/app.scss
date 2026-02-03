@@ -4,5 +4,13 @@
 
 
 @use "pages/home";
+@use "pages/services";
+@use "pages/projects";
 
 @use "layout/header";
+@use "layout/footer";
+
+
+@use "components/cta-banner";
+
+

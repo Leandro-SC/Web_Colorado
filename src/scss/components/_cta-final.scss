@@ -1,0 +1,249 @@
+@use "../base/mixins";
+
+.cta-final {
+  position: relative;
+  padding: 24px 0 0 0;
+  background:
+    radial-gradient(900px 360px at 20% 10%, rgba(199, 154, 58, 0.22), transparent 60%),
+    radial-gradient(900px 360px at 85% 20%, rgba(15, 23, 42, 0.10), transparent 60%),
+    #ffffff;
+  overflow: hidden;
+}
+
+.cta-final__inner {
+  @include mixins.container;
+  padding-bottom: 22px; /* deja aire antes de la ola */
+}
+
+.cta-final__card {
+  position: relative;
+  border-radius: 26px;
+  overflow: hidden;
+
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.92), rgba(255,255,255,0.86)),
+    radial-gradient(900px 360px at 15% 0%, rgba(199, 154, 58, 0.14), transparent 60%);
+
+  border: 1px solid rgba(15, 23, 42, 0.10);
+  box-shadow: 0 28px 120px rgba(15, 23, 42, 0.10);
+}
+
+.cta-final__card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: radial-gradient(900px 260px at 20% 0%, rgba(199, 154, 58, 0.18), transparent 70%);
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.cta-final__content {
+  position: relative;
+  padding: 18px 16px 16px 16px;
+  display: grid;
+  gap: 10px;
+}
+
+.cta-final__eyebrow {
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: rgba(15, 23, 42, 0.70);
+}
+
+.cta-final__title {
+  margin: 0;
+  font-weight: 950;
+  letter-spacing: -0.7px;
+  line-height: 1.06;
+  font-size: clamp(1.65rem, 5.8vw, 2.5rem);
+  color: rgba(15, 23, 42, 0.96);
+  max-width: 30ch;
+}
+
+.cta-final__text {
+  margin: 0;
+  color: rgba(15, 23, 42, 0.72);
+  line-height: 1.6;
+  max-width: 62ch;
+}
+
+.cta-final__actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.cta-final__trust {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cta-final__chip {
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
+  border-radius: 999px;
+
+  background: rgba(15, 23, 42, 0.04);
+  border: 1px solid rgba(15, 23, 42, 0.10);
+
+  font-weight: 900;
+  color: rgba(15, 23, 42, 0.78);
+  letter-spacing: -0.1px;
+}
+
+.cta-final__aside {
+  position: relative;
+  padding: 12px 16px 18px 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.cta-final__stats {
+  display: grid;
+  gap: 10px;
+}
+
+.cta-final__stat {
+  border-radius: 18px;
+  padding: 12px 12px;
+
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 18px 60px rgba(15, 23, 42, 0.06);
+
+  @include mixins.ease(transform, 220ms);
+}
+
+.cta-final__stat:hover {
+  transform: translateY(-2px);
+}
+
+.cta-final__statValue {
+  margin: 0;
+  font-weight: 950;
+  letter-spacing: -0.35px;
+  font-size: 1.4rem;
+  color: rgba(15, 23, 42, 0.92);
+}
+
+.cta-final__statLabel {
+  margin: 6px 0 0 0;
+  color: rgba(15, 23, 42, 0.68);
+  line-height: 1.45;
+}
+
+.cta-final__note {
+  border-radius: 18px;
+  padding: 12px 12px;
+
+  background: linear-gradient(135deg, rgba(199, 154, 58, 0.14), rgba(15, 23, 42, 0.02));
+  border: 1px solid rgba(199, 154, 58, 0.20);
+}
+
+.cta-final__noteTitle {
+  margin: 0;
+  font-weight: 950;
+  letter-spacing: -0.2px;
+  color: rgba(15, 23, 42, 0.90);
+}
+
+.cta-final__noteText {
+  margin: 6px 0 0 0;
+  color: rgba(15, 23, 42, 0.70);
+  line-height: 1.55;
+}
+
+/* Wave */
+.cta-final__wave {
+  position: relative;
+  height: 90px;
+  margin-top: 18px;
+}
+
+.cta-final__wave svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.cta-final__wave path {
+  fill: rgba(15, 23, 42, 0.06);
+}
+
+/* Animación reveal (si ya usas data-reveal en otras secciones, esto se integra) */
+.cta-final [data-reveal] {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 520ms ease, transform 520ms ease;
+}
+
+.cta-final [data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Tablet */
+@include mixins.tablet {
+  .cta-final__actions {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .cta-final__inner {
+    padding-bottom: 26px;
+  }
+
+  .cta-final__wave {
+    height: 110px;
+  }
+}
+
+/* Desktop: layout diferente (no igual a móvil) */
+@include mixins.desktop {
+  .cta-final {
+    padding-top: 34px;
+  }
+
+  .cta-final__card {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    align-items: stretch;
+  }
+
+  .cta-final__content {
+    padding: 22px 22px 22px 22px;
+  }
+
+  .cta-final__aside {
+    padding: 22px 22px 22px 0;
+  }
+
+  .cta-final__stats {
+    gap: 12px;
+  }
+
+  .cta-final__wave {
+    height: 140px;
+  }
+}
+
+@include mixins.desktopXL {
+  .cta-final__content {
+    padding: 26px 26px 26px 26px;
+  }
+
+  .cta-final__aside {
+    padding: 26px 26px 26px 0;
+  }
+}

@@ -1,0 +1,173 @@
+@use "../base/mixins";
+
+.cta-banner{
+  position: relative;
+  background: #0f172a; /* fallback visible */
+  overflow: hidden;
+  padding: 22px 0 0 0;
+}
+
+/* Garantiza altura aunque la imagen no cargue */
+.cta-banner__inner{
+  @include mixins.container;
+  position: relative;
+  z-index: 2;
+  min-height: 320px; /* clave */
+  padding: 44px 0 38px 0;
+  display: grid;
+  place-items: center;
+}
+
+/* Fondo (si existe la imagen) */
+.cta-banner__bg{
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.cta-banner__bg img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Overlay siempre visible */
+.cta-banner__shade{
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(180deg, rgba(15, 23, 42, 0.55) 0%, rgba(15, 23, 42, 0.62) 60%, rgba(15, 23, 42, 0.40) 100%),
+    radial-gradient(900px 420px at 20% 25%, rgba(199, 154, 58, 0.18), transparent 60%);
+}
+
+/* Panel centrado */
+.cta-banner__panel{
+  width: 100%;
+  max-width: 980px;
+  text-align: center;
+
+  border-radius: 26px;
+  padding: 18px 14px 16px 14px;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 34px 120px rgba(0, 0, 0, 0.30);
+  backdrop-filter: blur(10px);
+}
+
+/* Tipografía */
+.cta-banner__title{
+  margin: 0;
+  color: rgba(255, 255, 255, 0.98);
+  font-weight: 950;
+  letter-spacing: -0.8px;
+  line-height: 1.02;
+  font-size: clamp(1.65rem, 6.4vw, 3.25rem);
+}
+
+.cta-banner__subtitle{
+  margin: 10px 0 0 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-weight: 750;
+  letter-spacing: -0.2px;
+  font-size: clamp(1rem, 3.8vw, 1.35rem);
+}
+
+.cta-banner__actions{
+  margin-top: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+/* Botones */
+.cta-banner__btn{
+  height: 52px;
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  font-weight: 950;
+  letter-spacing: -0.2px;
+
+  border: 1px solid transparent;
+  box-shadow: 0 22px 70px rgba(0,0,0,0.22);
+
+  transform: translateZ(0);
+  @include mixins.ease(transform, 180ms);
+  @include mixins.ease(filter, 180ms);
+}
+
+.cta-banner__btn:hover{
+  transform: translateY(-2px);
+  filter: brightness(1.02);
+}
+
+.cta-banner__btn:active{ transform: translateY(0); }
+
+.cta-banner__btn--phone{
+  background: rgba(143, 63, 60, 0.92);
+  color: rgba(255, 255, 255, 0.96);
+  border-color: rgba(255, 255, 255, 0.10);
+}
+
+.cta-banner__btn--appt{
+  background: rgba(255, 255, 255, 0.96);
+  color: rgba(15, 23, 42, 0.92);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+/* Wave */
+.cta-banner__wave{
+  position: relative;
+  z-index: 2;
+  height: 92px;
+  margin-top: 8px;
+}
+
+.cta-banner__wave svg{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.cta-banner__wave path{ fill: #ffffff; }
+
+/* Tablet */
+@include mixins.tablet{
+  .cta-banner__inner{
+    min-height: 380px;
+    padding: 64px 0 46px 0;
+  }
+
+  .cta-banner__panel{
+    padding: 22px 18px 18px 18px;
+  }
+
+  .cta-banner__actions{
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 18px;
+  }
+
+  .cta-banner__wave{ height: 110px; }
+}
+
+/* Desktop: 70% centrado */
+@include mixins.desktop{
+  .cta-banner__panel{
+    width: min(70%, 980px);
+  }
+
+  .cta-banner__btn{
+    height: 56px;
+    border-radius: 18px;
+  }
+
+  .cta-banner__wave{ height: 140px; }
+}

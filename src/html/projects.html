@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Colorado Pro Masonry LLC</title>
+  <meta name="description" content="Explore premium stone and concrete projects: patios, retaining walls, outdoor kitchens, fireplaces, and custom outdoor builds." />
+
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+
+<body>
+  @@include('partials/header.html')
+
+  <main class="main" id="main">
+    <!-- Page Intro -->
+    <section class="projects-hero" aria-label="Projects gallery overview">
+      <div class="projects-hero__inner">
+        <p class="projects-hero__pill">Portfolio</p>
+        <h1 class="projects-hero__title">Crafted Projects, Built to Last</h1>
+        <p class="projects-hero__lead">
+          A curated selection of our stone and concrete work. Tap any photo to open a full-screen view.
+        </p>
+      </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="projects" aria-label="Projects gallery">
+      <div class="projects__inner">
+        <header class="projects__head">
+          <div class="projects__copy">
+            <h2 class="projects__title">Featured Work</h2>
+            <p class="projects__text">
+              Filter by category to quickly find patios, walls, fireplaces, and outdoor builds.
+            </p>
+          </div>
+
+          <div class="projects__filters" role="tablist" aria-label="Project filters" data-project-filters>
+            <button class="filter-btn is-active" type="button" data-filter="all" role="tab" aria-selected="true">
+              All
+            </button>
+            <button class="filter-btn" type="button" data-filter="patios" role="tab" aria-selected="false">
+              Patios
+            </button>
+            <button class="filter-btn" type="button" data-filter="walls" role="tab" aria-selected="false">
+              Retaining Walls
+            </button>
+            <button class="filter-btn" type="button" data-filter="kitchens" role="tab" aria-selected="false">
+              Outdoor Kitchens
+            </button>
+            <button class="filter-btn" type="button" data-filter="fire" role="tab" aria-selected="false">
+              Fire Features
+            </button>
+            <button class="filter-btn" type="button" data-filter="custom" role="tab" aria-selected="false">
+              Custom Builds
+            </button>
+          </div>
+        </header>
+
+        <!-- Gallery grid (JS also uses it for lightbox + filtering) -->
+        <div class="gallery" data-gallery aria-label="Projects grid">
+          <!-- NOTA: puedes re-categorizar cambiando data-category -->
+          <!-- Card 01 -->
+          <article class="gcard" data-category="patios" data-title="Stone Patio" data-desc="Clean layout, premium finish, and durable joints.">
+            <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Stone Patio">
+              <picture class="gcard__pic">
+                <source data-srcset="img/colorado_mansory_03.avif" type="image/avif">
+                <source data-srcset="img/colorado_mansory_03.webp" type="image/webp">
+                <img class="gcard__img"
+                  data-src="img/colorado_mansory_03.jpg"
+                  alt="Stone patio installation with clean joints and premium finish"
+                  width="1200" height="800" loading="lazy" decoding="async">
+              </picture>
+              <span class="gcard__badge">Stone Patio</span>
+              <span class="gcard__overlay" aria-hidden="true">
+                <span class="gcard__overlayTitle">Stone Patio</span>
+                <span class="gcard__overlayText">Clean layout, premium finish, and durable joints.</span>
+              </span>
+            </button>
+          </article>
+
+          <!-- Card 02 -->
+          <article class="gcard" data-category="walls" data-title="Retaining Wall" data-desc="Structured blocks with precise leveling and drainage-ready base.">
+            <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Retaining Wall">
+              <picture class="gcard__pic">
+                <source data-srcset="img/colorado_mansory_06.avif" type="image/avif">
+                <source data-srcset="img/colorado_mansory_06.webp" type="image/webp">
+                <img class="gcard__img"
+                  data-src="img/colorado_mansory_06.jpg"
+                  alt="Retaining wall with structured stone layout and precise leveling"
+                  width="1200" height="800" loading="lazy" decoding="async">
+              </picture>
+              <span class="gcard__badge">Retaining Wall</span>
+              <span class="gcard__overlay" aria-hidden="true">
+                <span class="gcard__overlayTitle">Retaining Wall</span>
+                <span class="gcard__overlayText">Structured blocks with precise leveling and drainage-ready base.</span>
+              </span>
+            </button>
+          </article>
+
+          <!-- Card 03 -->
+          <article class="gcard" data-category="kitchens" data-title="Outdoor Kitchen" data-desc="Outdoor cooking space with stone accents and clean edges.">
+            <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Outdoor Kitchen">
+              <picture class="gcard__pic">
+                <source data-srcset="img/colorado_mansory_30.avif" type="image/avif">
+                <source data-srcset="img/colorado_mansory_30.webp" type="image/webp">
+                <img class="gcard__img"
+                  data-src="img/colorado_mansory_30.jpg"
+                  alt="Outdoor kitchen build with stonework finish"
+                  width="1200" height="800" loading="lazy" decoding="async">
+              </picture>
+              <span class="gcard__badge">Outdoor Kitchen</span>
+              <span class="gcard__overlay" aria-hidden="true">
+                <span class="gcard__overlayTitle">Outdoor Kitchen</span>
+                <span class="gcard__overlayText">Outdoor cooking space with stone accents and clean edges.</span>
+              </span>
+            </button>
+          </article>
+
+          <!-- Card 04 -->
+          <article class="gcard" data-category="fire" data-title="Fire Pit" data-desc="Premium fire feature designed for comfort and long-term use.">
+            <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Fire Pit">
+              <picture class="gcard__pic">
+                <source data-srcset="img/colorado_mansory_44.avif" type="image/avif">
+                <source data-srcset="img/colorado_mansory_44.webp" type="image/webp">
+                <img class="gcard__img"
+                  data-src="img/colorado_mansory_44.jpg"
+                  alt="Fire pit with stone surround in outdoor living space"
+                  width="1200" height="800" loading="lazy" decoding="async">
+              </picture>
+              <span class="gcard__badge">Fire Pit</span>
+              <span class="gcard__overlay" aria-hidden="true">
+                <span class="gcard__overlayTitle">Fire Pit</span>
+                <span class="gcard__overlayText">Premium fire feature designed for comfort and long-term use.</span>
+              </span>
+            </button>
+          </article>
+
+          <!-- Card 05 -->
+          <article class="gcard" data-category="patios" data-title="Flagstone Walkway" data-desc="Natural texture with clean transitions and durable bedding.">
+            <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Flagstone Walkway">
+              <picture class="gcard__pic">
+                <source data-srcset="img/colorado_mansory_12.avif" type="image/avif">
+                <source data-srcset="img/colorado_mansory_12.webp" type="image/webp">
+                <img class="gcard__img"
+                  data-src="img/colorado_mansory_12.jpg"
+                  alt="Flagstone walkway with natural stone texture"
+                  width="1200" height="800" loading="lazy" decoding="async">
+              </picture>
+              <span class="gcard__badge">Flagstone</span>
+              <span class="gcard__overlay" aria-hidden="true">
+                <span class="gcard__overlayTitle">Flagstone Walkway</span>
+                <span class="gcard__overlayText">Natural texture with clean transitions and durable bedding.</span>
+              </span>
+            </button>
+          </article>
+
+          <!-- Card 06 -->
+          <article class="gcard" data-category="custom" data-title="Custom Outdoor Build" data-desc="Tailored design to match the space, style, and usage goals.">
+            <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Custom Outdoor Build">
+              <picture class="gcard__pic">
+                <source data-srcset="img/colorado_mansory_22.avif" type="image/avif">
+                <source data-srcset="img/colorado_mansory_22.webp" type="image/webp">
+                <img class="gcard__img"
+                  data-src="img/colorado_mansory_22.jpg"
+                  alt="Custom outdoor masonry build with stone and concrete finish"
+                  width="1200" height="800" loading="lazy" decoding="async">
+              </picture>
+              <span class="gcard__badge">Custom</span>
+              <span class="gcard__overlay" aria-hidden="true">
+                <span class="gcard__overlayTitle">Custom Outdoor Build</span>
+                <span class="gcard__overlayText">Tailored design to match the space, style, and usage goals.</span>
+              </span>
+            </button>
+          </article>
+
+          <!-- Puedes duplicar este patrón hasta llegar a tus 50 imágenes -->
+          <!-- Recomendación: mantener 18–24 en la página y el resto en la home/otros o paginación -->
+        </div>
+
+        <div class="projects__footer">
+          <a class="projects__more" href="contact.html" aria-label="Request a free estimate">
+            Want something similar? Get a free estimate
+            <span class="projects__moreArrow" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox (single instance) -->
+    <div class="lightbox" data-lightbox hidden aria-hidden="true">
+      <div class="lightbox__backdrop" data-lightbox-close tabindex="-1" aria-label="Close"></div>
+
+      <div class="lightbox__dialog" role="dialog" aria-modal="true" aria-label="Project image viewer">
+        <button class="lightbox__close" type="button" data-lightbox-close aria-label="Close viewer">
+          <span class="lightbox__x" aria-hidden="true"></span>
+        </button>
+
+        <figure class="lightbox__figure">
+          <picture class="lightbox__picture">
+            <source data-lightbox-avif type="image/avif">
+            <source data-lightbox-webp type="image/webp">
+            <img class="lightbox__img" data-lightbox-img alt="" width="1400" height="900" decoding="async">
+          </picture>
+
+          <figcaption class="lightbox__caption">
+            <p class="lightbox__title" data-lightbox-title></p>
+            <p class="lightbox__desc" data-lightbox-desc></p>
+          </figcaption>
+        </figure>
+
+        <button class="lightbox__nav lightbox__nav--prev" type="button" data-lightbox-prev aria-label="Previous image">
+          <span aria-hidden="true">‹</span>
+        </button>
+        <button class="lightbox__nav lightbox__nav--next" type="button" data-lightbox-next aria-label="Next image">
+          <span aria-hidden="true">›</span>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  @@include('partials/footer.html')
+  <script src="js/app.js" defer></script>
+</body>
+</html>

@@ -11,237 +11,281 @@
 
   @@include('partials/header.html')
 
-  <main class="main" id="main">
-    <!-- HERO (visual, sin slider pesado) -->
-    <section class="about-hero" aria-label="About Colorado Pro Masonry">
-      <div class="about-hero__bg" aria-hidden="true"></div>
-      <div class="about-hero__inner">
-        <div class="about-hero__content" data-reveal>
-          <p class="about-hero__eyebrow">About us</p>
-          <h1 class="about-hero__title">Craftsmanship that feels premium—and lasts.</h1>
-          <p class="about-hero__text">
-            We build stone and concrete projects with clean lines, reliable materials, and a process designed for long-term durability.
-          </p>
+<main class="main" id="main">
+  <!-- HERO (visual, sin slider pesado) -->
+  <section class="about-hero" data-i18n-aria="about.hero.section_aria" aria-label="About Colorado Pro Masonry">
+    <div class="about-hero__bg" aria-hidden="true"></div>
 
-          <ul class="about-hero__stats" aria-label="Highlights">
-            <li class="stat">
-              <span class="stat__num">Premium</span>
-              <span class="stat__label">Finishes</span>
-            </li>
-            <li class="stat">
-              <span class="stat__num">Clean</span>
-              <span class="stat__label">Install</span>
-            </li>
-            <li class="stat">
-              <span class="stat__num">Fast</span>
-              <span class="stat__label">Quotes</span>
-            </li>
+    <div class="about-hero__inner">
+      <div class="about-hero__content" data-reveal>
+        <p class="about-hero__eyebrow" data-i18n="about.hero.eyebrow">About us</p>
+
+        <h1 class="about-hero__title" data-i18n="about.hero.title">
+          Craftsmanship that feels premium—and lasts.
+        </h1>
+
+        <p class="about-hero__text" data-i18n="about.hero.text">
+          We build stone and concrete projects with clean lines, reliable materials, and a process designed for long-term durability.
+        </p>
+
+        <ul class="about-hero__stats" data-i18n-aria="about.hero.stats_aria" aria-label="Highlights">
+          <li class="stat">
+            <span class="stat__num" data-i18n="about.hero.stats.s1_num">Premium</span>
+            <span class="stat__label" data-i18n="about.hero.stats.s1_label">Finishes</span>
+          </li>
+          <li class="stat">
+            <span class="stat__num" data-i18n="about.hero.stats.s2_num">Clean</span>
+            <span class="stat__label" data-i18n="about.hero.stats.s2_label">Install</span>
+          </li>
+          <li class="stat">
+            <span class="stat__num" data-i18n="about.hero.stats.s3_num">Fast</span>
+            <span class="stat__label" data-i18n="about.hero.stats.s3_label">Quotes</span>
+          </li>
+        </ul>
+
+        <div class="about-hero__actions">
+          <a class="btn btn--primary" href="contact.html" data-i18n="about.hero.cta_primary">Get a Free Estimate</a>
+          <a class="btn btn--ghost" href="projects.html" data-i18n="about.hero.cta_secondary">View Projects</a>
+        </div>
+      </div>
+
+      <div class="about-hero__media" data-reveal>
+        <div class="about-hero__collage" data-i18n-aria="about.hero.collage_aria" aria-label="Project collage">
+          <figure class="collage collage--a">
+            <img
+              src="img/colorado_mansory_44.jpg"
+              data-i18n-alt="about.hero.img1_alt"
+              alt="Stonework project highlight"
+              width="1200"
+              height="800"
+              loading="eager"
+              decoding="async"
+            >
+          </figure>
+
+          <figure class="collage collage--b">
+            <img
+              src="img/colorado_mansory_06.jpg"
+              data-i18n-alt="about.hero.img2_alt"
+              alt="Retaining wall detail"
+              width="1200"
+              height="800"
+              loading="lazy"
+              decoding="async"
+            >
+          </figure>
+
+          <figure class="collage collage--c">
+            <img
+              src="img/colorado_mansory_30.jpg"
+              data-i18n-alt="about.hero.img3_alt"
+              alt="Outdoor kitchen project"
+              width="1200"
+              height="800"
+              loading="lazy"
+              decoding="async"
+            >
+          </figure>
+
+          <div class="about-hero__badge" aria-hidden="true">
+            <span class="badge-pill" data-i18n="about.hero.badge_pill">Stone • Concrete • Masonry</span>
+            <span class="badge-sub" data-i18n="about.hero.badge_sub">Built to last</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- wave suave -->
+    <div class="about-hero__wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,48 C240,80 480,8 720,40 C960,72 1200,16 1440,48 L1440,80 L0,80 Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story" data-i18n-aria="about.story.section_aria" aria-label="Our story">
+    <div class="story__inner">
+      <div class="story__head" data-reveal>
+        <p class="story__tag" data-i18n="about.story.tag">Our story</p>
+
+        <h2 class="story__title" data-i18n="about.story.title">
+          We treat every project like it’s the front of your home.
+        </h2>
+
+        <p class="story__lead" data-i18n="about.story.lead">
+          From patios and walkways to retaining walls and outdoor kitchens, our focus is simple:
+          deliver a clean install, premium finish, and a reliable build you can enjoy for years.
+        </p>
+      </div>
+
+      <div class="story__grid">
+        <div class="story__cards" data-reveal>
+          <article class="story-card">
+            <h3 class="story-card__title" data-i18n="about.story.cards.c1_title">Detail-first</h3>
+            <p class="story-card__text" data-i18n="about.story.cards.c1_text">
+              Tight joints, clean edges, and consistent layout—details that make the build look premium.
+            </p>
+          </article>
+
+          <article class="story-card">
+            <h3 class="story-card__title" data-i18n="about.story.cards.c2_title">Process you can trust</h3>
+            <p class="story-card__text" data-i18n="about.story.cards.c2_text">
+              Clear scope, straightforward steps, and transparent communication from start to finish.
+            </p>
+          </article>
+
+          <article class="story-card">
+            <h3 class="story-card__title" data-i18n="about.story.cards.c3_title">Durability by design</h3>
+            <p class="story-card__text" data-i18n="about.story.cards.c3_text">
+              We prioritize stable base prep, quality materials, and proper execution so it holds up.
+            </p>
+          </article>
+        </div>
+
+        <div class="story__visual" data-reveal>
+          <div class="story-visual" data-i18n-aria="about.story.visual_aria" aria-label="Visual highlight">
+            <img
+              src="img/colorado_mansory_03.jpg"
+              data-i18n-alt="about.story.visual_alt"
+              alt="Stone patio premium finish"
+              width="1200"
+              height="800"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <div class="story-visual__overlay" aria-hidden="true">
+              <span class="chip" data-i18n="about.story.chips.c1">Clean install</span>
+              <span class="chip" data-i18n="about.story.chips.c2">Reliable materials</span>
+              <span class="chip" data-i18n="about.story.chips.c3">Premium finish</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION / VISION / VALUES -->
+  <section class="mvv" data-i18n-aria="about.mvv.section_aria" aria-label="Mission vision values">
+    <div class="mvv__inner">
+      <div class="mvv__head" data-reveal>
+        <p class="mvv__tag" data-i18n="about.mvv.tag">How we work</p>
+        <h2 class="mvv__title" data-i18n="about.mvv.title">Mission, vision & values</h2>
+        <p class="mvv__lead" data-i18n="about.mvv.lead">
+          Premium craftsmanship is not a style—it’s a standard we repeat on every project.
+        </p>
+      </div>
+
+      <div class="mvv__grid">
+        <article class="mvv-card" data-reveal>
+          <div class="mvv-card__icon" aria-hidden="true">✦</div>
+          <h3 class="mvv-card__title" data-i18n="about.mvv.mission_title">Mission</h3>
+          <p class="mvv-card__text" data-i18n="about.mvv.mission_text">
+            Deliver premium stone and concrete builds with clean workmanship, durable materials, and a smooth customer experience.
+          </p>
+        </article>
+
+        <article class="mvv-card" data-reveal>
+          <div class="mvv-card__icon" aria-hidden="true">◎</div>
+          <h3 class="mvv-card__title" data-i18n="about.mvv.vision_title">Vision</h3>
+          <p class="mvv-card__text" data-i18n="about.mvv.vision_text">
+            Be the trusted name homeowners recommend for outdoor masonry—known for quality, clarity, and results that last.
+          </p>
+        </article>
+
+        <article class="mvv-card" data-reveal>
+          <div class="mvv-card__icon" aria-hidden="true">✓</div>
+          <h3 class="mvv-card__title" data-i18n="about.mvv.values_title">Values</h3>
+          <ul class="mvv-list" data-i18n-aria="about.mvv.values_aria" aria-label="Values list">
+            <li data-i18n="about.mvv.values.v1">Craftsmanship & detail</li>
+            <li data-i18n="about.mvv.values.v2">Clear communication</li>
+            <li data-i18n="about.mvv.values.v3">Reliability & respect</li>
+            <li data-i18n="about.mvv.values.v4">Durability & safety</li>
           </ul>
+        </article>
+      </div>
+    </div>
+  </section>
 
-          <div class="about-hero__actions">
-            <a class="btn btn--primary" href="contact.html">Get a Free Estimate</a>
-            <a class="btn btn--ghost" href="projects.html">View Projects</a>
-          </div>
-        </div>
-
-        <div class="about-hero__media" data-reveal>
-          <div class="about-hero__collage" aria-label="Project collage">
-            <figure class="collage collage--a">
-              <img src="img/colorado_mansory_44.jpg" alt="Stonework project highlight" width="1200" height="800" loading="eager" decoding="async">
-            </figure>
-            <figure class="collage collage--b">
-              <img src="img/colorado_mansory_06.jpg" alt="Retaining wall detail" width="1200" height="800" loading="lazy" decoding="async">
-            </figure>
-            <figure class="collage collage--c">
-              <img src="img/colorado_mansory_30.jpg" alt="Outdoor kitchen project" width="1200" height="800" loading="lazy" decoding="async">
-            </figure>
-
-            <div class="about-hero__badge" aria-hidden="true">
-              <span class="badge-pill">Stone • Concrete • Masonry</span>
-              <span class="badge-sub">Built to last</span>
-            </div>
-          </div>
-        </div>
+  <!-- LEADERSHIP -->
+  <section class="leadership" data-i18n-aria="about.leadership.section_aria" aria-label="Leadership">
+    <div class="leadership__inner">
+      <div class="leadership__head" data-reveal>
+        <p class="leadership__tag" data-i18n="about.leadership.tag">Leadership</p>
+        <h2 class="leadership__title" data-i18n="about.leadership.title">Hands-on leadership, on-site standards.</h2>
+        <p class="leadership__lead" data-i18n="about.leadership.lead">
+          We keep quality consistent by staying close to the build—planning, execution, and final finish.
+        </p>
       </div>
 
-      <!-- wave suave -->
-      <div class="about-hero__wave" aria-hidden="true">
-        <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
-          <path d="M0,48 C240,80 480,8 720,40 C960,72 1200,16 1440,48 L1440,80 L0,80 Z"></path>
-        </svg>
-      </div>
-    </section>
-
-    <!-- STORY -->
-    <section class="story" aria-label="Our story">
-      <div class="story__inner">
-        <div class="story__head" data-reveal>
-          <p class="story__tag">Our story</p>
-          <h2 class="story__title">
-            We treat every project like it’s the front of your home.
-          </h2>
-          <p class="story__lead">
-            From patios and walkways to retaining walls and outdoor kitchens, our focus is simple:
-            deliver a clean install, premium finish, and a reliable build you can enjoy for years.
-          </p>
-        </div>
-
-        <div class="story__grid">
-          <div class="story__cards" data-reveal>
-            <article class="story-card">
-              <h3 class="story-card__title">Detail-first</h3>
-              <p class="story-card__text">
-                Tight joints, clean edges, and consistent layout—details that make the build look premium.
-              </p>
-            </article>
-
-            <article class="story-card">
-              <h3 class="story-card__title">Process you can trust</h3>
-              <p class="story-card__text">
-                Clear scope, straightforward steps, and transparent communication from start to finish.
-              </p>
-            </article>
-
-            <article class="story-card">
-              <h3 class="story-card__title">Durability by design</h3>
-              <p class="story-card__text">
-                We prioritize stable base prep, quality materials, and proper execution so it holds up.
-              </p>
-            </article>
+      <div class="leadership__grid">
+        <!-- Card 1 -->
+        <article class="leader" data-reveal>
+          <div class="leader__photo" aria-hidden="true">
+            <img src="img/colorado_mansory_12.jpg" alt="" width="800" height="800" loading="lazy" decoding="async">
           </div>
-
-          <div class="story__visual" data-reveal>
-            <div class="story-visual" aria-label="Visual highlight">
-              <img src="img/colorado_mansory_03.jpg" alt="Stone patio premium finish" width="1200" height="800" loading="lazy" decoding="async">
-              <div class="story-visual__overlay" aria-hidden="true">
-                <span class="chip">Clean install</span>
-                <span class="chip">Reliable materials</span>
-                <span class="chip">Premium finish</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MISSION / VISION / VALUES -->
-    <section class="mvv" aria-label="Mission vision values">
-      <div class="mvv__inner">
-        <div class="mvv__head" data-reveal>
-          <p class="mvv__tag">How we work</p>
-          <h2 class="mvv__title">Mission, vision & values</h2>
-          <p class="mvv__lead">
-            Premium craftsmanship is not a style—it’s a standard we repeat on every project.
-          </p>
-        </div>
-
-        <div class="mvv__grid">
-          <article class="mvv-card" data-reveal>
-            <div class="mvv-card__icon" aria-hidden="true">✦</div>
-            <h3 class="mvv-card__title">Mission</h3>
-            <p class="mvv-card__text">
-              Deliver premium stone and concrete builds with clean workmanship, durable materials, and a smooth customer experience.
+          <div class="leader__body">
+            <h3 class="leader__name" data-i18n="about.leadership.cards.c1_name">Project Lead</h3>
+            <p class="leader__role" data-i18n="about.leadership.cards.c1_role">Quality & execution</p>
+            <p class="leader__text" data-i18n="about.leadership.cards.c1_text">
+              Oversees layout, levels, and finish details to ensure every project looks premium and stays durable.
             </p>
-          </article>
-
-          <article class="mvv-card" data-reveal>
-            <div class="mvv-card__icon" aria-hidden="true">◎</div>
-            <h3 class="mvv-card__title">Vision</h3>
-            <p class="mvv-card__text">
-              Be the trusted name homeowners recommend for outdoor masonry—known for quality, clarity, and results that last.
-            </p>
-          </article>
-
-          <article class="mvv-card" data-reveal>
-            <div class="mvv-card__icon" aria-hidden="true">✓</div>
-            <h3 class="mvv-card__title">Values</h3>
-            <ul class="mvv-list" aria-label="Values list">
-              <li>Craftsmanship & detail</li>
-              <li>Clear communication</li>
-              <li>Reliability & respect</li>
-              <li>Durability & safety</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- LEADERSHIP -->
-    <section class="leadership" aria-label="Leadership">
-      <div class="leadership__inner">
-        <div class="leadership__head" data-reveal>
-          <p class="leadership__tag">Leadership</p>
-          <h2 class="leadership__title">Hands-on leadership, on-site standards.</h2>
-          <p class="leadership__lead">
-            We keep quality consistent by staying close to the build—planning, execution, and final finish.
-          </p>
-        </div>
-
-        <div class="leadership__grid">
-          <!-- Card 1 -->
-          <article class="leader" data-reveal>
-            <div class="leader__photo" aria-hidden="true">
-              <img src="img/colorado_mansory_12.jpg" alt="" width="800" height="800" loading="lazy" decoding="async">
-            </div>
-            <div class="leader__body">
-              <h3 class="leader__name">Project Lead</h3>
-              <p class="leader__role">Quality & execution</p>
-              <p class="leader__text">
-                Oversees layout, levels, and finish details to ensure every project looks premium and stays durable.
-              </p>
-            </div>
-          </article>
-
-          <!-- Card 2 -->
-          <article class="leader" data-reveal>
-            <div class="leader__photo" aria-hidden="true">
-              <img src="img/colorado_mansory_19.jpg" alt="" width="800" height="800" loading="lazy" decoding="async">
-            </div>
-            <div class="leader__body">
-              <h3 class="leader__name">Client Experience</h3>
-              <p class="leader__role">Communication & planning</p>
-              <p class="leader__text">
-                Handles scope clarity, timeline expectations, and quick updates—so the process feels smooth and professional.
-              </p>
-            </div>
-          </article>
-
-          <!-- Card 3 -->
-          <article class="leader" data-reveal>
-            <div class="leader__photo" aria-hidden="true">
-              <img src="img/colorado_mansory_35.jpg" alt="" width="800" height="800" loading="lazy" decoding="async">
-            </div>
-            <div class="leader__body">
-              <h3 class="leader__name">Craft Team</h3>
-              <p class="leader__role">Masonry specialists</p>
-              <p class="leader__text">
-                Skilled installation team focused on clean joints, stable bases, and consistent finishing across every build.
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA FINAL -->
-    <section class="about-cta" aria-label="Get a free estimate">
-      <div class="about-cta__inner" data-reveal>
-        <div class="about-cta__bg" aria-hidden="true"></div>
-        <div class="about-cta__content">
-          <p class="about-cta__tag">Ready to start?</p>
-          <h2 class="about-cta__title">Get a fast quote with clear next steps.</h2>
-          <p class="about-cta__text">
-            Send a short description (and photos if available). We’ll reply with a clear estimate and timeline.
-          </p>
-
-          <div class="about-cta__actions">
-            <a class="btn btn--primary" href="contact.html">Get a Free Estimate</a>
-            <a class="btn btn--ghost" href="projects.html">See Portfolio</a>
           </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="leader" data-reveal>
+          <div class="leader__photo" aria-hidden="true">
+            <img src="img/colorado_mansory_19.jpg" alt="" width="800" height="800" loading="lazy" decoding="async">
+          </div>
+          <div class="leader__body">
+            <h3 class="leader__name" data-i18n="about.leadership.cards.c2_name">Client Experience</h3>
+            <p class="leader__role" data-i18n="about.leadership.cards.c2_role">Communication & planning</p>
+            <p class="leader__text" data-i18n="about.leadership.cards.c2_text">
+              Handles scope clarity, timeline expectations, and quick updates—so the process feels smooth and professional.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="leader" data-reveal>
+          <div class="leader__photo" aria-hidden="true">
+            <img src="img/colorado_mansory_35.jpg" alt="" width="800" height="800" loading="lazy" decoding="async">
+          </div>
+          <div class="leader__body">
+            <h3 class="leader__name" data-i18n="about.leadership.cards.c3_name">Craft Team</h3>
+            <p class="leader__role" data-i18n="about.leadership.cards.c3_role">Masonry specialists</p>
+            <p class="leader__text" data-i18n="about.leadership.cards.c3_text">
+              Skilled installation team focused on clean joints, stable bases, and consistent finishing across every build.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="about-cta" data-i18n-aria="about.cta.section_aria" aria-label="Get a free estimate">
+    <div class="about-cta__inner" data-reveal>
+      <div class="about-cta__bg" aria-hidden="true"></div>
+
+      <div class="about-cta__content">
+        <p class="about-cta__tag" data-i18n="about.cta.tag">Ready to start?</p>
+        <h2 class="about-cta__title" data-i18n="about.cta.title">Get a fast quote with clear next steps.</h2>
+        <p class="about-cta__text" data-i18n="about.cta.text">
+          Send a short description (and photos if available). We’ll reply with a clear estimate and timeline.
+        </p>
+
+        <div class="about-cta__actions">
+          <a class="btn btn--primary" href="contact.html" data-i18n="about.cta.primary">Get a Free Estimate</a>
+          <a class="btn btn--ghost" href="projects.html" data-i18n="about.cta.secondary">See Portfolio</a>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+</main>
+
 
   @@include('partials/footer.html')
 <script src="https://unpkg.com/i18next@23/i18next.min.js"></script>

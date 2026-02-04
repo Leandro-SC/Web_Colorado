@@ -104,442 +104,960 @@
 </header>
 
 
-  <main class="main" id="main">
-    <!-- Page Intro -->
-    <section class="projects-hero" aria-label="Projects gallery overview">
-      <div class="projects-hero__inner">
-        <p class="projects-hero__pill">Portfolio</p>
-        <h1 class="projects-hero__title">Crafted Projects, Built to Last</h1>
-        <p class="projects-hero__lead">
-          A curated selection of our stone and concrete work. Tap any photo to open a full-screen view.
-        </p>
-      </div>
-    </section>
-
-    <!-- Filters -->
-    <section class="projects" aria-label="Projects gallery">
-      <div class="projects__inner">
-        <header class="projects__head">
-          <div class="projects__copy">
-            <h2 class="projects__title">Featured Work</h2>
-            <p class="projects__text">
-              Filter by category to quickly find patios, walls, fireplaces, and outdoor builds.
-            </p>
-          </div>
-
-          <div class="projects__filters" role="tablist" aria-label="Project filters" data-project-filters>
-            <button class="filter-btn is-active" type="button" data-filter="all" role="tab" aria-selected="true">
-              All
-            </button>
-            <button class="filter-btn" type="button" data-filter="patios" role="tab" aria-selected="false">
-              Patios
-            </button>
-            <button class="filter-btn" type="button" data-filter="walls" role="tab" aria-selected="false">
-              Retaining Walls
-            </button>
-            <button class="filter-btn" type="button" data-filter="kitchens" role="tab" aria-selected="false">
-              Outdoor Kitchens
-            </button>
-            <button class="filter-btn" type="button" data-filter="fire" role="tab" aria-selected="false">
-              Fire Features
-            </button>
-            <button class="filter-btn" type="button" data-filter="custom" role="tab" aria-selected="false">
-              Custom Builds
-            </button>
-          </div>
-        </header>
-
-        <!-- Gallery grid (JS also uses it for lightbox + filtering) -->
-        <div class="gallery" data-gallery aria-label="Projects grid">
-          
-<!-- Patios (01–10) -->
-<article class="gcard" data-category="patios" data-title="Stone Patio" data-desc="Premium finish with clean joints and long-term durability.">
-  <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Stone Patio">
-    <picture class="gcard__pic">
-      <source data-srcset="img/colorado_mansory_01.avif" type="image/avif">
-      <source data-srcset="img/colorado_mansory_01.webp" type="image/webp">
-      <img class="gcard__img" data-src="img/colorado_mansory_01.jpg" alt="Stone patio masonry project" width="1200" height="800" loading="lazy" decoding="async">
-    </picture>
-    <span class="gcard__badge">Stone Patio</span>
-    <span class="gcard__overlay" aria-hidden="true">
-      <span class="gcard__overlayTitle">Stone Patio</span>
-      <span class="gcard__overlayText">Premium finish with clean joints and long-term durability.</span>
-    </span>
-  </button>
-</article>
-
-<article class="gcard" data-category="patios" data-title="Flagstone Walkway" data-desc="Natural texture, stable bedding, and clean transitions.">
-  <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Flagstone Walkway">
-    <picture class="gcard__pic">
-      <source data-srcset="img/colorado_mansory_02.avif" type="image/avif">
-      <source data-srcset="img/colorado_mansory_02.webp" type="image/webp">
-      <img class="gcard__img" data-src="img/colorado_mansory_02.jpg" alt="Flagstone walkway masonry project" width="1200" height="800" loading="lazy" decoding="async">
-    </picture>
-    <span class="gcard__badge">Flagstone</span>
-    <span class="gcard__overlay" aria-hidden="true">
-      <span class="gcard__overlayTitle">Flagstone Walkway</span>
-      <span class="gcard__overlayText">Natural texture, stable bedding, and clean transitions.</span>
-    </span>
-  </button>
-</article>
-
-<article class="gcard" data-category="patios" data-title="Paver Patio" data-desc="Balanced layout and crisp edges for a premium outdoor space.">
-  <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Paver Patio">
-    <picture class="gcard__pic">
-      <source data-srcset="img/colorado_mansory_03.avif" type="image/avif">
-      <source data-srcset="img/colorado_mansory_03.webp" type="image/webp">
-      <img class="gcard__img" data-src="img/colorado_mansory_03.jpg" alt="Paver patio masonry project" width="1200" height="800" loading="lazy" decoding="async">
-    </picture>
-    <span class="gcard__badge">Paver Patio</span>
-    <span class="gcard__overlay" aria-hidden="true">
-      <span class="gcard__overlayTitle">Paver Patio</span>
-      <span class="gcard__overlayText">Balanced layout and crisp edges for a premium outdoor space.</span>
-    </span>
-  </button>
-</article>
-
-<article class="gcard" data-category="patios" data-title="Stone Steps" data-desc="Safe rise, clean alignment, and durable stone surfaces.">
-  <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Stone Steps">
-    <picture class="gcard__pic">
-      <source data-srcset="img/colorado_mansory_04.avif" type="image/avif">
-      <source data-srcset="img/colorado_mansory_04.webp" type="image/webp">
-      <img class="gcard__img" data-src="img/colorado_mansory_04.jpg" alt="Stone steps masonry project" width="1200" height="800" loading="lazy" decoding="async">
-    </picture>
-    <span class="gcard__badge">Stone Steps</span>
-    <span class="gcard__overlay" aria-hidden="true">
-      <span class="gcard__overlayTitle">Stone Steps</span>
-      <span class="gcard__overlayText">Safe rise, clean alignment, and durable stone surfaces.</span>
-    </span>
-  </button>
-</article>
-
-<article class="gcard" data-category="patios" data-title="Front Walkway" data-desc="A clean entry path that improves curb appeal instantly.">
-  <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Front Walkway">
-    <picture class="gcard__pic">
-      <source data-srcset="img/colorado_mansory_05.avif" type="image/avif">
-      <source data-srcset="img/colorado_mansory_05.webp" type="image/webp">
-      <img class="gcard__img" data-src="img/colorado_mansory_05.jpg" alt="Front walkway masonry project" width="1200" height="800" loading="lazy" decoding="async">
-    </picture>
-    <span class="gcard__badge">Walkway</span>
-    <span class="gcard__overlay" aria-hidden="true">
-      <span class="gcard__overlayTitle">Front Walkway</span>
-      <span class="gcard__overlayText">A clean entry path that improves curb appeal instantly.</span>
-    </span>
-  </button>
-</article>
-
-<article class="gcard" data-category="patios" data-title="Stone Landing" data-desc="A durable landing that ties steps and patio together smoothly.">
-  <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Stone Landing">
-    <picture class="gcard__pic">
-      <source data-srcset="img/colorado_mansory_06.avif" type="image/avif">
-      <source data-srcset="img/colorado_mansory_06.webp" type="image/webp">
-      <img class="gcard__img" data-src="img/colorado_mansory_06.jpg" alt="Stone landing masonry project" width="1200" height="800" loading="lazy" decoding="async">
-    </picture>
-    <span class="gcard__badge">Landing</span>
-    <span class="gcard__overlay" aria-hidden="true">
-      <span class="gcard__overlayTitle">Stone Landing</span>
-      <span class="gcard__overlayText">A durable landing that ties steps and patio together smoothly.</span>
-    </span>
-  </button>
-</article>
-
-<article class="gcard" data-category="patios" data-title="Outdoor Walk Path" data-desc="Comfortable flow through the yard with premium stone texture.">
-  <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Outdoor Walk Path">
-    <picture class="gcard__pic">
-      <source data-srcset="img/colorado_mansory_07.avif" type="image/avif">
-      <source data-srcset="img/colorado_mansory_07.webp" type="image/webp">
-      <img class="gcard__img" data-src="img/colorado_mansory_07.jpg" alt="Outdoor walk path masonry project" width="1200" height="800" loading="lazy" decoding="async">
-    </picture>
-    <span class="gcard__badge">Walk Path</span>
-    <span class="gcard__overlay" aria-hidden="true">
-      <span class="gcard__overlayTitle">Outdoor Walk Path</span>
-      <span class="gcard__overlayText">Comfortable flow through the yard with premium stone texture.</span>
-    </span>
-  </button>
-</article>
-
-<article class="gcard" data-category="patios" data-title="Stone Border Detail" data-desc="Clean borders that keep the layout crisp and premium.">
-  <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Stone Border Detail">
-    <picture class="gcard__pic">
-      <source data-srcset="img/colorado_mansory_08.avif" type="image/avif">
-      <source data-srcset="img/colorado_mansory_08.webp" type="image/webp">
-      <img class="gcard__img" data-src="img/colorado_mansory_08.jpg" alt="Stone border detail masonry project" width="1200" height="800" loading="lazy" decoding="async">
-    </picture>
-    <span class="gcard__badge">Border Detail</span>
-    <span class="gcard__overlay" aria-hidden="true">
-      <span class="gcard__overlayTitle">Stone Border Detail</span>
-      <span class="gcard__overlayText">Clean borders that keep the layout crisp and premium.</span>
-    </span>
-  </button>
-</article>
-
-<article class="gcard" data-category="patios" data-title="Patio + Steps" data-desc="A cohesive set: patio surface, steps, and edges aligned.">
-  <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Patio + Steps">
-    <picture class="gcard__pic">
-      <source data-srcset="img/colorado_mansory_09.avif" type="image/avif">
-      <source data-srcset="img/colorado_mansory_09.webp" type="image/webp">
-      <img class="gcard__img" data-src="img/colorado_mansory_09.jpg" alt="Patio and steps masonry project" width="1200" height="800" loading="lazy" decoding="async">
-    </picture>
-    <span class="gcard__badge">Patio + Steps</span>
-    <span class="gcard__overlay" aria-hidden="true">
-      <span class="gcard__overlayTitle">Patio + Steps</span>
-      <span class="gcard__overlayText">A cohesive set: patio surface, steps, and edges aligned.</span>
-    </span>
-  </button>
-</article>
-
-<article class="gcard" data-category="patios" data-title="Outdoor Living Patio" data-desc="A refined patio designed for everyday comfort and hosting.">
-  <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Outdoor Living Patio">
-    <picture class="gcard__pic">
-      <source data-srcset="img/colorado_mansory_10.avif" type="image/avif">
-      <source data-srcset="img/colorado_mansory_10.webp" type="image/webp">
-      <img class="gcard__img" data-src="img/colorado_mansory_10.jpg" alt="Outdoor living patio masonry project" width="1200" height="800" loading="lazy" decoding="async">
-    </picture>
-    <span class="gcard__badge">Outdoor Patio</span>
-    <span class="gcard__overlay" aria-hidden="true">
-      <span class="gcard__overlayTitle">Outdoor Living Patio</span>
-      <span class="gcard__overlayText">A refined patio designed for everyday comfort and hosting.</span>
-    </span>
-  </button>
-</article>
-
-<!-- Walls (11–20) -->
-<article class="gcard" data-category="walls" data-title="Retaining Wall" data-desc="Structured build with clean lines and a drainage-ready base.">
-  <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Retaining Wall">
-    <picture class="gcard__pic">
-      <source data-srcset="img/colorado_mansory_11.avif" type="image/avif">
-      <source data-srcset="img/colorado_mansory_11.webp" type="image/webp">
-      <img class="gcard__img" data-src="img/colorado_mansory_11.jpg" alt="Retaining wall masonry project" width="1200" height="800" loading="lazy" decoding="async">
-    </picture>
-    <span class="gcard__badge">Retaining Wall</span>
-    <span class="gcard__overlay" aria-hidden="true">
-      <span class="gcard__overlayTitle">Retaining Wall</span>
-      <span class="gcard__overlayText">Structured build with clean lines and a drainage-ready base.</span>
-    </span>
-  </button>
-</article>
-
-<article class="gcard" data-category="walls" data-title="Stone Wall Detail" data-desc="Tight joints and premium texture for a high-end finish.">
-  <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Stone Wall Detail">
-    <picture class="gcard__pic">
-      <source data-srcset="img/colorado_mansory_12.avif" type="image/avif">
-      <source data-srcset="img/colorado_mansory_12.webp" type="image/webp">
-      <img class="gcard__img" data-src="img/colorado_mansory_12.jpg" alt="Stone wall detail masonry project" width="1200" height="800" loading="lazy" decoding="async">
-    </picture>
-    <span class="gcard__badge">Stone Wall</span>
-    <span class="gcard__overlay" aria-hidden="true">
-      <span class="gcard__overlayTitle">Stone Wall Detail</span>
-      <span class="gcard__overlayText">Tight joints and premium texture for a high-end finish.</span>
-    </span>
-  </button>
-</article>
-
-<article class="gcard" data-category="walls" data-title="Decorative Wall" data-desc="Elevates outdoor spaces with a refined stone profile.">
-  <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Decorative Wall">
-    <picture class="gcard__pic">
-      <source data-srcset="img/colorado_mansory_13.avif" type="image/avif">
-      <source data-srcset="img/colorado_mansory_13.webp" type="image/webp">
-      <img class="gcard__img" data-src="img/colorado_mansory_13.jpg" alt="Decorative stone wall masonry project" width="1200" height="800" loading="lazy" decoding="async">
-    </picture>
-    <span class="gcard__badge">Decorative Wall</span>
-    <span class="gcard__overlay" aria-hidden="true">
-      <span class="gcard__overlayTitle">Decorative Wall</span>
-      <span class="gcard__overlayText">Elevates outdoor spaces with a refined stone profile.</span>
-    </span>
-  </button>
-</article>
-
-<article class="gcard" data-category="walls" data-title="Tiered Retaining Wall" data-desc="Multi-level support with a premium stacked look.">
-  <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Tiered Retaining Wall">
-    <picture class="gcard__pic">
-      <source data-srcset="img/colorado_mansory_14.avif" type="image/avif">
-      <source data-srcset="img/colorado_mansory_14.webp" type="image/webp">
-      <img class="gcard__img" data-src="img/colorado_mansory_14.jpg" alt="Tiered retaining wall masonry project" width="1200" height="800" loading="lazy" decoding="async">
-    </picture>
-    <span class="gcard__badge">Tiered Wall</span>
-    <span class="gcard__overlay" aria-hidden="true">
-      <span class="gcard__overlayTitle">Tiered Retaining Wall</span>
-      <span class="gcard__overlayText">Multi-level support with a premium stacked look.</span>
-    </span>
-  </button>
-</article>
-
-<article class="gcard" data-category="walls" data-title="Stone Columns" data-desc="Clean column work that frames entrances and outdoor areas.">
-  <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Stone Columns">
-    <picture class="gcard__pic">
-      <source data-srcset="img/colorado_mansory_15.avif" type="image/avif">
-      <source data-srcset="img/colorado_mansory_15.webp" type="image/webp">
-      <img class="gcard__img" data-src="img/colorado_mansory_15.jpg" alt="Stone columns masonry project" width="1200" height="800" loading="lazy" decoding="async">
-    </picture>
-    <span class="gcard__badge">Stone Columns</span>
-    <span class="gcard__overlay" aria-hidden="true">
-      <span class="gcard__overlayTitle">Stone Columns</span>
-      <span class="gcard__overlayText">Clean column work that frames entrances and outdoor areas.</span>
-    </span>
-  </button>
-</article>
-
-<article class="gcard" data-category="walls" data-title="Garden Wall" data-desc="A refined wall that defines planting zones and edges.">
-  <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Garden Wall">
-    <picture class="gcard__pic">
-      <source data-srcset="img/colorado_mansory_16.avif" type="image/avif">
-      <source data-srcset="img/colorado_mansory_16.webp" type="image/webp">
-      <img class="gcard__img" data-src="img/colorado_mansory_16.jpg" alt="Garden wall masonry project" width="1200" height="800" loading="lazy" decoding="async">
-    </picture>
-    <span class="gcard__badge">Garden Wall</span>
-    <span class="gcard__overlay" aria-hidden="true">
-      <span class="gcard__overlayTitle">Garden Wall</span>
-      <span class="gcard__overlayText">A refined wall that defines planting zones and edges.</span>
-    </span>
-  </button>
-</article>
-
-<article class="gcard" data-category="walls" data-title="Wall Cap Detail" data-desc="Precise caps and corners for a crisp, finished look.">
-  <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Wall Cap Detail">
-    <picture class="gcard__pic">
-      <source data-srcset="img/colorado_mansory_17.avif" type="image/avif">
-      <source data-srcset="img/colorado_mansory_17.webp" type="image/webp">
-      <img class="gcard__img" data-src="img/colorado_mansory_17.jpg" alt="Wall cap detail masonry project" width="1200" height="800" loading="lazy" decoding="async">
-    </picture>
-    <span class="gcard__badge">Wall Cap</span>
-    <span class="gcard__overlay" aria-hidden="true">
-      <span class="gcard__overlayTitle">Wall Cap Detail</span>
-      <span class="gcard__overlayText">Precise caps and corners for a crisp, finished look.</span>
-    </span>
-  </button>
-</article>
-
-<article class="gcard" data-category="walls" data-title="Straight Retaining Wall" data-desc="Clean, straight alignment built for stability and style.">
-  <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Straight Retaining Wall">
-    <picture class="gcard__pic">
-      <source data-srcset="img/colorado_mansory_18.avif" type="image/avif">
-      <source data-srcset="img/colorado_mansory_18.webp" type="image/webp">
-      <img class="gcard__img" data-src="img/colorado_mansory_18.jpg" alt="Straight retaining wall masonry project" width="1200" height="800" loading="lazy" decoding="async">
-    </picture>
-    <span class="gcard__badge">Retaining Wall</span>
-    <span class="gcard__overlay" aria-hidden="true">
-      <span class="gcard__overlayTitle">Straight Retaining Wall</span>
-      <span class="gcard__overlayText">Clean, straight alignment built for stability and style.</span>
-    </span>
-  </button>
-</article>
-
-<article class="gcard" data-category="walls" data-title="Stone Accent Wall" data-desc="Premium texture that adds depth to outdoor living areas.">
-  <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Stone Accent Wall">
-    <picture class="gcard__pic">
-      <source data-srcset="img/colorado_mansory_19.avif" type="image/avif">
-      <source data-srcset="img/colorado_mansory_19.webp" type="image/webp">
-      <img class="gcard__img" data-src="img/colorado_mansory_19.jpg" alt="Stone accent wall masonry project" width="1200" height="800" loading="lazy" decoding="async">
-    </picture>
-    <span class="gcard__badge">Accent Wall</span>
-    <span class="gcard__overlay" aria-hidden="true">
-      <span class="gcard__overlayTitle">Stone Accent Wall</span>
-      <span class="gcard__overlayText">Premium texture that adds depth to outdoor living areas.</span>
-    </span>
-  </button>
-</article>
-
-<article class="gcard" data-category="walls" data-title="Corner Wall Detail" data-desc="Crisp corner work for a refined, high-end finish.">
-  <button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Corner Wall Detail">
-    <picture class="gcard__pic">
-      <source data-srcset="img/colorado_mansory_20.avif" type="image/avif">
-      <source data-srcset="img/colorado_mansory_20.webp" type="image/webp">
-      <img class="gcard__img" data-src="img/colorado_mansory_20.jpg" alt="Corner wall detail masonry project" width="1200" height="800" loading="lazy" decoding="async">
-    </picture>
-    <span class="gcard__badge">Corner Detail</span>
-    <span class="gcard__overlay" aria-hidden="true">
-      <span class="gcard__overlayTitle">Corner Wall Detail</span>
-      <span class="gcard__overlayText">Crisp corner work for a refined, high-end finish.</span>
-    </span>
-  </button>
-</article>
-
-<!-- Kitchens (21–30) -->
-<!-- (mismo patrón) -->
-<!-- Para mantenerte la respuesta utilizable sin hacerte scrollear infinito,
-     te dejo el resto 21–50 en un bloque compacto ya listo, sin cambiar el patrón. -->
-
-<!-- Kitchens (21–30) -->
-<article class="gcard" data-category="kitchens" data-title="Outdoor Kitchen" data-desc="Outdoor cooking space with stone accents and clean edges."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Outdoor Kitchen"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_21.avif" type="image/avif"><source data-srcset="img/colorado_mansory_21.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_21.jpg" alt="Outdoor kitchen masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Outdoor Kitchen</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Outdoor Kitchen</span><span class="gcard__overlayText">Outdoor cooking space with stone accents and clean edges.</span></span></button></article>
-<article class="gcard" data-category="kitchens" data-title="Stone Counter Build" data-desc="Durable surfaces built for heat, weather, and daily use."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Stone Counter Build"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_22.avif" type="image/avif"><source data-srcset="img/colorado_mansory_22.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_22.jpg" alt="Stone counter masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Stone Counter</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Stone Counter Build</span><span class="gcard__overlayText">Durable surfaces built for heat, weather, and daily use.</span></span></button></article>
-<article class="gcard" data-category="kitchens" data-title="Grill Island" data-desc="Clean layout with space for prep, storage, and hosting."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Grill Island"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_23.avif" type="image/avif"><source data-srcset="img/colorado_mansory_23.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_23.jpg" alt="Grill island masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Grill Island</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Grill Island</span><span class="gcard__overlayText">Clean layout with space for prep, storage, and hosting.</span></span></button></article>
-<article class="gcard" data-category="kitchens" data-title="Outdoor Bar" data-desc="A premium bar edge designed for comfort and durability."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Outdoor Bar"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_24.avif" type="image/avif"><source data-srcset="img/colorado_mansory_24.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_24.jpg" alt="Outdoor bar masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Outdoor Bar</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Outdoor Bar</span><span class="gcard__overlayText">A premium bar edge designed for comfort and durability.</span></span></button></article>
-<article class="gcard" data-category="kitchens" data-title="Kitchen Stone Veneer" data-desc="Refined veneer look with crisp corners and clean joints."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Kitchen Stone Veneer"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_25.avif" type="image/avif"><source data-srcset="img/colorado_mansory_25.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_25.jpg" alt="Kitchen stone veneer masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Stone Veneer</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Kitchen Stone Veneer</span><span class="gcard__overlayText">Refined veneer look with crisp corners and clean joints.</span></span></button></article>
-<article class="gcard" data-category="kitchens" data-title="Outdoor Prep Space" data-desc="Practical workspace built to handle weather and daily use."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Outdoor Prep Space"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_26.avif" type="image/avif"><source data-srcset="img/colorado_mansory_26.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_26.jpg" alt="Outdoor prep space masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Prep Space</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Outdoor Prep Space</span><span class="gcard__overlayText">Practical workspace built to handle weather and daily use.</span></span></button></article>
-<article class="gcard" data-category="kitchens" data-title="Built-in Storage" data-desc="Clean openings, aligned lines, and a premium finish."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Built-in Storage"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_27.avif" type="image/avif"><source data-srcset="img/colorado_mansory_27.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_27.jpg" alt="Built-in storage masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Storage</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Built-in Storage</span><span class="gcard__overlayText">Clean openings, aligned lines, and a premium finish.</span></span></button></article>
-<article class="gcard" data-category="kitchens" data-title="Outdoor Kitchen Detail" data-desc="Refined details that elevate the whole build instantly."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Outdoor Kitchen Detail"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_28.avif" type="image/avif"><source data-srcset="img/colorado_mansory_28.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_28.jpg" alt="Outdoor kitchen detail masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Kitchen Detail</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Outdoor Kitchen Detail</span><span class="gcard__overlayText">Refined details that elevate the whole build instantly.</span></span></button></article>
-<article class="gcard" data-category="kitchens" data-title="Outdoor Cooking Area" data-desc="Designed for hosting with durable surfaces and clean edges."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Outdoor Cooking Area"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_29.avif" type="image/avif"><source data-srcset="img/colorado_mansory_29.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_29.jpg" alt="Outdoor cooking area masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Cooking Area</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Outdoor Cooking Area</span><span class="gcard__overlayText">Designed for hosting with durable surfaces and clean edges.</span></span></button></article>
-<article class="gcard" data-category="kitchens" data-title="Premium Kitchen Build" data-desc="A clean, premium layout built for long-term performance."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Premium Kitchen Build"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_30.avif" type="image/avif"><source data-srcset="img/colorado_mansory_30.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_30.jpg" alt="Premium outdoor kitchen masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Premium Kitchen</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Premium Kitchen Build</span><span class="gcard__overlayText">A clean, premium layout built for long-term performance.</span></span></button></article>
-
-<!-- Fire Features (31–40) -->
-<article class="gcard" data-category="fire" data-title="Fire Pit" data-desc="A warm focal point built for comfort and durability."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Fire Pit"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_31.avif" type="image/avif"><source data-srcset="img/colorado_mansory_31.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_31.jpg" alt="Fire pit masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Fire Pit</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Fire Pit</span><span class="gcard__overlayText">A warm focal point built for comfort and durability.</span></span></button></article>
-<article class="gcard" data-category="fire" data-title="Outdoor Fireplace" data-desc="Premium fireplace build that elevates outdoor living."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Outdoor Fireplace"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_32.avif" type="image/avif"><source data-srcset="img/colorado_mansory_32.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_32.jpg" alt="Outdoor fireplace masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Fireplace</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Outdoor Fireplace</span><span class="gcard__overlayText">Premium fireplace build that elevates outdoor living.</span></span></button></article>
-<article class="gcard" data-category="fire" data-title="Stone Fire Feature" data-desc="Crisp stonework with a refined, high-end finish."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Stone Fire Feature"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_33.avif" type="image/avif"><source data-srcset="img/colorado_mansory_33.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_33.jpg" alt="Stone fire feature masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Fire Feature</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Stone Fire Feature</span><span class="gcard__overlayText">Crisp stonework with a refined, high-end finish.</span></span></button></article>
-<article class="gcard" data-category="fire" data-title="Fire Pit Seating Area" data-desc="A social zone designed for warmth and hosting."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Fire Pit Seating Area"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_34.avif" type="image/avif"><source data-srcset="img/colorado_mansory_34.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_34.jpg" alt="Fire pit seating area masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Seating Area</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Fire Pit Seating Area</span><span class="gcard__overlayText">A social zone designed for warmth and hosting.</span></span></button></article>
-<article class="gcard" data-category="fire" data-title="Fireplace Stone Detail" data-desc="Premium texture and clean alignment around the opening."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Fireplace Stone Detail"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_35.avif" type="image/avif"><source data-srcset="img/colorado_mansory_35.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_35.jpg" alt="Fireplace stone detail masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Stone Detail</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Fireplace Stone Detail</span><span class="gcard__overlayText">Premium texture and clean alignment around the opening.</span></span></button></article>
-<article class="gcard" data-category="fire" data-title="Modern Fire Feature" data-desc="A clean, modern look built with reliable materials."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Modern Fire Feature"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_36.avif" type="image/avif"><source data-srcset="img/colorado_mansory_36.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_36.jpg" alt="Modern fire feature masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Modern Fire</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Modern Fire Feature</span><span class="gcard__overlayText">A clean, modern look built with reliable materials.</span></span></button></article>
-<article class="gcard" data-category="fire" data-title="Outdoor Hearth" data-desc="A refined hearth that anchors your outdoor living space."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Outdoor Hearth"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_37.avif" type="image/avif"><source data-srcset="img/colorado_mansory_37.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_37.jpg" alt="Outdoor hearth masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Hearth</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Outdoor Hearth</span><span class="gcard__overlayText">A refined hearth that anchors your outdoor living space.</span></span></button></article>
-<article class="gcard" data-category="fire" data-title="Fire Pit Stone Ring" data-desc="Clean ring detail built to withstand heat and weather."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Fire Pit Stone Ring"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_38.avif" type="image/avif"><source data-srcset="img/colorado_mansory_38.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_38.jpg" alt="Fire pit stone ring masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Stone Ring</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Fire Pit Stone Ring</span><span class="gcard__overlayText">Clean ring detail built to withstand heat and weather.</span></span></button></article>
-<article class="gcard" data-category="fire" data-title="Fire Feature Corner" data-desc="Crisp corners and premium texture for a finished look."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Fire Feature Corner"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_39.avif" type="image/avif"><source data-srcset="img/colorado_mansory_39.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_39.jpg" alt="Fire feature corner masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Corner Detail</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Fire Feature Corner</span><span class="gcard__overlayText">Crisp corners and premium texture for a finished look.</span></span></button></article>
-<article class="gcard" data-category="fire" data-title="Outdoor Fire Space" data-desc="A complete fire zone designed for relaxing nights."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Outdoor Fire Space"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_40.avif" type="image/avif"><source data-srcset="img/colorado_mansory_40.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_40.jpg" alt="Outdoor fire space masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Fire Space</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Outdoor Fire Space</span><span class="gcard__overlayText">A complete fire zone designed for relaxing nights.</span></span></button></article>
-
-<!-- Custom Builds (41–50) -->
-<article class="gcard" data-category="custom" data-title="Custom Outdoor Build" data-desc="Tailored to the space, style, and usage goals."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Custom Outdoor Build"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_41.avif" type="image/avif"><source data-srcset="img/colorado_mansory_41.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_41.jpg" alt="Custom outdoor masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Custom Build</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Custom Outdoor Build</span><span class="gcard__overlayText">Tailored to the space, style, and usage goals.</span></span></button></article>
-<article class="gcard" data-category="custom" data-title="Outdoor Accent Project" data-desc="Premium detail work that elevates the entire layout."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Outdoor Accent Project"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_42.avif" type="image/avif"><source data-srcset="img/colorado_mansory_42.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_42.jpg" alt="Outdoor accent masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Outdoor Accent</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Outdoor Accent Project</span><span class="gcard__overlayText">Premium detail work that elevates the entire layout.</span></span></button></article>
-<article class="gcard" data-category="custom" data-title="Stone + Concrete Mix" data-desc="A balanced combination designed for durability and style."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Stone + Concrete Mix"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_43.avif" type="image/avif"><source data-srcset="img/colorado_mansory_43.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_43.jpg" alt="Stone and concrete masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Stone + Concrete</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Stone + Concrete Mix</span><span class="gcard__overlayText">A balanced combination designed for durability and style.</span></span></button></article>
-<article class="gcard" data-category="custom" data-title="Custom Entry Feature" data-desc="A refined entry element with crisp lines and premium texture."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Custom Entry Feature"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_44.avif" type="image/avif"><source data-srcset="img/colorado_mansory_44.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_44.jpg" alt="Custom entry masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Entry Feature</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Custom Entry Feature</span><span class="gcard__overlayText">A refined entry element with crisp lines and premium texture.</span></span></button></article>
-<article class="gcard" data-category="custom" data-title="Outdoor Living Build" data-desc="Designed for comfort, flow, and long-term daily use."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Outdoor Living Build"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_45.avif" type="image/avif"><source data-srcset="img/colorado_mansory_45.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_45.jpg" alt="Outdoor living masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Outdoor Living</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Outdoor Living Build</span><span class="gcard__overlayText">Designed for comfort, flow, and long-term daily use.</span></span></button></article>
-<article class="gcard" data-category="custom" data-title="Custom Stone Feature" data-desc="A premium statement piece tailored to your space."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Custom Stone Feature"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_46.avif" type="image/avif"><source data-srcset="img/colorado_mansory_46.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_46.jpg" alt="Custom stone feature masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Stone Feature</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Custom Stone Feature</span><span class="gcard__overlayText">A premium statement piece tailored to your space.</span></span></button></article>
-<article class="gcard" data-category="custom" data-title="Architectural Detail" data-desc="Refined details with clean geometry and crisp edges."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Architectural Detail"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_47.avif" type="image/avif"><source data-srcset="img/colorado_mansory_47.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_47.jpg" alt="Architectural masonry detail project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Detail Work</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Architectural Detail</span><span class="gcard__overlayText">Refined details with clean geometry and crisp edges.</span></span></button></article>
-<article class="gcard" data-category="custom" data-title="Custom Outdoor Space" data-desc="A cohesive design that upgrades the full backyard experience."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Custom Outdoor Space"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_48.avif" type="image/avif"><source data-srcset="img/colorado_mansory_48.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_48.jpg" alt="Custom outdoor space masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Custom Space</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Custom Outdoor Space</span><span class="gcard__overlayText">A cohesive design that upgrades the full backyard experience.</span></span></button></article>
-<article class="gcard" data-category="custom" data-title="Premium Finish Project" data-desc="Premium surfaces finished with clean lines and durable materials."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Premium Finish Project"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_49.avif" type="image/avif"><source data-srcset="img/colorado_mansory_49.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_49.jpg" alt="Premium finish masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Premium Finish</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Premium Finish Project</span><span class="gcard__overlayText">Premium surfaces finished with clean lines and durable materials.</span></span></button></article>
-<article class="gcard" data-category="custom" data-title="Signature Outdoor Build" data-desc="A signature build crafted to fit your home and lifestyle."><button class="gcard__btn" type="button" data-lightbox-open aria-label="Open Signature Outdoor Build"><picture class="gcard__pic"><source data-srcset="img/colorado_mansory_50.avif" type="image/avif"><source data-srcset="img/colorado_mansory_50.webp" type="image/webp"><img class="gcard__img" data-src="img/colorado_mansory_50.jpg" alt="Signature outdoor build masonry project" width="1200" height="800" loading="lazy" decoding="async"></picture><span class="gcard__badge">Signature Build</span><span class="gcard__overlay" aria-hidden="true"><span class="gcard__overlayTitle">Signature Outdoor Build</span><span class="gcard__overlayText">A signature build crafted to fit your home and lifestyle.</span></span></button></article>
 
 
-          <!-- Puedes duplicar este patrón hasta llegar a tus 50 imágenes -->
-          <!-- Recomendación: mantener 18–24 en la página y el resto en la home/otros o paginación -->
+<main class="main" id="main">
+  <!-- Page Intro -->
+  <section class="projects-hero" aria-label="Projects gallery overview" data-i18n-aria="projects.hero.aria">
+    <div class="projects-hero__inner">
+      <p class="projects-hero__pill" data-i18n="projects.hero.pill">Portfolio</p>
+      <h1 class="projects-hero__title" data-i18n="projects.hero.title">Crafted Projects, Built to Last</h1>
+      <p class="projects-hero__lead" data-i18n="projects.hero.lead">
+        A curated selection of our stone and concrete work. Tap any photo to open a full-screen view.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="projects" aria-label="Projects gallery" data-i18n-aria="projects.section.aria">
+    <div class="projects__inner">
+      <header class="projects__head">
+        <div class="projects__copy">
+          <h2 class="projects__title" data-i18n="projects.head.title">Featured Work</h2>
+          <p class="projects__text" data-i18n="projects.head.text">
+            Filter by category to quickly find patios, walls, fireplaces, and outdoor builds.
+          </p>
         </div>
 
-        <div class="projects__footer">
-          <a class="projects__more" href="contact.html" aria-label="Request a free estimate">
-            Want something similar? Get a free estimate
-            <span class="projects__moreArrow" aria-hidden="true"></span>
-          </a>
+        <div class="projects__filters" role="tablist" aria-label="Project filters" data-i18n-aria="projects.filters.aria" data-project-filters>
+          <button class="filter-btn is-active" type="button" data-filter="all" role="tab" aria-selected="true" data-i18n="projects.filters.all">All</button>
+          <button class="filter-btn" type="button" data-filter="patios" role="tab" aria-selected="false" data-i18n="projects.filters.patios">Patios</button>
+          <button class="filter-btn" type="button" data-filter="walls" role="tab" aria-selected="false" data-i18n="projects.filters.walls">Retaining Walls</button>
+          <button class="filter-btn" type="button" data-filter="kitchens" role="tab" aria-selected="false" data-i18n="projects.filters.kitchens">Outdoor Kitchens</button>
+          <button class="filter-btn" type="button" data-filter="fire" role="tab" aria-selected="false" data-i18n="projects.filters.fire">Fire Features</button>
+          <button class="filter-btn" type="button" data-filter="custom" role="tab" aria-selected="false" data-i18n="projects.filters.custom">Custom Builds</button>
         </div>
+      </header>
+
+      <!-- Gallery grid (JS uses: data-category + data-title + data-desc) -->
+      <div class="gallery" data-gallery aria-label="Projects grid" data-i18n-aria="projects.gallery.aria">
+
+        <!-- ========================= -->
+        <!-- Patios (01–10)            -->
+        <!-- ========================= -->
+        <article class="gcard" data-category="patios"
+          data-title="Stone Patio"
+          data-desc="Premium finish with clean joints and long-term durability."
+          data-i18n-title-attr="projects.items.p01.title"
+          data-i18n-desc-attr="projects.items.p01.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p01.open_aria" aria-label="Open Stone Patio">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_01.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_01.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_01.jpg" data-i18n-alt="projects.items.p01.alt" alt="Stone patio masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p01.badge">Stone Patio</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p01.title">Stone Patio</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p01.desc">Premium finish with clean joints and long-term durability.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="patios"
+          data-title="Flagstone Walkway"
+          data-desc="Natural texture, stable bedding, and clean transitions."
+          data-i18n-title-attr="projects.items.p02.title"
+          data-i18n-desc-attr="projects.items.p02.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p02.open_aria" aria-label="Open Flagstone Walkway">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_02.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_02.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_02.jpg" data-i18n-alt="projects.items.p02.alt" alt="Flagstone walkway masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p02.badge">Flagstone</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p02.title">Flagstone Walkway</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p02.desc">Natural texture, stable bedding, and clean transitions.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="patios"
+          data-title="Paver Patio"
+          data-desc="Balanced layout and crisp edges for a premium outdoor space."
+          data-i18n-title-attr="projects.items.p03.title"
+          data-i18n-desc-attr="projects.items.p03.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p03.open_aria" aria-label="Open Paver Patio">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_03.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_03.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_03.jpg" data-i18n-alt="projects.items.p03.alt" alt="Paver patio masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p03.badge">Paver Patio</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p03.title">Paver Patio</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p03.desc">Balanced layout and crisp edges for a premium outdoor space.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="patios"
+          data-title="Stone Steps"
+          data-desc="Safe rise, clean alignment, and durable stone surfaces."
+          data-i18n-title-attr="projects.items.p04.title"
+          data-i18n-desc-attr="projects.items.p04.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p04.open_aria" aria-label="Open Stone Steps">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_04.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_04.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_04.jpg" data-i18n-alt="projects.items.p04.alt" alt="Stone steps masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p04.badge">Stone Steps</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p04.title">Stone Steps</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p04.desc">Safe rise, clean alignment, and durable stone surfaces.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="patios"
+          data-title="Front Walkway"
+          data-desc="A clean entry path that improves curb appeal instantly."
+          data-i18n-title-attr="projects.items.p05.title"
+          data-i18n-desc-attr="projects.items.p05.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p05.open_aria" aria-label="Open Front Walkway">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_05.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_05.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_05.jpg" data-i18n-alt="projects.items.p05.alt" alt="Front walkway masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p05.badge">Walkway</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p05.title">Front Walkway</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p05.desc">A clean entry path that improves curb appeal instantly.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="patios"
+          data-title="Stone Landing"
+          data-desc="A durable landing that ties steps and patio together smoothly."
+          data-i18n-title-attr="projects.items.p06.title"
+          data-i18n-desc-attr="projects.items.p06.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p06.open_aria" aria-label="Open Stone Landing">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_06.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_06.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_06.jpg" data-i18n-alt="projects.items.p06.alt" alt="Stone landing masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p06.badge">Landing</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p06.title">Stone Landing</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p06.desc">A durable landing that ties steps and patio together smoothly.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="patios"
+          data-title="Outdoor Walk Path"
+          data-desc="Comfortable flow through the yard with premium stone texture."
+          data-i18n-title-attr="projects.items.p07.title"
+          data-i18n-desc-attr="projects.items.p07.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p07.open_aria" aria-label="Open Outdoor Walk Path">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_07.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_07.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_07.jpg" data-i18n-alt="projects.items.p07.alt" alt="Outdoor walk path masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p07.badge">Walk Path</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p07.title">Outdoor Walk Path</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p07.desc">Comfortable flow through the yard with premium stone texture.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="patios"
+          data-title="Stone Border Detail"
+          data-desc="Clean borders that keep the layout crisp and premium."
+          data-i18n-title-attr="projects.items.p08.title"
+          data-i18n-desc-attr="projects.items.p08.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p08.open_aria" aria-label="Open Stone Border Detail">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_08.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_08.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_08.jpg" data-i18n-alt="projects.items.p08.alt" alt="Stone border detail masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p08.badge">Border Detail</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p08.title">Stone Border Detail</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p08.desc">Clean borders that keep the layout crisp and premium.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="patios"
+          data-title="Patio + Steps"
+          data-desc="A cohesive set: patio surface, steps, and edges aligned."
+          data-i18n-title-attr="projects.items.p09.title"
+          data-i18n-desc-attr="projects.items.p09.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p09.open_aria" aria-label="Open Patio + Steps">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_09.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_09.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_09.jpg" data-i18n-alt="projects.items.p09.alt" alt="Patio and steps masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p09.badge">Patio + Steps</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p09.title">Patio + Steps</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p09.desc">A cohesive set: patio surface, steps, and edges aligned.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="patios"
+          data-title="Outdoor Living Patio"
+          data-desc="A refined patio designed for everyday comfort and hosting."
+          data-i18n-title-attr="projects.items.p10.title"
+          data-i18n-desc-attr="projects.items.p10.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p10.open_aria" aria-label="Open Outdoor Living Patio">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_10.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_10.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_10.jpg" data-i18n-alt="projects.items.p10.alt" alt="Outdoor living patio masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p10.badge">Outdoor Patio</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p10.title">Outdoor Living Patio</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p10.desc">A refined patio designed for everyday comfort and hosting.</span>
+            </span>
+          </button>
+        </article>
+
+        <!-- ========================= -->
+        <!-- Walls (11–20)             -->
+        <!-- ========================= -->
+        <article class="gcard" data-category="walls"
+          data-title="Retaining Wall"
+          data-desc="Structured build with clean lines and a drainage-ready base."
+          data-i18n-title-attr="projects.items.p11.title"
+          data-i18n-desc-attr="projects.items.p11.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p11.open_aria" aria-label="Open Retaining Wall">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_11.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_11.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_11.jpg" data-i18n-alt="projects.items.p11.alt" alt="Retaining wall masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p11.badge">Retaining Wall</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p11.title">Retaining Wall</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p11.desc">Structured build with clean lines and a drainage-ready base.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="walls"
+          data-title="Stone Wall Detail"
+          data-desc="Tight joints and premium texture for a high-end finish."
+          data-i18n-title-attr="projects.items.p12.title"
+          data-i18n-desc-attr="projects.items.p12.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p12.open_aria" aria-label="Open Stone Wall Detail">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_12.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_12.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_12.jpg" data-i18n-alt="projects.items.p12.alt" alt="Stone wall detail masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p12.badge">Stone Wall</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p12.title">Stone Wall Detail</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p12.desc">Tight joints and premium texture for a high-end finish.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="walls"
+          data-title="Decorative Wall"
+          data-desc="Elevates outdoor spaces with a refined stone profile."
+          data-i18n-title-attr="projects.items.p13.title"
+          data-i18n-desc-attr="projects.items.p13.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p13.open_aria" aria-label="Open Decorative Wall">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_13.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_13.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_13.jpg" data-i18n-alt="projects.items.p13.alt" alt="Decorative stone wall masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p13.badge">Decorative Wall</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p13.title">Decorative Wall</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p13.desc">Elevates outdoor spaces with a refined stone profile.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="walls"
+          data-title="Tiered Retaining Wall"
+          data-desc="Multi-level support with a premium stacked look."
+          data-i18n-title-attr="projects.items.p14.title"
+          data-i18n-desc-attr="projects.items.p14.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p14.open_aria" aria-label="Open Tiered Retaining Wall">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_14.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_14.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_14.jpg" data-i18n-alt="projects.items.p14.alt" alt="Tiered retaining wall masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p14.badge">Tiered Wall</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p14.title">Tiered Retaining Wall</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p14.desc">Multi-level support with a premium stacked look.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="walls"
+          data-title="Stone Columns"
+          data-desc="Clean column work that frames entrances and outdoor areas."
+          data-i18n-title-attr="projects.items.p15.title"
+          data-i18n-desc-attr="projects.items.p15.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p15.open_aria" aria-label="Open Stone Columns">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_15.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_15.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_15.jpg" data-i18n-alt="projects.items.p15.alt" alt="Stone columns masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p15.badge">Stone Columns</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p15.title">Stone Columns</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p15.desc">Clean column work that frames entrances and outdoor areas.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="walls"
+          data-title="Garden Wall"
+          data-desc="A refined wall that defines planting zones and edges."
+          data-i18n-title-attr="projects.items.p16.title"
+          data-i18n-desc-attr="projects.items.p16.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p16.open_aria" aria-label="Open Garden Wall">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_16.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_16.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_16.jpg" data-i18n-alt="projects.items.p16.alt" alt="Garden wall masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p16.badge">Garden Wall</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p16.title">Garden Wall</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p16.desc">A refined wall that defines planting zones and edges.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="walls"
+          data-title="Wall Cap Detail"
+          data-desc="Precise caps and corners for a crisp, finished look."
+          data-i18n-title-attr="projects.items.p17.title"
+          data-i18n-desc-attr="projects.items.p17.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p17.open_aria" aria-label="Open Wall Cap Detail">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_17.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_17.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_17.jpg" data-i18n-alt="projects.items.p17.alt" alt="Wall cap detail masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p17.badge">Wall Cap</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p17.title">Wall Cap Detail</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p17.desc">Precise caps and corners for a crisp, finished look.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="walls"
+          data-title="Straight Retaining Wall"
+          data-desc="Clean, straight alignment built for stability and style."
+          data-i18n-title-attr="projects.items.p18.title"
+          data-i18n-desc-attr="projects.items.p18.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p18.open_aria" aria-label="Open Straight Retaining Wall">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_18.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_18.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_18.jpg" data-i18n-alt="projects.items.p18.alt" alt="Straight retaining wall masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p18.badge">Retaining Wall</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p18.title">Straight Retaining Wall</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p18.desc">Clean, straight alignment built for stability and style.</span>
+            </span>
+          </button>
+        </article>
+
+ 
+
+        <article class="gcard" data-category="walls"
+          data-title="Corner Wall Detail"
+          data-desc="Crisp corner work for a refined, high-end finish."
+          data-i18n-title-attr="projects.items.p20.title"
+          data-i18n-desc-attr="projects.items.p20.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p20.open_aria" aria-label="Open Corner Wall Detail">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_20.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_20.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_20.jpg" data-i18n-alt="projects.items.p20.alt" alt="Corner wall detail masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p20.badge">Corner Detail</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p20.title">Corner Wall Detail</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p20.desc">Crisp corner work for a refined, high-end finish.</span>
+            </span>
+          </button>
+        </article>
+
+        <!-- ========================= -->
+        <!-- Kitchens (21–30)          -->
+        <!-- ========================= -->
+        <article class="gcard" data-category="kitchens"
+          data-title="Outdoor Kitchen"
+          data-desc="Outdoor cooking space with stone accents and clean edges."
+          data-i18n-title-attr="projects.items.p21.title"
+          data-i18n-desc-attr="projects.items.p21.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p21.open_aria" aria-label="Open Outdoor Kitchen">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_21.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_21.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_21.jpg" data-i18n-alt="projects.items.p21.alt" alt="Outdoor kitchen masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p21.badge">Outdoor Kitchen</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p21.title">Outdoor Kitchen</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p21.desc">Outdoor cooking space with stone accents and clean edges.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="kitchens"
+          data-title="Stone Counter Build"
+          data-desc="Durable surfaces built for heat, weather, and daily use."
+          data-i18n-title-attr="projects.items.p22.title"
+          data-i18n-desc-attr="projects.items.p22.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p22.open_aria" aria-label="Open Stone Counter Build">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_22.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_22.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_22.jpg" data-i18n-alt="projects.items.p22.alt" alt="Stone counter masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p22.badge">Stone Counter</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p22.title">Stone Counter Build</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p22.desc">Durable surfaces built for heat, weather, and daily use.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="kitchens"
+          data-title="Grill Island"
+          data-desc="Clean layout with space for prep, storage, and hosting."
+          data-i18n-title-attr="projects.items.p23.title"
+          data-i18n-desc-attr="projects.items.p23.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p23.open_aria" aria-label="Open Grill Island">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_23.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_23.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_23.jpg" data-i18n-alt="projects.items.p23.alt" alt="Grill island masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p23.badge">Grill Island</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p23.title">Grill Island</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p23.desc">Clean layout with space for prep, storage, and hosting.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="kitchens"
+          data-title="Outdoor Bar"
+          data-desc="A premium bar edge designed for comfort and durability."
+          data-i18n-title-attr="projects.items.p24.title"
+          data-i18n-desc-attr="projects.items.p24.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p24.open_aria" aria-label="Open Outdoor Bar">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_24.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_24.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_24.jpg" data-i18n-alt="projects.items.p24.alt" alt="Outdoor bar masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p24.badge">Outdoor Bar</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p24.title">Outdoor Bar</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p24.desc">A premium bar edge designed for comfort and durability.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="kitchens"
+          data-title="Kitchen Stone Veneer"
+          data-desc="Refined veneer look with crisp corners and clean joints."
+          data-i18n-title-attr="projects.items.p25.title"
+          data-i18n-desc-attr="projects.items.p25.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p25.open_aria" aria-label="Open Kitchen Stone Veneer">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_25.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_25.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_25.jpg" data-i18n-alt="projects.items.p25.alt" alt="Kitchen stone veneer masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p25.badge">Stone Veneer</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p25.title">Kitchen Stone Veneer</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p25.desc">Refined veneer look with crisp corners and clean joints.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="kitchens"
+          data-title="Outdoor Prep Space"
+          data-desc="Practical workspace built to handle weather and daily use."
+          data-i18n-title-attr="projects.items.p26.title"
+          data-i18n-desc-attr="projects.items.p26.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p26.open_aria" aria-label="Open Outdoor Prep Space">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_26.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_26.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_26.jpg" data-i18n-alt="projects.items.p26.alt" alt="Outdoor prep space masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p26.badge">Prep Space</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p26.title">Outdoor Prep Space</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p26.desc">Practical workspace built to handle weather and daily use.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="kitchens"
+          data-title="Built-in Storage"
+          data-desc="Clean openings, aligned lines, and a premium finish."
+          data-i18n-title-attr="projects.items.p27.title"
+          data-i18n-desc-attr="projects.items.p27.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p27.open_aria" aria-label="Open Built-in Storage">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_27.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_27.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_27.jpg" data-i18n-alt="projects.items.p27.alt" alt="Built-in storage masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p27.badge">Storage</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p27.title">Built-in Storage</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p27.desc">Clean openings, aligned lines, and a premium finish.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="kitchens"
+          data-title="Outdoor Kitchen Detail"
+          data-desc="Refined details that elevate the whole build instantly."
+          data-i18n-title-attr="projects.items.p28.title"
+          data-i18n-desc-attr="projects.items.p28.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p28.open_aria" aria-label="Open Outdoor Kitchen Detail">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_28.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_28.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_28.jpg" data-i18n-alt="projects.items.p28.alt" alt="Outdoor kitchen detail masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p28.badge">Kitchen Detail</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p28.title">Outdoor Kitchen Detail</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p28.desc">Refined details that elevate the whole build instantly.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="kitchens"
+          data-title="Outdoor Cooking Area"
+          data-desc="Designed for hosting with durable surfaces and clean edges."
+          data-i18n-title-attr="projects.items.p29.title"
+          data-i18n-desc-attr="projects.items.p29.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p29.open_aria" aria-label="Open Outdoor Cooking Area">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_29.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_29.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_29.jpg" data-i18n-alt="projects.items.p29.alt" alt="Outdoor cooking area masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p29.badge">Cooking Area</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p29.title">Outdoor Cooking Area</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p29.desc">Designed for hosting with durable surfaces and clean edges.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="kitchens"
+          data-title="Premium Kitchen Build"
+          data-desc="A clean, premium layout built for long-term performance."
+          data-i18n-title-attr="projects.items.p30.title"
+          data-i18n-desc-attr="projects.items.p30.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p30.open_aria" aria-label="Open Premium Kitchen Build">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_30.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_30.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_30.jpg" data-i18n-alt="projects.items.p30.alt" alt="Premium outdoor kitchen masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p30.badge">Premium Kitchen</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p30.title">Premium Kitchen Build</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p30.desc">A clean, premium layout built for long-term performance.</span>
+            </span>
+          </button>
+        </article>
+
+        <!-- ========================= -->
+        <!-- Fire Features (31–40)     -->
+        <!-- ========================= -->
+        <article class="gcard" data-category="fire"
+          data-title="Fire Pit"
+          data-desc="A warm focal point built for comfort and durability."
+          data-i18n-title-attr="projects.items.p31.title"
+          data-i18n-desc-attr="projects.items.p31.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p31.open_aria" aria-label="Open Fire Pit">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_31.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_31.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_31.jpg" data-i18n-alt="projects.items.p31.alt" alt="Fire pit masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p31.badge">Fire Pit</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p31.title">Fire Pit</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p31.desc">A warm focal point built for comfort and durability.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="fire"
+          data-title="Stone Fire Feature"
+          data-desc="Crisp stonework with a refined, high-end finish."
+          data-i18n-title-attr="projects.items.p33.title"
+          data-i18n-desc-attr="projects.items.p33.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p33.open_aria" aria-label="Open Stone Fire Feature">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_33.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_33.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_33.jpg" data-i18n-alt="projects.items.p33.alt" alt="Stone fire feature masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p33.badge">Fire Feature</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p33.title">Stone Fire Feature</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p33.desc">Crisp stonework with a refined, high-end finish.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="fire"
+          data-title="Fire Pit Seating Area"
+          data-desc="A social zone designed for warmth and hosting."
+          data-i18n-title-attr="projects.items.p34.title"
+          data-i18n-desc-attr="projects.items.p34.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p34.open_aria" aria-label="Open Fire Pit Seating Area">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_34.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_34.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_34.jpg" data-i18n-alt="projects.items.p34.alt" alt="Fire pit seating area masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p34.badge">Seating Area</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p34.title">Fire Pit Seating Area</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p34.desc">A social zone designed for warmth and hosting.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="fire"
+          data-title="Fireplace Stone Detail"
+          data-desc="Premium texture and clean alignment around the opening."
+          data-i18n-title-attr="projects.items.p35.title"
+          data-i18n-desc-attr="projects.items.p35.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p35.open_aria" aria-label="Open Fireplace Stone Detail">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_35.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_35.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_35.jpg" data-i18n-alt="projects.items.p35.alt" alt="Fireplace stone detail masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p35.badge">Stone Detail</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p35.title">Fireplace Stone Detail</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p35.desc">Premium texture and clean alignment around the opening.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="fire"
+          data-title="Modern Fire Feature"
+          data-desc="A clean, modern look built with reliable materials."
+          data-i18n-title-attr="projects.items.p36.title"
+          data-i18n-desc-attr="projects.items.p36.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p36.open_aria" aria-label="Open Modern Fire Feature">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_36.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_36.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_36.jpg" data-i18n-alt="projects.items.p36.alt" alt="Modern fire feature masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p36.badge">Modern Fire</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p36.title">Modern Fire Feature</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p36.desc">A clean, modern look built with reliable materials.</span>
+            </span>
+          </button>
+        </article>
+
+
+        <article class="gcard" data-category="fire"
+          data-title="Fire Feature Corner"
+          data-desc="Crisp corners and premium texture for a finished look."
+          data-i18n-title-attr="projects.items.p39.title"
+          data-i18n-desc-attr="projects.items.p39.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p39.open_aria" aria-label="Open Fire Feature Corner">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_39.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_39.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_39.jpg" data-i18n-alt="projects.items.p39.alt" alt="Fire feature corner masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p39.badge">Corner Detail</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p39.title">Fire Feature Corner</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p39.desc">Crisp corners and premium texture for a finished look.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="fire"
+          data-title="Outdoor Fire Space"
+          data-desc="A complete fire zone designed for relaxing nights."
+          data-i18n-title-attr="projects.items.p40.title"
+          data-i18n-desc-attr="projects.items.p40.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p40.open_aria" aria-label="Open Outdoor Fire Space">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_40.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_40.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_40.jpg" data-i18n-alt="projects.items.p40.alt" alt="Outdoor fire space masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p40.badge">Fire Space</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p40.title">Outdoor Fire Space</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p40.desc">A complete fire zone designed for relaxing nights.</span>
+            </span>
+          </button>
+        </article>
+
+        <!-- ========================= -->
+        <!-- Custom Builds (41–50)     -->
+        <!-- ========================= -->
+        <article class="gcard" data-category="custom"
+          data-title="Custom Outdoor Build"
+          data-desc="Tailored to the space, style, and usage goals."
+          data-i18n-title-attr="projects.items.p41.title"
+          data-i18n-desc-attr="projects.items.p41.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p41.open_aria" aria-label="Open Custom Outdoor Build">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_41.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_41.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_41.jpg" data-i18n-alt="projects.items.p41.alt" alt="Custom outdoor masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p41.badge">Custom Build</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p41.title">Custom Outdoor Build</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p41.desc">Tailored to the space, style, and usage goals.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="custom"
+          data-title="Outdoor Accent Project"
+          data-desc="Premium detail work that elevates the entire layout."
+          data-i18n-title-attr="projects.items.p42.title"
+          data-i18n-desc-attr="projects.items.p42.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p42.open_aria" aria-label="Open Outdoor Accent Project">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_42.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_42.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_42.jpg" data-i18n-alt="projects.items.p42.alt" alt="Outdoor accent masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p42.badge">Outdoor Accent</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p42.title">Outdoor Accent Project</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p42.desc">Premium detail work that elevates the entire layout.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="custom"
+          data-title="Stone + Concrete Mix"
+          data-desc="A balanced combination designed for durability and style."
+          data-i18n-title-attr="projects.items.p43.title"
+          data-i18n-desc-attr="projects.items.p43.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p43.open_aria" aria-label="Open Stone + Concrete Mix">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_43.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_43.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_43.jpg" data-i18n-alt="projects.items.p43.alt" alt="Stone and concrete masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p43.badge">Stone + Concrete</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p43.title">Stone + Concrete Mix</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p43.desc">A balanced combination designed for durability and style.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="custom"
+          data-title="Custom Entry Feature"
+          data-desc="A refined entry element with crisp lines and premium texture."
+          data-i18n-title-attr="projects.items.p44.title"
+          data-i18n-desc-attr="projects.items.p44.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p44.open_aria" aria-label="Open Custom Entry Feature">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_44.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_44.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_44.jpg" data-i18n-alt="projects.items.p44.alt" alt="Custom entry masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p44.badge">Entry Feature</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p44.title">Custom Entry Feature</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p44.desc">A refined entry element with crisp lines and premium texture.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="custom"
+          data-title="Outdoor Living Build"
+          data-desc="Designed for comfort, flow, and long-term daily use."
+          data-i18n-title-attr="projects.items.p45.title"
+          data-i18n-desc-attr="projects.items.p45.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p45.open_aria" aria-label="Open Outdoor Living Build">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_45.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_45.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_45.jpg" data-i18n-alt="projects.items.p45.alt" alt="Outdoor living masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p45.badge">Outdoor Living</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p45.title">Outdoor Living Build</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p45.desc">Designed for comfort, flow, and long-term daily use.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="custom"
+          data-title="Architectural Detail"
+          data-desc="Refined details with clean geometry and crisp edges."
+          data-i18n-title-attr="projects.items.p47.title"
+          data-i18n-desc-attr="projects.items.p47.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p47.open_aria" aria-label="Open Architectural Detail">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_47.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_47.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_47.jpg" data-i18n-alt="projects.items.p47.alt" alt="Architectural masonry detail project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p47.badge">Detail Work</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p47.title">Architectural Detail</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p47.desc">Refined details with clean geometry and crisp edges.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="custom"
+          data-title="Custom Outdoor Space"
+          data-desc="A cohesive design that upgrades the full backyard experience."
+          data-i18n-title-attr="projects.items.p48.title"
+          data-i18n-desc-attr="projects.items.p48.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p48.open_aria" aria-label="Open Custom Outdoor Space">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_48.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_48.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_48.jpg" data-i18n-alt="projects.items.p48.alt" alt="Custom outdoor space masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p48.badge">Custom Space</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p48.title">Custom Outdoor Space</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p48.desc">A cohesive design that upgrades the full backyard experience.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="custom"
+          data-title="Premium Finish Project"
+          data-desc="Premium surfaces finished with clean lines and durable materials."
+          data-i18n-title-attr="projects.items.p49.title"
+          data-i18n-desc-attr="projects.items.p49.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p49.open_aria" aria-label="Open Premium Finish Project">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_49.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_49.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_49.jpg" data-i18n-alt="projects.items.p49.alt" alt="Premium finish masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p49.badge">Premium Finish</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p49.title">Premium Finish Project</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p49.desc">Premium surfaces finished with clean lines and durable materials.</span>
+            </span>
+          </button>
+        </article>
+
+        <article class="gcard" data-category="custom"
+          data-title="Signature Outdoor Build"
+          data-desc="A signature build crafted to fit your home and lifestyle."
+          data-i18n-title-attr="projects.items.p50.title"
+          data-i18n-desc-attr="projects.items.p50.desc">
+          <button class="gcard__btn" type="button" data-lightbox-open data-i18n-aria="projects.items.p50.open_aria" aria-label="Open Signature Outdoor Build">
+            <picture class="gcard__pic">
+              <source data-srcset="img/colorado_mansory_50.avif" type="image/avif">
+              <source data-srcset="img/colorado_mansory_50.webp" type="image/webp">
+              <img class="gcard__img" data-src="img/colorado_mansory_50.jpg" data-i18n-alt="projects.items.p50.alt" alt="Signature outdoor build masonry project" width="1200" height="800" loading="lazy" decoding="async">
+            </picture>
+            <span class="gcard__badge" data-i18n="projects.items.p50.badge">Signature Build</span>
+            <span class="gcard__overlay" aria-hidden="true">
+              <span class="gcard__overlayTitle" data-i18n="projects.items.p50.title">Signature Outdoor Build</span>
+              <span class="gcard__overlayText" data-i18n="projects.items.p50.desc">A signature build crafted to fit your home and lifestyle.</span>
+            </span>
+          </button>
+        </article>
+
       </div>
-    </section>
 
-    <!-- Lightbox (single instance) -->
-    <div class="lightbox" data-lightbox hidden aria-hidden="true">
-      <div class="lightbox__backdrop" data-lightbox-close tabindex="-1" aria-label="Close"></div>
-
-      <div class="lightbox__dialog" role="dialog" aria-modal="true" aria-label="Project image viewer">
-        <button class="lightbox__close" type="button" data-lightbox-close aria-label="Close viewer">
-          <span class="lightbox__x" aria-hidden="true"></span>
-        </button>
-
-        <figure class="lightbox__figure">
-          <picture class="lightbox__picture">
-            <source data-lightbox-avif type="image/avif">
-            <source data-lightbox-webp type="image/webp">
-            <img class="lightbox__img" data-lightbox-img alt="" width="1400" height="900" decoding="async">
-          </picture>
-
-          <figcaption class="lightbox__caption">
-            <p class="lightbox__title" data-lightbox-title></p>
-            <p class="lightbox__desc" data-lightbox-desc></p>
-          </figcaption>
-        </figure>
-
-        <button class="lightbox__nav lightbox__nav--prev" type="button" data-lightbox-prev aria-label="Previous image">
-          <span aria-hidden="true">‹</span>
-        </button>
-        <button class="lightbox__nav lightbox__nav--next" type="button" data-lightbox-next aria-label="Next image">
-          <span aria-hidden="true">›</span>
-        </button>
+      <div class="projects__footer">
+        <a class="projects__more" href="contact.html" data-i18n="projects.footer.cta" data-i18n-aria="projects.footer.cta_aria" aria-label="Request a free estimate">
+          Want something similar? Get a free estimate
+          <span class="projects__moreArrow" aria-hidden="true"></span>
+        </a>
       </div>
     </div>
-  </main>
+  </section>
+
+  <!-- Lightbox (single instance) -->
+  <div class="lightbox" data-lightbox hidden aria-hidden="true">
+    <div class="lightbox__backdrop" data-lightbox-close tabindex="-1" data-i18n-aria="projects.lightbox.backdrop_aria" aria-label="Close"></div>
+
+    <div class="lightbox__dialog" role="dialog" aria-modal="true" data-i18n-aria="projects.lightbox.dialog_aria" aria-label="Project image viewer">
+      <button class="lightbox__close" type="button" data-lightbox-close data-i18n-aria="projects.lightbox.close_aria" aria-label="Close viewer">
+        <span class="lightbox__x" aria-hidden="true"></span>
+      </button>
+
+      <figure class="lightbox__figure">
+        <picture class="lightbox__picture">
+          <source data-lightbox-avif type="image/avif">
+          <source data-lightbox-webp type="image/webp">
+          <img class="lightbox__img" data-lightbox-img alt="" width="1400" height="900" decoding="async">
+        </picture>
+
+        <figcaption class="lightbox__caption">
+          <p class="lightbox__title" data-lightbox-title></p>
+          <p class="lightbox__desc" data-lightbox-desc></p>
+        </figcaption>
+      </figure>
+
+      <button class="lightbox__nav lightbox__nav--prev" type="button" data-lightbox-prev data-i18n-aria="projects.lightbox.prev_aria" aria-label="Previous image">
+        <span aria-hidden="true">‹</span>
+      </button>
+      <button class="lightbox__nav lightbox__nav--next" type="button" data-lightbox-next data-i18n-aria="projects.lightbox.next_aria" aria-label="Next image">
+        <span aria-hidden="true">›</span>
+      </button>
+    </div>
+  </div>
+</main>
+
 
   <footer class="site-footer" aria-label="Footer">
   <!-- Wave superior -->
@@ -692,32 +1210,25 @@
         <path d="M20.52 3.48A11.82 11.82 0 0 0 12.03 0C5.4 0 .02 5.38.02 12c0 2.12.55 4.19 1.6 6.02L0 24l6.17-1.62A11.9 11.9 0 0 0 12.03 24C18.66 24 24 18.62 24 12c0-3.2-1.25-6.2-3.5-8.52zM12.03 21.8a9.9 9.9 0 0 1-5.05-1.38l-.36-.22-3.66.96.98-3.57-.24-.37A9.82 9.82 0 0 1 2.2 12 9.84 9.84 0 0 1 12.03 2.2 9.84 9.84 0 0 1 21.86 12a9.84 9.84 0 0 1-9.83 9.8zm5.67-7.35c-.31-.16-1.84-.91-2.13-1.01-.29-.11-.5-.16-.71.16-.2.31-.82 1.01-1.01 1.21-.18.2-.36.23-.67.08-.31-.16-1.3-.48-2.48-1.54-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.14-.64.14-.14.31-.36.47-.54.16-.18.2-.31.31-.52.1-.2.05-.38-.03-.54-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.53-.71-.54h-.6c-.2 0-.52.08-.8.38-.28.31-1.05 1.03-1.05 2.5 0 1.47 1.07 2.9 1.22 3.1.16.2 2.1 3.2 5.08 4.49.71.31 1.27.5 1.7.64.71.22 1.35.19 1.86.12.57-.09 1.84-.75 2.1-1.47.26-.71.26-1.32.18-1.47-.08-.14-.29-.22-.6-.38z"/>
       </svg>
     </a>
+<!-- GTranslate (Language switcher) -->
 
-<!-- Language toggle -->
-<button
-  class="fab__btn fab__btn--lang"
-  type="button"
-  data-lang-toggle
-  data-i18n-aria="fab.lang_aria"
-  data-i18n-title="fab.lang_title"
->
-  <span class="fab__flag" aria-hidden="true" data-lang-flag>🇲🇽</span>
-  <span class="fab__lang">ES</span>
-</button>
-
-<script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-      pageLanguage: 'en',
-      includedLanguages: 'es,en',
-      autoDisplay: false
-    }, 'google_translate_element');
-  }
-</script>
 
   </div>
-</footer>
 
+</footer>
+<div class="gtranslate_wrapper gt-fab" aria-label="Change language"></div>
+  <script>
+  window.gtranslateSettings = {
+    default_language: "en",
+    languages: ["en", "es"],
+    wrapper_selector: ".gtranslate_wrapper",
+    flag_size: 18,
+    switcher_text: "EN",          // texto visible en el botón (GTranslate lo cambia)
+    detect_browser_language: false
+  };
+</script>
+
+<script src="https://cdn.gtranslate.net/widgets/latest/fc.js" defer></script>
   <script src="https://unpkg.com/i18next@23/i18next.min.js"></script>
 
   <script src="js/app.js" defer></script>

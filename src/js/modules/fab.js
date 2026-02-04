@@ -19,6 +19,24 @@ export function initFloatingActions() {
 
 
 
+  document.addEventListener("DOMContentLoaded", () => {
+    const fab = document.querySelector(".fab");
+    const topBtn = fab?.querySelector("[data-back-to-top]");
+    if (!fab) return;
+
+    const onScroll = () => {
+      fab.classList.toggle("is-top-visible", window.scrollY > 500);
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    topBtn?.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+
   // -------------------------------
   // Back to top visibility
   // -------------------------------
@@ -860,6 +878,16 @@ export function initFloatingActions() {
       window.i18next.changeLanguage(next);
     });
   }
+
+ document.addEventListener(
+  "click",
+  (e) => {
+    const hit = e.target.closest?.("[data-lang-toggle]");
+    if (hit) console.log("[probe] click detected on lang toggle", hit);
+  },
+  true // capture
+);
+ 
 
   
 }

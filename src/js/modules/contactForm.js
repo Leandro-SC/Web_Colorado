@@ -1,63 +1,40 @@
-/* =========================================================
-   Contact form (PROD)
-   - Validación campos (client)
-   - Anti-bot: honeypot + time-trap + Proof-of-Work (sin Cloudflare)
-   - Envío a Apps Script (JSON)
-   - SweetAlert2 (mantener)  ✅
-   - Sin modal custom (NO ui-modal) ✅
-========================================================= */
-
 const POW_DIFFICULTY = 4;     // 4 hex zeros => "0000" (balance móvil/perf)
 const POW_MAX_ITERS = 180000; // límite para evitar congelar
 const POW_STATUS_EVERY = 2500;
 
 // Helpers SweetAlert (requiere SweetAlert2 cargado: window.Swal)
 function toast_(icon, title) {
-  if (!window.Swal) return;
-  return window.Swal.fire({
-    toast: true,
-    position: "top-end",
-    icon,
-    title,
-    showConfirmButton: false,
-    timer: 2200,
-    timerProgressBar: true
-  });
+  if (!window.Swal) {
+    console.log(`[toast:${icon}] ${title}`);
+    return;
+  }
+  return window.Swal.fire({ toast:true, position:"top-end", icon, title, showConfirmButton:false, timer:2200, timerProgressBar:true });
 }
 
 function alert_(icon, title, text) {
-  if (!window.Swal) return;
-  return window.Swal.fire({
-    icon,
-    title,
-    text,
-    confirmButtonText: "OK",
-    buttonsStyling: true
-  });
+  if (!window.Swal) {
+    alert(`${title}\n\n${text || ""}`);
+    return;
+  }
+  return window.Swal.fire({ icon, title, text, confirmButtonText:"OK", buttonsStyling:true });
 }
 
-export function initContactForm() {
+function initContactForm() {
   const form = document.querySelector("#quoteForm");
   if (!form) return;
 
+  console.log("initContactForm OK");
+
   const endpoint = form.getAttribute("data-endpoint") || "";
   const btn = form.querySelector(".form__submit");
-
-  // Time-trap anti-bot (mínimo 2.5s ya lo valida servidor)
   const formTs = Date.now();
 
-  function setButtonEnabled(enabled) {
-    if (!btn) return;
-    btn.disabled = !enabled;
-  }
-
-  // Inicial: habilitado (ya no dependemos de captcha externo)
+  const setButtonEnabled = (enabled) => { if (btn) btn.disabled = !enabled; };
   setButtonEnabled(true);
 
   form.addEventListener("submit", async (ev) => {
     ev.preventDefault();
 
-    // Honeypot
     const hp = form.querySelector('input[name="website"]');
     if (hp && hp.value.trim() !== "") {
       alert_("error", "Error", "Something went wrong. Please try again.");
@@ -66,8 +43,11 @@ export function initContactForm() {
 
     const payload = serializeForm_(form);
     const errors = validate_(payload);
-
     renderErrors_(errors);
+    console.log("payload:", payload);
+    console.log("errors:", errors);
+
+
     if (Object.keys(errors).length) {
       alert_("warning", "Check your details", "Please fix the highlighted fields and try again.");
       return;
@@ -78,24 +58,20 @@ export function initContactForm() {
       return;
     }
 
-    // UI lock
     setButtonEnabled(false);
     const prevText = btn ? btn.textContent : "";
     if (btn) btn.textContent = "Verifying...";
 
     try {
-      // Proof of Work (sin servicios externos)
       const powTs = Date.now();
       const powBase = `${payload.email}|${powTs}`;
-      const pow = await computePow_(powBase, POW_DIFFICULTY, POW_MAX_ITERS);
-
+      const pow = await computePow_(powBase, 4, 180000);
       if (!pow) {
-        alert_("error", "Verification failed", "Please try again. If the issue persists, refresh the page.");
+        alert_("error", "Verification failed", "Please try again.");
         return;
       }
 
       if (btn) btn.textContent = "Sending...";
-      toast_("info", "Sending...");
 
       const body = {
         ...payload,
@@ -103,39 +79,42 @@ export function initContactForm() {
         ua: navigator.userAgent,
         tz: Intl.DateTimeFormat().resolvedOptions().timeZone || "",
         page_id: document.body.getAttribute("data-page") || "contact",
-
-        // PoW
         pow_ts: powTs,
         pow_nonce: pow.nonce,
         pow_hash: pow.hash,
-        pow_difficulty: POW_DIFFICULTY
+        pow_difficulty: 4
       };
 
       const res = await fetch(endpoint, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "text/plain;charset=utf-8" }, 
         body: JSON.stringify(body),
-        cache: "no-store",
-        keepalive: true
+        cache: "no-store"
       });
 
+      
+
       const text = (await res.text()).trim();
+      console.log("AppsScript response:", res.status, text);
 
       if (text === "OK") {
         form.reset();
-        toast_("success", "Request sent!");
         alert_("success", "Request sent", "Thanks. We received your details and will reply soon.");
       } else {
-        alert_("error", "Could not send", "Please try again in a moment.");
+        alert_("error", "Could not send", `Server said: ${text || "Unknown"}`);
       }
     } catch (err) {
-      alert_("error", "Network error", "Please try again in a moment.");
+      console.error(err);
+      alert_("error", "Network error", String(err?.message || err));
     } finally {
       if (btn) btn.textContent = prevText;
       setButtonEnabled(true);
     }
   });
 }
+
+document.addEventListener("DOMContentLoaded", initContactForm);
+
 
 /* ================================
    Serialize: DEBE COINCIDIR CON TU HTML

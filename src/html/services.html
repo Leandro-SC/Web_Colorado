@@ -37,464 +37,464 @@
 
   @@include('partials/header.html')
 
-  <main class="main" id="main">
+<main class="main" id="main">
 
-    <!-- HERO -->
-    <section class="services-hero" aria-label="Services hero">
-      <div class="services-hero__media" aria-hidden="true">
-        <picture>
-          <source srcset="img/colorado_mansory_44.avif" type="image/avif">
-          <source srcset="img/colorado_mansory_44.webp" type="image/webp">
-          <img
-            src="img/colorado_mansory_44.jpg"
-            alt=""
-            width="1600"
-            height="900"
-            loading="eager"
-            decoding="async"
-          />
-        </picture>
-        <div class="services-hero__scrim" aria-hidden="true"></div>
+  <!-- HERO -->
+  <section class="services-hero" aria-label="Services hero" data-i18n-aria="services.hero.aria">
+    <div class="services-hero__media" aria-hidden="true">
+      <picture>
+        <source srcset="img/colorado_mansory_44.avif" type="image/avif">
+        <source srcset="img/colorado_mansory_44.webp" type="image/webp">
+        <img
+          src="img/colorado_mansory_44.jpg"
+          data-i18n-alt="services.hero.img_alt"
+          alt=""
+          width="1600"
+          height="900"
+          loading="eager"
+          decoding="async"
+        />
+      </picture>
+      <div class="services-hero__scrim" aria-hidden="true"></div>
+    </div>
+
+    <div class="services-hero__inner">
+      <p class="services-hero__eyebrow" data-i18n="services.hero.eyebrow">Services</p>
+      <h1 class="services-hero__title" data-i18n="services.hero.title">Premium Stone & Masonry Craftsmanship</h1>
+      <p class="services-hero__text" data-i18n="services.hero.text">
+        Explore our core services for outdoor living, stonework, and masonry repairs. Built with clean finishes and durable materials.
+      </p>
+
+      <div class="services-hero__actions">
+        <a class="btn btn--primary" href="contact.html" data-i18n="services.hero.primary">Get a Free Estimate</a>
+        <a class="btn btn--ghost" href="projects.html" data-i18n="services.hero.secondary">See Portfolio</a>
       </div>
 
-      <div class="services-hero__inner">
-        <p class="services-hero__eyebrow">Services</p>
-        <h1 class="services-hero__title">Premium Stone & Masonry Craftsmanship</h1>
-        <p class="services-hero__text">
-          Explore our core services for outdoor living, stonework, and masonry repairs. Built with clean finishes and durable materials.
-        </p>
+      <ul class="services-hero__chips" aria-label="Highlights" data-i18n-aria="services.hero.highlights_aria">
+        <li class="chip" data-i18n="services.hero.chip1">Fast Quotes</li>
+        <li class="chip" data-i18n="services.hero.chip2">Reliable Materials</li>
+        <li class="chip" data-i18n="services.hero.chip3">Clean Install</li>
+      </ul>
+    </div>
+  </section>
 
-        <div class="services-hero__actions">
-          <a class="btn btn--primary" href="contact.html">Get a Free Estimate</a>
-          <a class="btn btn--ghost" href="projects.html">See Portfolio</a>
-        </div>
-
-        <ul class="services-hero__chips" aria-label="Highlights">
-          <li class="chip">Fast Quotes</li>
-          <li class="chip">Reliable Materials</li>
-          <li class="chip">Clean Install</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- SERVICES GRID -->
-    <section class="services-grid" aria-label="Services list">
-      <div class="services-grid__inner">
-        <header class="section-head">
-          <h2 class="section-head__title">What we build</h2>
-          <p class="section-head__text">
-            Each service is planned, measured, and installed with a premium finish. Tap a card to read details on mobile.
-          </p>
-        </header>
-
-        <div class="svc-grid" data-services-grid>
-          <!-- Card 1 -->
-          <article class="svc" data-svc>
-            <button class="svc__btn" type="button" aria-expanded="false">
-              <span class="svc__media">
-                <picture>
-                  <source data-srcset="img/colorado_mansory_30.avif" type="image/avif">
-                  <source data-srcset="img/colorado_mansory_30.webp" type="image/webp">
-                  <img
-                    data-src="img/colorado_mansory_30.jpg"
-                    alt="Natural stone installation with premium finish"
-                    width="1200"
-                    height="800"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </picture>
-              </span>
-
-              <span class="svc__badge">Stone Work</span>
-
-              <span class="svc__panel">
-                <span class="svc__title">Stone Work</span>
-                <span class="svc__desc">Natural stone installations designed for durability and a premium look.</span>
-              </span>
-            </button>
-          </article>
-
-          <!-- Card 2 -->
-          <article class="svc" data-svc>
-            <button class="svc__btn" type="button" aria-expanded="false">
-              <span class="svc__media">
-                <picture>
-                  <source data-srcset="img/colorado_mansory_06.avif" type="image/avif">
-                  <source data-srcset="img/colorado_mansory_06.webp" type="image/webp">
-                  <img
-                    data-src="img/colorado_mansory_06.jpg"
-                    alt="Thin brick facade with clean lines"
-                    width="1200"
-                    height="800"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </picture>
-              </span>
-
-              <span class="svc__badge">Thin Brick</span>
-
-              <span class="svc__panel">
-                <span class="svc__title">Thin Brick</span>
-                <span class="svc__desc">Lightweight brick finishes for walls, accents, and exterior upgrades.</span>
-              </span>
-            </button>
-          </article>
-
-          <!-- Card 3 -->
-          <article class="svc" data-svc>
-            <button class="svc__btn" type="button" aria-expanded="false">
-              <span class="svc__media">
-                <picture>
-                  <source data-srcset="img/colorado_mansory_03.avif" type="image/avif">
-                  <source data-srcset="img/colorado_mansory_03.webp" type="image/webp">
-                  <img
-                    data-src="img/colorado_mansory_03.jpg"
-                    alt="Flagstone patio installation"
-                    width="1200"
-                    height="800"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </picture>
-              </span>
-
-              <span class="svc__badge">Flagstone</span>
-
-              <span class="svc__panel">
-                <span class="svc__title">Flagstone</span>
-                <span class="svc__desc">Patios and walkways with natural texture and timeless outdoor appeal.</span>
-              </span>
-            </button>
-          </article>
-
-          <!-- Card 4 -->
-          <article class="svc" data-svc>
-            <button class="svc__btn" type="button" aria-expanded="false">
-              <span class="svc__media">
-                <picture>
-                  <source data-srcset="img/colorado_mansory_18.avif" type="image/avif">
-                  <source data-srcset="img/colorado_mansory_18.webp" type="image/webp">
-                  <img
-                    data-src="img/colorado_mansory_18.jpg"
-                    alt="Outdoor kitchen with stone and masonry details"
-                    width="1200"
-                    height="800"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </picture>
-              </span>
-
-              <span class="svc__badge">Outdoor Kitchens</span>
-
-              <span class="svc__panel">
-                <span class="svc__title">Outdoor Kitchens</span>
-                <span class="svc__desc">Cook, host, and relax with a durable outdoor kitchen built for real use.</span>
-              </span>
-            </button>
-          </article>
-
-          <!-- Card 5 -->
-          <article class="svc" data-svc>
-            <button class="svc__btn" type="button" aria-expanded="false">
-              <span class="svc__media">
-                <picture>
-                  <source data-srcset="img/colorado_mansory_12.avif" type="image/avif">
-                  <source data-srcset="img/colorado_mansory_12.webp" type="image/webp">
-                  <img
-                    data-src="img/colorado_mansory_12.jpg"
-                    alt="Fire pit outdoor feature"
-                    width="1200"
-                    height="800"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </picture>
-              </span>
-
-              <span class="svc__badge">Fire Pits</span>
-
-              <span class="svc__panel">
-                <span class="svc__title">Fire Pits</span>
-                <span class="svc__desc">A premium focal point that upgrades comfort and outdoor ambiance.</span>
-              </span>
-            </button>
-          </article>
-
-          <!-- Card 6 -->
-          <article class="svc" data-svc>
-            <button class="svc__btn" type="button" aria-expanded="false">
-              <span class="svc__media">
-                <picture>
-                  <source data-srcset="img/colorado_mansory_20.avif" type="image/avif">
-                  <source data-srcset="img/colorado_mansory_20.webp" type="image/webp">
-                  <img
-                    data-src="img/colorado_mansory_20.jpg"
-                    alt="Fireplace masonry build"
-                    width="1200"
-                    height="800"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </picture>
-              </span>
-
-              <span class="svc__badge">Fireplaces</span>
-
-              <span class="svc__panel">
-                <span class="svc__title">Fireplaces</span>
-                <span class="svc__desc">Indoor or outdoor fireplace builds that feel high-end and lasting.</span>
-              </span>
-            </button>
-          </article>
-
-          <!-- Card 7 -->
-          <article class="svc" data-svc>
-            <button class="svc__btn" type="button" aria-expanded="false">
-              <span class="svc__media">
-                <picture>
-                  <source data-srcset="img/colorado_mansory_09.avif" type="image/avif">
-                  <source data-srcset="img/colorado_mansory_09.webp" type="image/webp">
-                  <img
-                    data-src="img/colorado_mansory_09.jpg"
-                    alt="Decorative stone wall detail"
-                    width="1200"
-                    height="800"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </picture>
-              </span>
-
-              <span class="svc__badge">Decorative Stone Walls</span>
-
-              <span class="svc__panel">
-                <span class="svc__title">Decorative Stone Walls</span>
-                <span class="svc__desc">Accent walls and feature builds that elevate spaces instantly.</span>
-              </span>
-            </button>
-          </article>
-
-          <!-- Card 8 -->
-          <article class="svc" data-svc>
-            <button class="svc__btn" type="button" aria-expanded="false">
-              <span class="svc__media">
-                <picture>
-                  <source data-srcset="img/colorado_mansory_27.avif" type="image/avif">
-                  <source data-srcset="img/colorado_mansory_27.webp" type="image/webp">
-                  <img
-                    data-src="img/colorado_mansory_27.jpg"
-                    alt="Masonry repairs and restoration work"
-                    width="1200"
-                    height="800"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </picture>
-              </span>
-
-              <span class="svc__badge">Masonry Repairs</span>
-
-              <span class="svc__panel">
-                <span class="svc__title">Masonry Repairs</span>
-                <span class="svc__desc">Fix cracks, loose stone, and aged mortar with clean restoration.</span>
-              </span>
-            </button>
-          </article>
-
-          <!-- Card 9 -->
-          <article class="svc" data-svc>
-            <button class="svc__btn" type="button" aria-expanded="false">
-              <span class="svc__media">
-                <picture>
-                  <source data-srcset="img/colorado_mansory_41.avif" type="image/avif">
-                  <source data-srcset="img/colorado_mansory_41.webp" type="image/webp">
-                  <img
-                    data-src="img/colorado_mansory_41.jpg"
-                    alt="Custom outdoor masonry project"
-                    width="1200"
-                    height="800"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </picture>
-              </span>
-
-              <span class="svc__badge">Custom Outdoor Projects</span>
-
-              <span class="svc__panel">
-                <span class="svc__title">Custom Outdoor Projects</span>
-                <span class="svc__desc">Tell us your idea. We design and build premium custom outdoor features.</span>
-              </span>
-            </button>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="faq" aria-label="Frequently asked questions">
-  <div class="faq__inner">
-    <div class="faq__wrap">
-      <header class="faq__head">
-        <p class="faq__pill">FAQ</p>
-
-        <h2 class="faq__title">
-          <span class="faq__decor" aria-hidden="true">
-            <svg viewBox="0 0 52 24" fill="currentColor" focusable="false" aria-hidden="true">
-              <defs>
-                <pattern id="faqDots" x="0" y="0" width=".135" height=".30">
-                  <circle cx="1" cy="1" r=".7"></circle>
-                </pattern>
-              </defs>
-              <rect fill="url(#faqDots)" width="52" height="24"></rect>
-            </svg>
-          </span>
-          Answers to common service questions
-        </h2>
-
-        <p class="faq__lead">
-          Quick answers about estimates, timelines, materials, and how we work. If you have a specific request, send photos and a short description.
+  <!-- SERVICES GRID -->
+  <section class="services-grid" aria-label="Services list" data-i18n-aria="services.grid.aria">
+    <div class="services-grid__inner">
+      <header class="section-head">
+        <h2 class="section-head__title" data-i18n="services.grid.title">What we build</h2>
+        <p class="section-head__text" data-i18n="services.grid.text">
+          Each service is planned, measured, and installed with a premium finish. Tap a card to read details on mobile.
         </p>
       </header>
 
-      <div class="faq__list" data-faq>
-        <!-- Item 1 -->
-        <div class="faq-item" data-faq-item>
-          <button class="faq-item__btn" type="button" aria-expanded="false">
-            <span class="faq-item__q">Do you offer free estimates?</span>
-            <span class="faq-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
-                  points="2,7 12,17 22,7" stroke-linejoin="round"></polyline>
-              </svg>
+      <div class="svc-grid" data-services-grid>
+        <!-- Card 1 -->
+        <article class="svc" data-svc>
+          <button class="svc__btn" type="button" aria-expanded="false" data-i18n-aria="services.cards.stoneWork.open_aria">
+            <span class="svc__media">
+              <picture>
+                <source data-srcset="img/colorado_mansory_30.avif" type="image/avif">
+                <source data-srcset="img/colorado_mansory_30.webp" type="image/webp">
+                <img
+                  data-src="img/colorado_mansory_30.jpg"
+                  data-i18n-alt="services.cards.stoneWork.alt"
+                  alt="Natural stone installation with premium finish"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </span>
-          </button>
-          <div class="faq-item__panel" hidden>
-            <p class="faq-item__a">
-              Yes. Share a short description, measurements if available, and photos. We’ll respond with a clear estimate and next steps.
-            </p>
-          </div>
-        </div>
 
-        <!-- Item 2 -->
-        <div class="faq-item" data-faq-item>
-          <button class="faq-item__btn" type="button" aria-expanded="false">
-            <span class="faq-item__q">How long does a typical project take?</span>
-            <span class="faq-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
-                  points="2,7 12,17 22,7" stroke-linejoin="round"></polyline>
-              </svg>
-            </span>
-          </button>
-          <div class="faq-item__panel" hidden>
-            <p class="faq-item__a">
-              Timelines vary by scope and site conditions. Small repairs can be completed quickly, while custom outdoor builds may take longer.
-              After reviewing photos and details, we provide a realistic schedule.
-            </p>
-          </div>
-        </div>
+            <span class="svc__badge" data-i18n="services.cards.stoneWork.badge">Stone Work</span>
 
-        <!-- Item 3 -->
-        <div class="faq-item" data-faq-item>
-          <button class="faq-item__btn" type="button" aria-expanded="false">
-            <span class="faq-item__q">What materials do you work with?</span>
-            <span class="faq-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
-                  points="2,7 12,17 22,7" stroke-linejoin="round"></polyline>
-              </svg>
+            <span class="svc__panel">
+              <span class="svc__title" data-i18n="services.cards.stoneWork.title">Stone Work</span>
+              <span class="svc__desc" data-i18n="services.cards.stoneWork.desc">Natural stone installations designed for durability and a premium look.</span>
             </span>
           </button>
-          <div class="faq-item__panel" hidden>
-            <p class="faq-item__a">
-              We specialize in natural stone, thin brick, flagstone, and masonry finishes for outdoor living spaces. We recommend materials
-              based on design goals, durability, and budget.
-            </p>
-          </div>
-        </div>
+        </article>
 
-        <!-- Item 4 -->
-        <div class="faq-item" data-faq-item>
-          <button class="faq-item__btn" type="button" aria-expanded="false">
-            <span class="faq-item__q">Can you match an existing style or repair older masonry?</span>
-            <span class="faq-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
-                  points="2,7 12,17 22,7" stroke-linejoin="round"></polyline>
-              </svg>
+        <!-- Card 2 -->
+        <article class="svc" data-svc>
+          <button class="svc__btn" type="button" aria-expanded="false" data-i18n-aria="services.cards.thinBrick.open_aria">
+            <span class="svc__media">
+              <picture>
+                <source data-srcset="img/colorado_mansory_06.avif" type="image/avif">
+                <source data-srcset="img/colorado_mansory_06.webp" type="image/webp">
+                <img
+                  data-src="img/colorado_mansory_06.jpg"
+                  data-i18n-alt="services.cards.thinBrick.alt"
+                  alt="Thin brick facade with clean lines"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
             </span>
-          </button>
-          <div class="faq-item__panel" hidden>
-            <p class="faq-item__a">
-              Yes. We handle masonry repairs and restoration with clean finishing. Send close-up photos so we can evaluate matching,
-              mortar condition, and the best repair approach.
-            </p>
-          </div>
-        </div>
 
-        <!-- Item 5 -->
-        <div class="faq-item" data-faq-item>
-          <button class="faq-item__btn" type="button" aria-expanded="false">
-            <span class="faq-item__q">How do I get started?</span>
-            <span class="faq-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-                <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
-                  points="2,7 12,17 22,7" stroke-linejoin="round"></polyline>
-              </svg>
+            <span class="svc__badge" data-i18n="services.cards.thinBrick.badge">Thin Brick</span>
+
+            <span class="svc__panel">
+              <span class="svc__title" data-i18n="services.cards.thinBrick.title">Thin Brick</span>
+              <span class="svc__desc" data-i18n="services.cards.thinBrick.desc">Lightweight brick finishes for walls, accents, and exterior upgrades.</span>
             </span>
           </button>
-          <div class="faq-item__panel" hidden>
-            <p class="faq-item__a">
-              Use our contact form to send a short description and photos. We’ll confirm details, provide an estimate, and schedule a visit if needed.
-            </p>
-          </div>
-        </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="svc" data-svc>
+          <button class="svc__btn" type="button" aria-expanded="false" data-i18n-aria="services.cards.flagstone.open_aria">
+            <span class="svc__media">
+              <picture>
+                <source data-srcset="img/colorado_mansory_03.avif" type="image/avif">
+                <source data-srcset="img/colorado_mansory_03.webp" type="image/webp">
+                <img
+                  data-src="img/colorado_mansory_03.jpg"
+                  data-i18n-alt="services.cards.flagstone.alt"
+                  alt="Flagstone patio installation"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </span>
+
+            <span class="svc__badge" data-i18n="services.cards.flagstone.badge">Flagstone</span>
+
+            <span class="svc__panel">
+              <span class="svc__title" data-i18n="services.cards.flagstone.title">Flagstone</span>
+              <span class="svc__desc" data-i18n="services.cards.flagstone.desc">Patios and walkways with natural texture and timeless outdoor appeal.</span>
+            </span>
+          </button>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="svc" data-svc>
+          <button class="svc__btn" type="button" aria-expanded="false" data-i18n-aria="services.cards.outdoorKitchens.open_aria">
+            <span class="svc__media">
+              <picture>
+                <source data-srcset="img/colorado_mansory_18.avif" type="image/avif">
+                <source data-srcset="img/colorado_mansory_18.webp" type="image/webp">
+                <img
+                  data-src="img/colorado_mansory_18.jpg"
+                  data-i18n-alt="services.cards.outdoorKitchens.alt"
+                  alt="Outdoor kitchen with stone and masonry details"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </span>
+
+            <span class="svc__badge" data-i18n="services.cards.outdoorKitchens.badge">Outdoor Kitchens</span>
+
+            <span class="svc__panel">
+              <span class="svc__title" data-i18n="services.cards.outdoorKitchens.title">Outdoor Kitchens</span>
+              <span class="svc__desc" data-i18n="services.cards.outdoorKitchens.desc">Cook, host, and relax with a durable outdoor kitchen built for real use.</span>
+            </span>
+          </button>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="svc" data-svc>
+          <button class="svc__btn" type="button" aria-expanded="false" data-i18n-aria="services.cards.firePits.open_aria">
+            <span class="svc__media">
+              <picture>
+                <source data-srcset="img/colorado_mansory_12.avif" type="image/avif">
+                <source data-srcset="img/colorado_mansory_12.webp" type="image/webp">
+                <img
+                  data-src="img/colorado_mansory_12.jpg"
+                  data-i18n-alt="services.cards.firePits.alt"
+                  alt="Fire pit outdoor feature"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </span>
+
+            <span class="svc__badge" data-i18n="services.cards.firePits.badge">Fire Pits</span>
+
+            <span class="svc__panel">
+              <span class="svc__title" data-i18n="services.cards.firePits.title">Fire Pits</span>
+              <span class="svc__desc" data-i18n="services.cards.firePits.desc">A premium focal point that upgrades comfort and outdoor ambiance.</span>
+            </span>
+          </button>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="svc" data-svc>
+          <button class="svc__btn" type="button" aria-expanded="false" data-i18n-aria="services.cards.fireplaces.open_aria">
+            <span class="svc__media">
+              <picture>
+                <source data-srcset="img/colorado_mansory_20.avif" type="image/avif">
+                <source data-srcset="img/colorado_mansory_20.webp" type="image/webp">
+                <img
+                  data-src="img/colorado_mansory_20.jpg"
+                  data-i18n-alt="services.cards.fireplaces.alt"
+                  alt="Fireplace masonry build"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </span>
+
+            <span class="svc__badge" data-i18n="services.cards.fireplaces.badge">Fireplaces</span>
+
+            <span class="svc__panel">
+              <span class="svc__title" data-i18n="services.cards.fireplaces.title">Fireplaces</span>
+              <span class="svc__desc" data-i18n="services.cards.fireplaces.desc">Indoor or outdoor fireplace builds that feel high-end and lasting.</span>
+            </span>
+          </button>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="svc" data-svc>
+          <button class="svc__btn" type="button" aria-expanded="false" data-i18n-aria="services.cards.stoneWalls.open_aria">
+            <span class="svc__media">
+              <picture>
+                <source data-srcset="img/colorado_mansory_09.avif" type="image/avif">
+                <source data-srcset="img/colorado_mansory_09.webp" type="image/webp">
+                <img
+                  data-src="img/colorado_mansory_09.jpg"
+                  data-i18n-alt="services.cards.stoneWalls.alt"
+                  alt="Decorative stone wall detail"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </span>
+
+            <span class="svc__badge" data-i18n="services.cards.stoneWalls.badge">Decorative Stone Walls</span>
+
+            <span class="svc__panel">
+              <span class="svc__title" data-i18n="services.cards.stoneWalls.title">Decorative Stone Walls</span>
+              <span class="svc__desc" data-i18n="services.cards.stoneWalls.desc">Accent walls and feature builds that elevate spaces instantly.</span>
+            </span>
+          </button>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="svc" data-svc>
+          <button class="svc__btn" type="button" aria-expanded="false" data-i18n-aria="services.cards.repairs.open_aria">
+            <span class="svc__media">
+              <picture>
+                <source data-srcset="img/colorado_mansory_27.avif" type="image/avif">
+                <source data-srcset="img/colorado_mansory_27.webp" type="image/webp">
+                <img
+                  data-src="img/colorado_mansory_27.jpg"
+                  data-i18n-alt="services.cards.repairs.alt"
+                  alt="Masonry repairs and restoration work"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </span>
+
+            <span class="svc__badge" data-i18n="services.cards.repairs.badge">Masonry Repairs</span>
+
+            <span class="svc__panel">
+              <span class="svc__title" data-i18n="services.cards.repairs.title">Masonry Repairs</span>
+              <span class="svc__desc" data-i18n="services.cards.repairs.desc">Fix cracks, loose stone, and aged mortar with clean restoration.</span>
+            </span>
+          </button>
+        </article>
+
+        <!-- Card 9 -->
+        <article class="svc" data-svc>
+          <button class="svc__btn" type="button" aria-expanded="false" data-i18n-aria="services.cards.custom.open_aria">
+            <span class="svc__media">
+              <picture>
+                <source data-srcset="img/colorado_mansory_41.avif" type="image/avif">
+                <source data-srcset="img/colorado_mansory_41.webp" type="image/webp">
+                <img
+                  data-src="img/colorado_mansory_41.jpg"
+                  data-i18n-alt="services.cards.custom.alt"
+                  alt="Custom outdoor masonry project"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </span>
+
+            <span class="svc__badge" data-i18n="services.cards.custom.badge">Custom Outdoor Projects</span>
+
+            <span class="svc__panel">
+              <span class="svc__title" data-i18n="services.cards.custom.title">Custom Outdoor Projects</span>
+              <span class="svc__desc" data-i18n="services.cards.custom.desc">Tell us your idea. We design and build premium custom outdoor features.</span>
+            </span>
+          </button>
+        </article>
       </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
+  <section class="faq" aria-label="Frequently asked questions" data-i18n-aria="services.faq.aria">
+    <div class="faq__inner">
+      <div class="faq__wrap">
+        <header class="faq__head">
+          <p class="faq__pill" data-i18n="services.faq.pill">FAQ</p>
 
-    <!-- CTA FINAL -->
-    <section class="services-cta" aria-label="Services call to action">
-      <div class="services-cta__inner">
-        <div class="services-cta__card">
-          <div class="services-cta__bg" aria-hidden="true">
-            <picture>
-              <source data-srcset="img/colorado_mansory_50.avif" type="image/avif">
-              <source data-srcset="img/colorado_mansory_50.webp" type="image/webp">
-              <img
-                data-src="img/colorado_mansory_50.jpg"
-                alt=""
-                width="1600"
-                height="900"
-                loading="lazy"
-                decoding="async"
-              />
-            </picture>
+          <h2 class="faq__title" data-i18n="services.faq.title">
+            Answers to common service questions
+          </h2>
+
+          <p class="faq__lead" data-i18n="services.faq.lead">
+            Quick answers about estimates, timelines, materials, and how we work. If you have a specific request, send photos and a short description.
+          </p>
+        </header>
+
+        <div class="faq__list" data-faq>
+          <!-- Item 1 -->
+          <div class="faq-item" data-faq-item>
+            <button class="faq-item__btn" type="button" aria-expanded="false">
+              <span class="faq-item__q" data-i18n="services.faq.q1">Do you offer free estimates?</span>
+              <span class="faq-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                  <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
+                    points="2,7 12,17 22,7" stroke-linejoin="round"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-item__panel" hidden>
+              <p class="faq-item__a" data-i18n="services.faq.a1">
+                Yes. Share a short description, measurements if available, and photos. We’ll respond with a clear estimate and next steps.
+              </p>
+            </div>
           </div>
-          <div class="services-cta__scrim" aria-hidden="true"></div>
 
-          <div class="services-cta__content">
-            <h2 class="services-cta__title">Ready to build something premium?</h2>
-            <p class="services-cta__text">
-              Share a short description and photos. We’ll reply with a clear estimate and next steps.
-            </p>
+          <!-- Item 2 -->
+          <div class="faq-item" data-faq-item>
+            <button class="faq-item__btn" type="button" aria-expanded="false">
+              <span class="faq-item__q" data-i18n="services.faq.q2">How long does a typical project take?</span>
+              <span class="faq-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                  <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
+                    points="2,7 12,17 22,7" stroke-linejoin="round"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-item__panel" hidden>
+              <p class="faq-item__a" data-i18n="services.faq.a2">
+                Timelines vary by scope and site conditions. Small repairs can be completed quickly, while custom outdoor builds may take longer.
+                After reviewing photos and details, we provide a realistic schedule.
+              </p>
+            </div>
+          </div>
 
-            <div class="services-cta__actions">
-              <a class="btn btn--primary" href="contact.html">Request a Quote</a>
-              <a class="btn btn--ghost" href="projects.html">View Projects</a>
+          <!-- Item 3 -->
+          <div class="faq-item" data-faq-item>
+            <button class="faq-item__btn" type="button" aria-expanded="false">
+              <span class="faq-item__q" data-i18n="services.faq.q3">What materials do you work with?</span>
+              <span class="faq-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                  <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
+                    points="2,7 12,17 22,7" stroke-linejoin="round"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-item__panel" hidden>
+              <p class="faq-item__a" data-i18n="services.faq.a3">
+                We specialize in natural stone, thin brick, flagstone, and masonry finishes for outdoor living spaces. We recommend materials
+                based on design goals, durability, and budget.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item" data-faq-item>
+            <button class="faq-item__btn" type="button" aria-expanded="false">
+              <span class="faq-item__q" data-i18n="services.faq.q4">Can you match an existing style or repair older masonry?</span>
+              <span class="faq-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                  <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
+                    points="2,7 12,17 22,7" stroke-linejoin="round"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-item__panel" hidden>
+              <p class="faq-item__a" data-i18n="services.faq.a4">
+                Yes. We handle masonry repairs and restoration with clean finishing. Send close-up photos so we can evaluate matching,
+                mortar condition, and the best repair approach.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="faq-item" data-faq-item>
+            <button class="faq-item__btn" type="button" aria-expanded="false">
+              <span class="faq-item__q" data-i18n="services.faq.q5">How do I get started?</span>
+              <span class="faq-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                  <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
+                    points="2,7 12,17 22,7" stroke-linejoin="round"></polyline>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-item__panel" hidden>
+              <p class="faq-item__a" data-i18n="services.faq.a5">
+                Use our contact form to send a short description and photos. We’ll confirm details, provide an estimate, and schedule a visit if needed.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-  </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="services-cta" aria-label="Services call to action" data-i18n-aria="services.cta.aria">
+    <div class="services-cta__inner">
+      <div class="services-cta__card">
+        <div class="services-cta__bg" aria-hidden="true">
+          <picture>
+            <source data-srcset="img/colorado_mansory_50.avif" type="image/avif">
+            <source data-srcset="img/colorado_mansory_50.webp" type="image/webp">
+            <img
+              data-src="img/colorado_mansory_50.jpg"
+              data-i18n-alt="services.cta.img_alt"
+              alt=""
+              width="1600"
+              height="900"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+        </div>
+        <div class="services-cta__scrim" aria-hidden="true"></div>
+
+        <div class="services-cta__content">
+          <h2 class="services-cta__title" data-i18n="services.cta.title">Ready to build something premium?</h2>
+          <p class="services-cta__text" data-i18n="services.cta.text">
+            Share a short description and photos. We’ll reply with a clear estimate and next steps.
+          </p>
+
+          <div class="services-cta__actions">
+            <a class="btn btn--primary" href="contact.html" data-i18n="services.cta.primary">Request a Quote</a>
+            <a class="btn btn--ghost" href="projects.html" data-i18n="services.cta.secondary">View Projects</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
 
   @@include('partials/footer.html')
   <script src="https://unpkg.com/i18next@23/i18next.min.js"></script>

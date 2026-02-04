@@ -435,3 +435,23 @@
 }
 
 
+/* ================================
+   Anti-deformación por traducción (SOLO botones)
+================================ */
+:where(.btn, .fab__btn, button, [type="button"], [type="submit"], [role="button"], .footer-link, .footer-mini, .social-btn){
+  font-size: 14px !important;      /* ajusta a tu base */
+  line-height: 1.1 !important;
+  font-weight: 700;                /* opcional */
+  letter-spacing: -0.1px;          /* opcional */
+  white-space: nowrap;             /* evita salto de línea */
+  text-overflow: ellipsis;         /* si se pasa, recorta */
+  overflow: hidden;
+  max-width: 100%;
+}
+
+/* Si tienes botones con dos líneas permitidas, usa esta clase */
+.btn--wrap{
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: initial !important;
+}

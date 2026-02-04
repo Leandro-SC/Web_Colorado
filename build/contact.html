@@ -8,20 +8,22 @@
   <link rel="stylesheet" href="css/app.css" />
 
   <!-- SEO: Schema -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"Colorado Pro Masonry LLC",
-    "url":"https://example.com",
-    "image":"https://example.com/img/logo.jpg",
-    "telephone":"+15018120003",
-    "priceRange":"$$",
-    "areaServed":"Colorado",
-    "sameAs":[]
-  }
-  </script>
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Colorado Pro Masonry LLC",
+  "url": "https://www.coloradopromasonryllc.com/",
+  "telephone": "+1-501-812-0003",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Colorado"
+  },
+  "image": "https://www.coloradopromasonryllc.com/img/logo.jpg",
+  "priceRange": "$$",
+  "sameAs": []
+}
+</script>
 </head>
 <body>
 
@@ -511,25 +513,55 @@
         <path d="M20.52 3.48A11.82 11.82 0 0 0 12.03 0C5.4 0 .02 5.38.02 12c0 2.12.55 4.19 1.6 6.02L0 24l6.17-1.62A11.9 11.9 0 0 0 12.03 24C18.66 24 24 18.62 24 12c0-3.2-1.25-6.2-3.5-8.52zM12.03 21.8a9.9 9.9 0 0 1-5.05-1.38l-.36-.22-3.66.96.98-3.57-.24-.37A9.82 9.82 0 0 1 2.2 12 9.84 9.84 0 0 1 12.03 2.2 9.84 9.84 0 0 1 21.86 12a9.84 9.84 0 0 1-9.83 9.8zm5.67-7.35c-.31-.16-1.84-.91-2.13-1.01-.29-.11-.5-.16-.71.16-.2.31-.82 1.01-1.01 1.21-.18.2-.36.23-.67.08-.31-.16-1.3-.48-2.48-1.54-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.14-.64.14-.14.31-.36.47-.54.16-.18.2-.31.31-.52.1-.2.05-.38-.03-.54-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.53-.71-.54h-.6c-.2 0-.52.08-.8.38-.28.31-1.05 1.03-1.05 2.5 0 1.47 1.07 2.9 1.22 3.1.16.2 2.1 3.2 5.08 4.49.71.31 1.27.5 1.7.64.71.22 1.35.19 1.86.12.57-.09 1.84-.75 2.1-1.47.26-.71.26-1.32.18-1.47-.08-.14-.29-.22-.6-.38z"/>
       </svg>
     </a>
-<!-- GTranslate (Language switcher) -->
-
 
   </div>
 
 </footer>
-<div class="gtranslate_wrapper gt-fab" aria-label="Change language"></div>
-  <script>
+
+
+<!-- GTranslate (single floating chip) -->
+<div class="gtranslate_wrapper gt-fab" id="gt_switcher" aria-label="Change language"></div>
+
+<script>
+  // 1) settings global
   window.gtranslateSettings = {
     default_language: "en",
     languages: ["en", "es"],
-    wrapper_selector: ".gtranslate_wrapper",
+    wrapper_selector: "#gt_switcher",
     flag_size: 18,
-    switcher_text: "EN",          // texto visible en el botón (GTranslate lo cambia)
+    switcher_text: "EN",
     detect_browser_language: false
   };
 </script>
 
 <script src="https://cdn.gtranslate.net/widgets/latest/fc.js" defer></script>
+<script>
+  (function fixGTranslateDuplicates() {
+    const WRAPPER_ID = "gt_switcher";
+
+    function dedupeWrappersOnly() {
+      // 1) Si hay más de un wrapper, deja SOLO el que tiene id=gt_switcher
+      const wrappers = document.querySelectorAll(".gtranslate_wrapper");
+
+      wrappers.forEach((w) => {
+        if (w.id !== WRAPPER_ID) w.remove();
+      });
+
+      // 2) Seguridad: si por error se clonó el mismo id (malo, pero pasa)
+      const sameId = document.querySelectorAll("#" + WRAPPER_ID);
+      sameId.forEach((el, idx) => {
+        if (idx > 0) el.remove();
+      });
+    }
+
+    // Ejecuta varias veces porque fc.js monta async
+    document.addEventListener("DOMContentLoaded", dedupeWrappersOnly);
+    window.addEventListener("load", dedupeWrappersOnly);
+    setTimeout(dedupeWrappersOnly, 200);
+    setTimeout(dedupeWrappersOnly, 800);
+  })();
+</script>
+
 <script src="https://unpkg.com/i18next@23/i18next.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 

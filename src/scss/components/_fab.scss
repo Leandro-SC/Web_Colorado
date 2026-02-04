@@ -102,94 +102,57 @@
 }
 
 /* ================================
-   GTranslate — Top Left (no bg)
+   GTranslate — Floating Chip (Top Right)
 ================================ */
+
+/* Wrapper flotante */
 .gt-fab{
   position: fixed;
-  top: 60px;
-  left: 16px;
-  z-index: 1800;
-
-  /* sin fondo ni círculo */
-  background: transparent !important;
-  border: 0 !important;
-  box-shadow: none !important;
-
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-
-  /* un poco de “glass” mínimo opcional en hover */
-  padding: 0;
+  top: 16px;
+  right: 16px;
+  z-index: 5000;
 }
 
-/* iPhone safe areas */
-@supports (padding: max(0px)) {
-  .gt-fab{
-    top: max(16px, env(safe-area-inset-top));
-    left: max(16px, env(safe-area-inset-left));
-  }
-}
-
-/* Evita que el widget te lo encierre en “bolita” */
-.gt-fab *{
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  background: transparent !important;
-}
-
-/* La mayoría de widgets inyectan anchors */
-.gt-fab a{
+/* GTranslate suele generar un <a> o <div> clickable dentro */
+.gt-fab a,
+.gt-fab .gt_switcher,
+.gt-fab .gt-current-lang,
+.gt-fab .gt_selected{
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
 
-  /* tamaño visual */
-  width: auto !important;
-  height: auto !important;
+  padding: 10px 14px !important;
+  border-radius: 999px !important;
 
-  padding: 0 !important;
-  margin: 0 8px 0 0 !important;
+  background: rgba(255,255,255,0.92) !important;
+  border: 1px solid rgba(15, 23, 42, 0.14) !important;
+  box-shadow: 0 18px 50px rgba(15,23,42,0.16) !important;
+
+  font-weight: 950 !important;
+  font-size: 0.95rem !important;
+  letter-spacing: -0.2px !important;
+  color: rgba(15,23,42,0.92) !important;
 
   text-decoration: none !important;
-  line-height: 1 !important;
-
-  opacity: 0.95;
-  transform: translateY(0);
-  transition: transform 160ms ease, opacity 160ms ease, filter 160ms ease;
+  cursor: pointer !important;
 }
 
-.gt-fab a:hover{
-  opacity: 1;
-  transform: translateY(-1px);
-  filter: drop-shadow(0 10px 22px rgba(15,23,42,.22));
+/* Si aparecen banderas internas, ocúltalas para que quede SOLO "EN | ES" */
+.gt-fab img,
+.gt-fab .gt_flag{
+  display: none !important;
 }
 
-/* Si las banderas son <img> */
-.gt-fab img{
-  width: 32px !important;   /* más grande */
-  height: 32px !important;
-  object-fit: cover !important;
-
-  /* look más premium */
-  border-radius: 10px !important; /* ya no círculo */
-  outline: 1px solid rgba(255,255,255,.55);
-  background: transparent !important;
+/* Safe area */
+@supports (padding: max(0px)) {
+  .gt-fab{
+    top: max(16px, env(safe-area-inset-top));
+    right: max(16px, env(safe-area-inset-right));
+  }
 }
 
-/* Si el widget usa spans con background-image */
-.gt-fab span{
-  display: inline-flex !important;
-  width: 32px !important;
-  height: 32px !important;
-  border-radius: 10px !important; /* evita círculo */
-}
+.gt-fab { pointer-events: auto; }
+.gt-fab * { pointer-events: auto; }
 
-/* Si el widget renderiza select */
-.gt-fab select{
-  font-weight: 900;
-  font-size: 14px;
-  border: 0 !important;
-  background: transparent !important;
-  color: rgba(15,23,42,0.92) !important;
-}
+
